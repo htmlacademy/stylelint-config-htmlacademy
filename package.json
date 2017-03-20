@@ -1,0 +1,36 @@
+{
+  "name": "stylelint-config-htmlacademy",
+  "version": "0.0.1",
+  "description": "Stylelint shareable config for the HTML Academy style",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "HTMLAcademy",
+    "HTML Academy",
+    "code",
+    "quality",
+    "style",
+    "lint",
+    "linter",
+    "stylelint",
+    "validate",
+    "code style",
+    "strict",
+    "check",
+    "checker",
+    "verify",
+    "enforce",
+    "hint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/htmlacademy/stylelint-config-htmlacademy.git"
+  },
+  "author": " <zyuzin.vitaly@htmlacademy.ru>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/htmlacademy/stylelint-config-htmlacademy/issues"
+  },
+  "homepage": "https://github.com/htmlacademy/stylelint-config-htmlacademy#readme"
+}
