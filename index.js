@@ -37,14 +37,15 @@ module.exports = {
     "value-list-comma-space-after": "always-single-line",
     "value-list-comma-space-before": "never",
     "value-list-max-empty-lines": 0,
+    "value-no-vendor-prefix": true,
 
     "property-case": "lower",
+    "property-no-vendor-prefix": true,
 
     "keyframe-declaration-no-important": true,
 
     "declaration-bang-space-after": "never",
     "declaration-bang-space-before": "always",
-    "declaration-colon-newline-after": "always-multi-line",
     "declaration-colon-space-after": "always-single-line",
     "declaration-colon-space-before": "never",
 
@@ -74,6 +75,7 @@ module.exports = {
     "selector-combinator-space-before": "always",
     "selector-descendant-combinator-no-non-space": true,
     "selector-max-compound-selectors": 3,
+    "selector-max-id": 0,
     "selector-pseudo-class-case": "lower",
     "selector-pseudo-class-no-unknown": true,
     "selector-pseudo-class-parentheses-space-inside": "never",
@@ -116,21 +118,26 @@ module.exports = {
       "ignore": ["after-comment"]
     }],
     "at-rule-name-case": "lower",
-    "at-rule-name-newline-after": "always-multi-line",
     "at-rule-name-space-after": "always",
     "at-rule-no-unknown": [true, {
-      "ignoreAtRules": ["mixin", "define-mixin"]
+      "ignoreAtRules": [
+        "mixin",
+        "define-mixin",
+        "include",
+        "content",
+        "rules"
+      ]
     }],
+    "at-rule-no-vendor-prefix": true,
     "at-rule-semicolon-newline-after": "always",
 
     "comment-no-empty": true,
 
     "indentation": [2, {
-      "except": ["value"]
+      "ignore": ["inside-parens"]
     }],
 
     "max-empty-lines": 2,
-    "max-nesting-depth": 3,
     "no-duplicate-selectors": true,
     "no-empty-source": true,
     "no-eol-whitespace": true,
