@@ -74,7 +74,6 @@ module.exports = {
     "selector-combinator-space-after": "always",
     "selector-combinator-space-before": "always",
     "selector-descendant-combinator-no-non-space": true,
-    "selector-max-compound-selectors": 3,
     "selector-max-id": 0,
     "selector-pseudo-class-case": "lower",
     "selector-pseudo-class-no-unknown": true,
@@ -133,9 +132,7 @@ module.exports = {
 
     "comment-no-empty": true,
 
-    "indentation": [2, {
-      "ignore": ["inside-parens"]
-    }],
+    "indentation": 2,
 
     "max-empty-lines": 2,
     "no-duplicate-selectors": true,
