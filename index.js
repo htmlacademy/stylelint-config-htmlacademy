@@ -8,6 +8,7 @@ module.exports = {
 
     "font-family-name-quotes": "always-unless-keyword",
     "font-family-no-duplicate-names": true,
+    "font-family-no-missing-generic-family-keyword": true,
 
     "function-calc-no-unspaced-operator": true,
     "function-comma-newline-after": "always-multi-line",
@@ -57,7 +58,9 @@ module.exports = {
     "declaration-block-semicolon-space-before": "never",
     "declaration-block-trailing-semicolon": "always",
 
-    "block-closing-brace-empty-line-before": "never",
+    "block-closing-brace-empty-line-before": ["never", {
+      "except": ["after-closing-brace"],
+    }],
     "block-closing-brace-newline-after": "always",
     "block-closing-brace-newline-before": "always",
     "block-closing-brace-space-after": "always-single-line",
@@ -136,6 +139,7 @@ module.exports = {
 
     "max-empty-lines": 2,
     "no-duplicate-selectors": true,
+    "no-duplicate-at-import-rules": true,
     "no-empty-source": true,
     "no-eol-whitespace": true,
     "no-extra-semicolons": true,
