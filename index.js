@@ -58,9 +58,7 @@ module.exports = {
     "declaration-block-semicolon-space-before": "never",
     "declaration-block-trailing-semicolon": "always",
 
-    "block-closing-brace-empty-line-before": ["never", {
-      "except": ["after-closing-brace"],
-    }],
+    "block-closing-brace-empty-line-before": "never",
     "block-closing-brace-newline-after": "always",
     "block-closing-brace-newline-before": "always",
     "block-closing-brace-space-after": "always-single-line",
