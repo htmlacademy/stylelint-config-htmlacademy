@@ -125,7 +125,8 @@ module.exports = {
         "define-mixin",
         "include",
         "content",
-        "rules"
+        "rules",
+        "each"
       ]
     }],
     "at-rule-no-vendor-prefix": true,
