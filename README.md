@@ -44,7 +44,7 @@ For example, to change the `indentation` to tabs, turn off the `number-leading-z
         "composes"
       ]
     }],
-    "unit-whitelist": ["em", "rem", "s"]
+    "unit-whitelist": ["em", "rem", "s", "px"]
   }
 }
 ```
