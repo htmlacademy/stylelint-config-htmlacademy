@@ -11,6 +11,7 @@ module.exports = {
     "font-family-no-missing-generic-family-keyword": true,
 
     "function-calc-no-unspaced-operator": true,
+    "function-calc-no-invalid": true,
     "function-comma-newline-after": "always-multi-line",
     "function-comma-newline-before": "never-multi-line",
     "function-comma-space-after": "always",
