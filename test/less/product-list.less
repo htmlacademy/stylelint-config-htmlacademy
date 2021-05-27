@@ -1,0 +1,187 @@
+//
+.product-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-weight: bold;
+  .font-size(19px, 24px);
+  color: @menu-invert-color;
+
+
+  @media (min-width: @tablet-width) {
+    .font-size(20px, 30px);
+    display: flex;
+  }
+}
+//карточка вида продукта
+.product-list__item {
+  position: relative;
+  min-height: 103px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 119px;
+    width: 50%;
+  }
+}
+//ссылка в карточке вида
+.product-list__link {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 24px 30px;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    padding: 27px 36px 23px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 27px 37px 23px;
+  }
+}
+
+//иконки в карточках видов продукта
+.product-list__icon {
+  position: absolute;
+}
+
+.product-list__icon--interior {
+  top: 23px;
+  right: 36px;
+
+  @media (min-width: @tablet-width) {
+    top: 30px;
+    right: 37px;
+  }
+}
+
+.product-list__icon--toys {
+  top: 21px;
+  right: 27px;
+
+  @media (min-width: @tablet-width) {
+    top: 31px;
+    right: 35px;
+  }
+}
+
+// карточка интерьера - фон и поведение
+.product-list__item--interior {
+  background-color: @product-list-left-bg;
+
+  &:hover {
+    background-color: @product-list-left-active;
+    box-shadow: 0 -5px @product-list-left-active;
+  }
+
+  &:hover .product-list__link {
+    padding-top: 22px;
+    padding-bottom: 28px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 22px;
+      padding-bottom: 28px;
+    }
+  }
+
+  &:hover .product-list__icon--interior {
+    top: 18px;
+
+    @media (min-width: @tablet-width) {
+      top: 25px;
+    }
+  }
+
+  &:hover .product-list__icon--interior g {
+    opacity: 0.7;
+  }
+
+  &:active {
+    background-color: @product-list-left-active;
+    box-shadow: none;
+  }
+
+  &:active .product-list__link {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+  }
+
+  &:active .product-list__icon--interior {
+    top: 23px;
+
+    @media (min-width: @tablet-width) {
+      top: 30px;
+    }
+  }
+
+  &:active .product-list__icon--interior g {
+    opacity: 0.3;
+  }
+}
+
+//карточка игрушек - фон и поведение
+
+.product-list__item--toys {
+  background-color: @product-list-right-bg;
+
+  &:hover {
+    background-color: @product-list-right-active;
+    box-shadow: 0 -5px @product-list-right-active;
+  }
+
+  &:hover .product-list__link {
+    padding-top: 19px;
+    padding-bottom: 29px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 20px;
+      padding-bottom: 30px;
+    }
+  }
+
+  &:hover .product-list__icon--toys {
+    top: 16px;
+
+    @media (min-width: @tablet-width) {
+      top: 26px;
+    }
+  }
+
+  &:hover .product-list__icon--toys path {
+    opacity: 0.7;
+  }
+
+  &:active {
+    background-color: @product-list-right-active;
+    box-shadow: none;
+  }
+
+  &:active .product-list__link {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+  }
+
+  &:active .product-list__icon--toys {
+    top: 21px;
+
+    @media (min-width: @tablet-width) {
+      top: 31px;
+    }
+  }
+
+  &:active .product-list__icon--toys path {
+    opacity: 0.3;
+  }
+}

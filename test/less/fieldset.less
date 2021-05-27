@@ -1,0 +1,33 @@
+//
+.fieldset {
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.fieldset__legend {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+  }
+}
+
+.fieldset-item {
+  @media (min-width: @tablet-width) {
+    grid-column-start: 2;
+    grid-column-end: -1;
+  }
+}
+
+.fieldset-item--text {
+  @media (min-width: @desktop-width) {
+    grid-column-start: 2;
+    grid-column-end: -2;
+  }
+}

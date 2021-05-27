@@ -1,0 +1,137 @@
+//
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  height: 366px;
+  box-sizing: border-box;
+  border: 1px solid @modal-border-color;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  background-color: @modal-background;
+  z-index: 999;
+
+  @media (min-width: @tablet-width) {
+    width: 566px;
+  }
+}
+
+.modal--open {
+  display: block;
+}
+
+.modal__content-wrapper {
+  @media (max-width: @mobile-only-width) {
+    min-width: 260px;
+    padding: 0 28px;
+    margin: 0 auto;
+  }
+}
+
+.modal__title {
+  margin: 0;
+  padding-top: 28px;
+  padding-bottom: 14px;
+  text-align: center;
+  font-weight: bold;
+  .font-size(25px, 30px);
+  text-transform: uppercase;
+  color: @menu-text-color;
+
+  @media (min-width: @modal-title-width) {
+    & br {
+      display: none;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding-top: 37px;
+    padding-bottom: 11px;
+    .font-size(30px, 57px);
+  }
+}
+
+.modal__legend {
+  margin: 0;
+  .font-size(13px, 30px);
+  text-align: center;
+  margin-bottom: 21px;
+
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 19px;
+    .font-size(17px, 30px);
+  }
+}
+
+.modal__size-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-right: -7px;
+}
+
+.modal__size-item {
+  width: 82px;
+  height: 52px;
+  margin-right: 7px;
+  margin-bottom: 7px;
+  font-weight: bold;
+  .font-size(17px, 16px);
+  text-transform: uppercase;
+
+
+  @media (min-width: @tablet-width) {
+    width: 112px;
+  }
+}
+
+.modal__size-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border: 2px solid  fade(@main-border-color, 10%);
+  cursor: pointer;
+}
+
+.modal__radio-input:hover + .modal__size-label {
+  border: 2px solid  fade(@checkbox-color, 30%);
+}
+
+.modal__radio-input:focus + .modal__size-label {
+  border: 2px solid  fade(@checkbox-color, 30%);
+}
+
+.modal__radio-input:checked + .modal__size-label {
+  border: 2px solid  @modal-size-input-checked;
+}
+
+.modal__radio-input:active + .modal__size-label {
+  border: 2px solid  @modal-size-input-checked;
+}
+
+.modal__button {
+  margin-top: 24px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.modal__close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

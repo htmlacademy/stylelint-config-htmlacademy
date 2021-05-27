@@ -1,0 +1,211 @@
+//
+
+.production-promo__wrapper {
+  .mobile-wrapper();
+
+  @media (min-width: @tablet-width) {
+    .tablet-wrapper();
+  }
+
+  @media (min-width: @desktop-width) {
+    .desktop-wrapper();
+  }
+}
+
+.production-promo__content-wrapper {
+  display: grid;
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  &:focus-within {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.production-promo__video {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  z-index: 3;
+  min-width: 260px;
+  min-height: 150px;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    min-width: 668px;
+    min-height: 455px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    width: 682px;
+    height: 455px;
+  }
+}
+
+.production-promo__title-wrapper {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 22px 0 25px;
+  border-top: 1px solid @catalog-card-border;
+  border-left: 1px solid @catalog-card-border;
+  border-right: 1px solid @catalog-card-border;
+
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 39px 0 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+    align-items: flex-start;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 47px 17px 27px 80px;
+  }
+}
+
+.production-promo__title {
+  flex-grow: 1;
+}
+
+.production-promo__title br {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: initial;
+  }
+}
+
+.production-promo__title-icon {
+  width: 32px;
+  height: 22px;
+  margin-left: 34px;
+  margin-right: 25px;
+
+  @media (max-width: @mobile-only-width) {
+    align-self: center;
+    //justify-self: center;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-left: 40px;
+    margin-right: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+    padding-bottom: 27px;
+  }
+}
+
+.production-promo__text-wrapper {
+  box-sizing: border-box;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 3;
+  grid-row-end: 4;
+
+  padding: 35px 0 40px 34px;
+  border-left: 1px solid @catalog-card-border;
+  border-right: 1px solid @catalog-card-border;
+
+  @media (min-width: @tablet-width) {
+    font-size: 15px;
+    line-height: 30px;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin: 0;
+    padding: 0 37px 41px 40px;
+    border: none;
+    border-left: 1px solid @catalog-card-border;
+    border-right: 1px solid @catalog-card-border;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 0 36px 51px 80px;
+  }
+}
+
+.production-promo__text {
+  margin: 0;
+  .font-size(13px, 24px);
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    .font-size(15px, 30px);
+  }
+}
+
+.production-promo__order-button {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  align-self: center;
+  width: auto;
+  margin: 0 34px;
+  margin-bottom: 33px;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin: 0 42px;
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin: 0 57px 60px 80px;
+  }
+}
+
+.production-promo__button-wrapper {
+  box-sizing: border-box;
+  border-left: 1px solid @catalog-card-border;
+  border-right: 1px solid @catalog-card-border;
+  border-bottom: 1px solid @catalog-card-border;
+}

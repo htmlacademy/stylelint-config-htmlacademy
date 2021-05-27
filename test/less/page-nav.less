@@ -1,0 +1,135 @@
+//
+.page-nav {
+  position: relative;
+  z-index: 3;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+.page-nav__button {
+  position: absolute;
+  right: 30px;
+  top: -50px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.page-nav__site-list {
+  @media (max-width: @mobile-only-width) {
+    display: none;
+    // display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-row-start: 1;
+    grid-row-end: -1;
+    display: flex;
+  }
+}
+
+
+.page-nav__user-list {
+  @media (max-width: @mobile-only-width) {
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 2;
+    grid-column-end: -1;
+  }
+}
+
+
+//Открываем меню
+.page-nav--open .page-nav__site-list {
+  @media (max-width: @mobile-only-width) {
+    display: flex;
+  }
+}
+
+.page-nav--nojs .page-nav__site-list {
+  @media (max-width: @mobile-only-width) {
+    display: flex;
+  }
+}
+
+.page-nav--open .page-nav__user-list {
+  @media (max-width: @mobile-only-width) {
+    display: flex;
+  }
+}
+
+.page-nav--nojs .page-nav__user-list {
+  @media (max-width: @mobile-only-width) {
+    display: flex;
+  }
+}
+
+// отображение кнопок
+.page-nav__button-close-icon {
+  display: none;
+}
+
+.page-nav--open .page-nav__button-close-icon {
+  display: initial;
+}
+
+.page-nav--nojs .page-nav__button-close-icon {
+  display: none;
+}
+
+.page-nav--open .page-nav__button-open-icon {
+  display: none;
+}
+
+.page-nav--nojs .page-nav__button-open-icon {
+  display: none;
+}
+
+
+.page-nav__feature-text {
+  .font-size(15px, 24px);
+
+  @media (max-width: @mobile-only-width) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 2;
+    grid-column-end: -1;
+    grid-row-start: 2;
+    grid-row-end: -1;
+    justify-self: end;
+    margin: 0;
+    padding-top: 21px;
+  }
+}

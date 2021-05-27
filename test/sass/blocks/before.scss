@@ -1,0 +1,16 @@
+.before {
+  height: 100%;
+}
+
+.before img {
+  left: -20px;
+
+  @media (min-width: $tablet-width) {
+    left: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 0;
+    top: 3px;
+  }
+}

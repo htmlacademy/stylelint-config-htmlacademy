@@ -1,0 +1,125 @@
+.main-nav {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 19px;
+  }
+}
+
+.main-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: end;
+  }
+}
+
+.main-nav__item {
+  border-bottom: 1px solid $special-light-grey;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 37px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 35px;
+  }
+}
+
+.main-nav__item--indent {
+  @media (min-width: $tablet-width) {
+    margin-left: 34px;
+  }
+}
+
+.main-nav__toggle--error {
+  display: none;
+}
+
+.main-nav__link {
+  display: inline-block;
+  padding: 23px 24px 22px 24px;
+  min-width: 280px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: $basic-black;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    min-width: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0;
+
+    &[href]:hover {
+      opacity: 0.6;
+    }
+
+    &[href]:active {
+      opacity: 0.3;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 29px;
+  }
+}
+
+.main-nav__link--desktop {
+  @media (min-width: $desktop-width) {
+    color: $basic-white;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__item--active {
+    padding-bottom: 4px;
+    border-bottom: 2px solid $special-green;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list--desktop .main-nav__item--active {
+    border-bottom: 2px solid $basic-white;
+  }
+}
+
+.main-nav--closed {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: -65px;
+  right: 2px;
+  width: 61px;
+  height: 61px;
+  border: none;
+  background: url("../../img/decorative/mobile/mobile-toggle.svg") no-repeat;
+  background-position: 50% 50%;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__toggle--closed {
+  background: url("../../img/decorative/mobile/mobile-toggle-closed.svg") no-repeat;
+  background-position: 50% 50%;
+}

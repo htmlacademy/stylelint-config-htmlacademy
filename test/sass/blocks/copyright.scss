@@ -1,0 +1,40 @@
+.copyright__text-link {
+  font-size: 16px;
+  line-height: 18px;
+  color: $special-dark-grey;
+}
+
+.copyright__link .copyright__logo {
+  fill: $special-light-grey4;
+}
+
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+
+  &:hover .copyright__logo {
+    fill: $special-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__text {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  margin: 8px 0 0 0;
+  color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 24px;
+  }
+}
+
+.page-footer__copyright {
+  margin-top: 2px;
+}
