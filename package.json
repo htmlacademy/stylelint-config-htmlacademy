@@ -35,7 +35,7 @@
   "homepage": "https://github.com/htmlacademy/stylelint-config-htmlacademy#readme",
   "devDependencies": {
     "stylelint": "13.13.1",
-    "stylelint-config-standard": "22.0.0"
+    "stylelint-config-recommended": "^5.0.0"
   },
   "scripts": {
     "test": "stylelint test/css/style.css --config index.js"

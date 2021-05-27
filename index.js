@@ -1,8 +1,8 @@
 "use strict"
 
 module.exports = {
-  "extends": "stylelint-config-standard",
-  "rules": {
+  extends: 'stylelint-config-recommended',
+  rules: {
     "no-descending-specificity" : null,
 
     "color-hex-case": "lower",
