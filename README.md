@@ -1,17 +1,17 @@
 # stylelint-config-htmlacademy
-> The standard shareable config for stylelint.
+> Это стандартный конфигурационный файл для stylelint от [HTML Academy](https://htmlacademy.ru/).
 
-Use it as is or as a foundation for your own config.
+Используйте его как есть или как основу для вашей собственной конфигурации.
 
-## Installation
+## Установка
 
 ```bash
 npm install stylelint-config-htmlacademy --save-dev
 ```
 
-## Usage
+## Использование
 
-If you've installed `stylelint-config-htmlacademy` locally within your project, just set your `stylelint` config to:
+Если вы установили `stylelint-config-htmlacademy` локально в свой проект, то просто примените его в конфигурационном файле `stylelint` вашего проекта:
 
 ```json
 {
@@ -19,7 +19,7 @@ If you've installed `stylelint-config-htmlacademy` locally within your project, 
 }
 ```
 
-If you've globally installed `stylelint-config-htmlacademy` using the `-g` flag, then you'll need to use the absolute path to `stylelint-config-htmlacademy` in your config e.g.
+Если вы установили `stylelint-config-htmlacademy` глобально с помощью флага `-g`, тогда вам нужно использовать абсолютный путь `stylelint-config-htmlacademy` в вашем конфигурационном файле:
 
 ```json
 {
@@ -27,11 +27,11 @@ If you've globally installed `stylelint-config-htmlacademy` using the `-g` flag,
 }
 ```
 
-### Extending the config
+### Расширение конфига
 
-Simply add a `"rules"` key to your config, then add your overrides and additions there.
+Просто добавьте ключ `"rules"` в ваш конфиг после `"extends": "stylelint-config-htmlacademy"`, а затем добавьте туда свои правила.
 
-For example, to change the `indentation` to tabs, turn off the `number-leading-zero` rule, change the `property-no-unknown` rule to use its `ignoreAtRules` option and add the `unit-whitelist` rule:
+Например, если вы хотите изменить `indentation` на табы, отключить правило `number-leading-zero`, изменить правило `property-no-unknown`, чтобы использовать его опцию `ignoreAtRules` и добавить правило `unit-whitelist`, то  нужно:
 
 ```json
 {
