@@ -127,7 +127,7 @@ module.exports = {
 
     'indentation': 2,
 
-    'max-nesting-depth' : [2, { ignoreAtRules: ['media'] }],
+    'max-nesting-depth' : [2, { 'ignoreAtRules': ['media'] }],
 
     'max-empty-lines': 2,
     'no-eol-whitespace': true,
