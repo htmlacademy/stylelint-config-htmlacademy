@@ -3,6 +3,7 @@
 module.exports = {
   extends: 'stylelint-config-recommended',
   rules: {
+    'font-family-no-missing-generic-family-keyword' : true,
     'no-descending-specificity' : null,
 
     'color-hex-case': 'lower',
@@ -38,6 +39,9 @@ module.exports = {
 
     'property-case': 'lower',
     'property-no-vendor-prefix': true,
+
+    'keyframe-declaration-no-important' : true,
+    'declaration-no-important' : true,
 
     'declaration-bang-space-after': 'never',
     'declaration-bang-space-before': 'always',
@@ -122,6 +126,8 @@ module.exports = {
     'at-rule-semicolon-newline-after': 'always',
 
     'indentation': 2,
+
+    'max-nesting-depth' : [2, { ignoreAtRules: ['media'] }],
 
     'max-empty-lines': 2,
     'no-eol-whitespace': true,
