@@ -1,0 +1,58 @@
+.after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  overflow: visible;
+}
+
+.after::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  background: $basic-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .after::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    background: linear-gradient(to bottom, $basic-white, $basic-white 171px, $basic-grey2 171px);
+  }
+
+  @media (min-width: $desktop-width) {
+    .after::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100vw;
+      height: 100%;
+      background: linear-gradient(to bottom, $basic-white, $basic-white 195px, $basic-grey2 195px);
+    }
+  }
+}
+
+.after__wrapper {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.after img {
+  right: 11px;
+  top: 2px;
+
+  @media (min-width: $tablet-width) {
+    right: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 54px;
+  }
+}

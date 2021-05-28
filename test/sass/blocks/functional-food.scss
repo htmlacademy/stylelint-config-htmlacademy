@@ -1,0 +1,109 @@
+.functional-food {
+  text-align: center;
+  height: min-content;
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    text-align: left;
+    min-height: 810px;
+    padding-left: 112px;
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: 500px 0;
+    background-size: 552px 499px;
+    padding-top: 83px;
+    padding-left: 110px;
+    min-height: 550px;
+    vertical-align: middle;
+  }
+}
+
+.functional-food__title {
+  margin: 0 auto;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 36px;
+  color: $basic-white;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    color: $basic-black;
+    width: 414px;
+    margin: 0 0 42px 5px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 414px;
+    margin: 0 0 41px 0;
+  }
+}
+
+.functional-food__slogan {
+  margin: 0 auto 28px auto;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: $basic-white;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    color: $basic-black;
+    margin: 0 0 48px 5px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 52px 0;
+  }
+}
+
+.functional-food__logo {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 202px;
+    left: 29px;
+    width: 709px;
+    height: 600px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 2px;
+    left: 478px;
+    width: 552px;
+    height: 499px;
+  }
+}
+
+.functional-food__link {
+  padding: 11px 73px;
+  font-size: 14px;
+  line-height: 18px;
+
+  &:hover {
+    background-color: $basic-green2;
+  }
+
+  &:active {
+    color: $special-basic-white;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    position: relative;
+    padding: 17px 26px 17px 27px;
+    font-size: 20px;
+    line-height: 20px;
+    z-index: 1;
+  }
+}

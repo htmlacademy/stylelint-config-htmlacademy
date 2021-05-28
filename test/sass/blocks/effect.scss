@@ -1,0 +1,249 @@
+.effect {
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.effect__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.effect__item {
+  background-color: $basic-grey;
+  padding: 30px 33px 18px 20px;
+  min-height: 266px;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 28px 56px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(100% / 2 - 40px);
+    padding: 78px 52px 58px 51px;
+    margin-bottom: 30px;
+  }
+}
+
+.effect__item:not(:last-child) {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.effect__item--weight-gain .effect__item-text {
+  @media (min-width: $tablet-width) {
+    width: 342px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 457px;
+  }
+}
+
+.effect__item-title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 37px;
+  color: $basic-black;
+  text-transform: uppercase;
+  margin: 0 0 29px 71px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0 0 25px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 73px 164px;
+  }
+}
+
+.effect__item-link {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: $basic-black;
+  text-transform: uppercase;
+  background-color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 29px;
+  }
+}
+
+.effect__item-text {
+  margin: 0 0 19px 0;
+  padding-bottom: 22px;
+  border-bottom: 1px solid $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    color: $basic-black;
+    width: 377px;
+    border: none;
+    padding-bottom: 0;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 467px;
+    margin-bottom: 27px;
+  }
+}
+
+.effect__link-weight-loss {
+  margin: 0;
+  width: 134px;
+  background: url("../../img/decorative/arrow.svg") 93px 2px no-repeat;
+
+  &:hover {
+    background-position: 101px 2px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 165px;
+    background-position: 125px 8px;
+
+    &:hover {
+      background-position: 133px 8px;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 170px;
+    background-position: 130px 8px;
+
+    &:hover {
+      background-position: 136px 8px;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.effect__link-weight-gain {
+  margin: 0;
+  width: 134px;
+  background: url("../../img/decorative/arrow.svg") 91px 2px no-repeat;
+
+  &:hover {
+    background-position: 99px 2px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 165px;
+    background-position: 121px 8px;
+
+    &:hover {
+      background-position: 129px 8px;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 165px;
+    background-position: 122px 8px;
+
+    &:hover {
+      background-position: 130px 8px;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.effect__item--weight-loss {
+  background: url("../img/logo/mobile/logo-cat-slim.svg") 22px 21px no-repeat, $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    background: url("../img/logo/logo-cat-slim-table.svg") no-repeat, $basic-grey;
+    background-size: 200px 213px;
+    background-position: 446px 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 100px 106px;
+    background-position: 52px 41px;
+  }
+}
+
+.effect__item--weight-gain {
+  background: url("../img/logo/mobile/logo-cat-fat.svg") 13px 24px no-repeat, $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    background: url("../img/logo/logo-cat-fat-table.svg") no-repeat, $basic-grey;
+    background-size: 268px 200px;
+    background-position: 412px 91px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 134px 100px;
+    background-position: 34px 47px;
+  }
+}
+
+.effect__item-link--loss {
+  display: inline-block;
+  padding-right: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 29px;
+  }
+}
+
+.effect__item-link--gain {
+  display: inline-block;
+  padding-right: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 27px;
+  }
+}

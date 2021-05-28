@@ -1,0 +1,61 @@
+//
+.button {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 52px;
+  padding-top: 16px;
+  padding-bottom: 12px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: @text-color;
+  border: 2px solid @main-border-color;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    color: @button-active-color;
+    background-color: @button-active-bg;
+  }
+
+  &:focus {
+    color: @button-active-color;
+    background-color: @button-active-bg;
+  }
+
+  &:active {
+    background-color: @button-active-bg;
+    color: fade(@button-active-color, 30%);
+  }
+}
+
+.button--w-292 {
+  width: 292px;
+}
+
+.button--modal {
+  border: none;
+  color: @button-active-color;
+  background-color: @modal-button-bg;
+
+  @media (min-width: @tablet-width) {
+    width: 350px;
+  }
+
+  &:hover {
+    background-color: @modal-button-active-bg;
+  }
+
+  &:focus {
+    background-color: @modal-button-active-bg;
+  }
+
+  &:active {
+    color: fade(@text-color, 30%);
+    background-color: fade(@modal-button-active-bg, 30%);
+  }
+}

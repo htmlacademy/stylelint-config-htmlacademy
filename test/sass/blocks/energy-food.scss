@@ -1,0 +1,112 @@
+.energy-food {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 75px;
+  }
+}
+
+.energy-food-wrapper {
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    max-width: $tablet-width;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: $desktop-width;
+  }
+}
+
+.energy-food__more-products {
+  background: url("../img/different/plus-mobile.png") 50% 25px no-repeat;
+  text-align: center;
+  padding: 79px 20px 23px 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("../img/different/plus.svg") 50% 50px no-repeat;
+    border: 2px solid $basic-grey;
+    padding: 161px 36px 36px;
+    min-height: 429px;
+  }
+}
+
+.energy-food__link {
+  background-color: $basic-grey;
+  color: $special-dark-grey;
+  width: 100%;
+
+  &:hover {
+    background-color: $special-light-grey2;
+  }
+
+  &:active {
+    background-color: $special-light-grey2;
+    color: $special-dark-grey3;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 39px;
+  }
+}
+
+.energy-food__title {
+  text-align: center;
+  color: $special-black;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    width: 134px;
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+    width: 134px;
+    margin-bottom: 25px;
+  }
+}
+
+.energy-food__text {
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0 0 21px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 87px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 86px;
+  }
+}
+
+.energy-food__more-wrapper {
+  border-top: 1px solid $special-light-grey2;
+  border-bottom: 1px solid $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 81px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 81px;
+    border: none;
+  }
+}

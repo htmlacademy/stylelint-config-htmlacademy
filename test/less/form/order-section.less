@@ -1,0 +1,26 @@
+// Задает раскладку секции с формой
+.order-section__wrapper {
+  .mobile-wrapper();
+
+  @media (min-width: @tablet-width) {
+    .tablet-wrapper();
+  }
+
+  @media (min-width: @desktop-width) {
+    .desktop-wrapper();
+  }
+}
+
+.order-section__text {
+  margin: 0 auto 15px;
+  .font-size(13px, 24px);
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 14px;
+    .font-size(17px, 30px);
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 700px;
+  }
+}

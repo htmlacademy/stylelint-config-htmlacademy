@@ -1,0 +1,172 @@
+.our-address__desktop {
+  position: relative;
+}
+
+.our-address__address-wrapper {
+  z-index: 2;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 96px;
+    min-width: 570px;
+  }
+}
+
+.our-address__address {
+  display: flex;
+  padding: 23px 0 26px 0;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    padding: 63px 40px 20px 40px;
+    min-height: 201px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 201px;
+    justify-content: space-between;
+    padding: 62px 90px 20px 76px;
+    background-color: $basic-white;
+  }
+}
+
+.our-address--font {
+  background-color: $basic-grey;
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-white;
+  }
+}
+
+.our-address__address--form {
+  background-color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 63px 2px 20px 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-white;
+    padding: 62px 90px 20px 76px;
+  }
+}
+
+.our-address__invitation {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special-black;
+  text-transform: uppercase;
+  margin: 0;
+  min-width: 140px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 60px;
+  }
+}
+
+.our-address__contact {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: start;
+  margin-top: 5px;
+  min-width: 140px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    text-align: end;
+    font-size: 16px;
+    line-height: 20px;
+    padding-right: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
+}
+
+.our-address__contact p {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 19px;
+  }
+}
+
+.our-address__image {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.our-address__wrapper {
+  min-height: min-content;
+}
+
+.our-address__map {
+  position: relative;
+  min-height: 362px;
+  padding: 0;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}
+
+.our-address__map-wrapper {
+  position: absolute;
+  height: 362px;
+  bottom: 0;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    bottom: 0;
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 400px;
+    top: 0;
+  }
+}
+
+.our-address__map-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.our-address__map iframe {
+  width: 100%;
+  border: 0;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}
+
+.our-address__invitation-text {
+  line-height: 28px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 30px;
+  }
+}

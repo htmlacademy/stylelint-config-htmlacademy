@@ -1,0 +1,45 @@
+//
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 183px;
+}
+
+.copyright__text {
+  margin: 0;
+  font-weight: bold;
+  .font-size(19px, 18px);
+  color: @menu-text-color;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 8px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 8px;
+  }
+}
+
+.copyright__link {
+  display: block;
+  margin-top: 5px;
+
+  &:hover path {
+    fill: @copyrifgt-active;
+  }
+
+  &:focus path {
+    fill: @copyrifgt-active;
+  }
+
+  &:active path {
+    fill: @copyrifgt-active;
+    opacity: 0.3;
+  }
+}
+
+.copyright__icon {
+  width: 27px;
+  height: 35px;
+}

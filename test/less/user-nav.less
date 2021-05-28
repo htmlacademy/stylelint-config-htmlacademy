@@ -1,0 +1,123 @@
+//
+.user-nav {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-self: end;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-self: end;
+    flex-wrap: wrap;
+  }
+}
+
+.user-nav__item {
+  box-sizing: border-box;
+
+  @media (max-width: @mobile-only-width) {
+    box-shadow: 0 1px 0 @menu-border, inset 0 1px 0 @menu-border;
+    height: 79px;
+  }
+}
+
+.user-nav__item--search {
+  @media (min-width: @tablet-width) {
+    width: 85px;
+    border-left: 1px solid fade(@dark-basic, 10);
+    border-right: 1px solid fade(@dark-basic, 10);
+  }
+}
+
+.user-nav__link {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  .font-size(17px, 24px);
+  color: @menu-text-color;
+  text-decoration: none;
+
+  @media (max-width: @mobile-only-width) {
+    padding: 29px 30px 26px 76px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 33px 0 31px 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 33px 3px 31px 80px;
+  }
+
+  &:hover {
+    color: fade(@menu-text-color, 60%);
+  }
+
+  &:focus {
+    color: fade(@menu-text-color, 60%);
+  }
+
+  &:active {
+    color: fade(@menu-text-color, 30%);
+  }
+}
+
+
+.user-nav__link:hover .user-nav__link-icon {
+  fill: @menu-icon-active;
+  opacity: 1;
+}
+
+.user-nav__link:focus .user-nav__link-icon {
+  fill: @menu-icon-active;
+  opacity: 1;
+}
+
+.user-nav__link:active .user-nav__link-icon {
+  fill: @menu-icon-active;
+  opacity: 0.3;
+}
+
+.user-nav__link-icon--search {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 32px;
+  left: 32px;
+  opacity: 0.2;
+
+  @media (min-width: @tablet-width) {
+    top: 36px;
+    left: 33px;
+  }
+}
+
+.user-nav__link-search-text {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.user-nav__link-icon--cart {
+  position: absolute;
+  width: 20px;
+  height: 19px;
+  top: 31px;
+  left: 30px;
+  opacity: 0.2;
+
+  @media (min-width: @tablet-width) {
+    top: 35px;
+    left: 31px;
+  }
+}

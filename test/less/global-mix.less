@@ -1,0 +1,26 @@
+// настройка шрифта
+.font-size (@font-size: 17px,
+@line-height: 30px) {
+  font-size: @font-size;
+  line-height: @line-height;
+}
+
+//глобальные врапперы
+.mobile-wrapper() {
+  min-width: 260px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.tablet-wrapper() {
+  min-width: 668px;
+  width: 86%;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+
+.desktop-wrapper() {
+  width: 1050px;
+  padding: 0 50px;
+  margin: 0 auto;
+}

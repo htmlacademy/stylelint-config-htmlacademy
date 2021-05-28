@@ -1,0 +1,31 @@
+//
+.production-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -51px;
+  }
+}
+
+.production-list__item {
+  margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 316px;
+    margin-left: 51px;
+    margin-top: 51px;
+    margin-bottom: 56px;
+  }
+}
