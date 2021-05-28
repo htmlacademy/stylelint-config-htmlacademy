@@ -5,6 +5,9 @@
 - Добавили [stylelint-config-recommended](https://github.com/stylelint/stylelint-config-recommended#readme) как стартовый конфиг
 - Почистили повторяющиеся свойств с `stylelint-config-recommended`
 - Перевели `README` на русский
+- Уточнили вложенность селекторов
+- Запретили импортанты
+- Заставили указывать семейство шрифта
 
 ## 0.1.4
 - Добавили в `"unit-whitelist"` `px`
