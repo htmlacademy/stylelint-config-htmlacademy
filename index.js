@@ -131,6 +131,14 @@ module.exports = {
 
     'max-empty-lines': 2,
     'no-eol-whitespace': true,
-    'no-missing-end-of-source-newline': true
+    'no-missing-end-of-source-newline': true,
+
+    'no-duplicate-at-import-rules' : true,
+    'no-invalid-position-at-import-rule': true,
+
+    'color-no-invalid-hex' : true,
+    'color-no-hex' : null,
+    'color-named' : 'never',
+    'number-max-precision' : 2
   }
 }
