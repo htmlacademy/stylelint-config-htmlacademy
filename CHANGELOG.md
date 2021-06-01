@@ -1,5 +1,15 @@
 # Change log
 
+## 0.1.6
+Приводит правила к обновлённому кодгайду и критериям качества
+
+- `no-duplicate-at-import-rules` - отключает дублированное использование `@import`
+- `no-invalid-position-at-import-rule` - заставляет писать `@import` раньше всех остальных CSS-правил, кроме `@charset 'utf-8';`
+- `color-no-invalid-hex` - ругается на невалидные хексы
+- `color-no-hex` - разрешает писать хексы. Свойство отключено
+- `color-named` - запрещает использовать имена цветов, вроде `red`, `black`, чтобы использовать хексы и `rgb`-цвета
+- `number-max-precision` - ограничивает точность значений - `width: 3.33%` вместо `width: 3.33333%`
+
 ## 0.1.5
 - Добавили тесты, чтобы правильнее следить за добавлением новых правил или изменением нынешних
 - Добавили [stylelint-config-recommended](https://github.com/stylelint/stylelint-config-recommended#readme) как стартовый конфиг
