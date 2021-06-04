@@ -34,13 +34,15 @@
   },
   "homepage": "https://github.com/htmlacademy/stylelint-config-htmlacademy#readme",
   "devDependencies": {
-    "stylelint": "13.13.1",
-    "stylelint-config-recommended": "^5.0.0"
+    "stylelint": "13.13.1"
   },
   "scripts": {
     "test": "npm run css && npm run less && npm run scss",
     "css": "stylelint test/css/style.css --config index.js",
     "less": "stylelint test/less/**/*.less --config index.js --syntax less",
     "scss": "stylelint test/sass/**/*.scss --config index.js --syntax scss"
+  },
+  "dependencies": {
+    "stylelint-config-recommended": "^5.0.0"
   }
 }
