@@ -11,28 +11,34 @@ npm install stylelint-config-htmlacademy --save-dev
 
 ## Использование
 
-Если вы установили `stylelint-config-htmlacademy` локально в свой проект, то просто примените его в конфигурационном файле `stylelint` вашего проекта:
+Если в вашем проекте ещё нет stylelint, то в корне проекта создайте файл `.stylelintrc`, либо с расширением `.stylelintrc.js`, чтобы редактор кода мог выделить синтаксис.
 
+После добавьте `stylelint-config-htmlacademy` в конфигурационный файл `.stylelintrc`.
+
+_.stylelintrc_
 ```json
 {
   "extends": "stylelint-config-htmlacademy"
 }
 ```
 
-Если вы установили `stylelint-config-htmlacademy` глобально с помощью флага `-g`, тогда вам нужно использовать абсолютный путь `stylelint-config-htmlacademy` в вашем конфигурационном файле:
+Если вы установили `stylelint-config-htmlacademy` глобально с помощью флага `-g`, тогда вам нужно использовать абсолютный путь `stylelint-config-htmlacademy` в конфигурационном файле:
 
+
+_.stylelintrc_
 ```json
 {
   "extends": "/absolute/path/to/stylelint-config-htmlacademy"
 }
 ```
 
-### Расширение конфига
+## Расширение конфига
 
-Просто добавьте ключ `"rules"` в ваш конфиг после `"extends": "stylelint-config-htmlacademy"`, а затем добавьте туда свои правила.
+Вы можете переопределить существующие правила или добавить новые.
 
-Например, если вы хотите изменить `indentation` на табы, отключить правило `number-leading-zero`, изменить правило `property-no-unknown`, чтобы использовать его опцию `ignoreAtRules` и добавить правило `unit-whitelist`, то  нужно:
+Для этого добавьте ключ `"rules"` в конфиг сразу после `"extends": "stylelint-config-htmlacademy"`, а затем добавляйте свои правила.
 
+_.stylelintrc_
 ```json
 {
   "extends": "stylelint-config-htmlacademy",
@@ -48,3 +54,14 @@ npm install stylelint-config-htmlacademy --save-dev
   }
 }
 ```
+
+## Использование в VSCode
+
+1. Откройте VScode
+2. Установите плагин [stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
+3. Пользуйтесь
+4. В случае если ваш код не соответствует правилам `stylelint-config-htmlacademy` он будет подчёркнут красной линией.
+
+![](vscode-error.png)
+
+_в примере сработало правило `'color-named' : 'never'`, которое запрещает использовать цвета по имени_
