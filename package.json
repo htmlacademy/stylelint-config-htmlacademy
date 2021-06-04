@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-htmlacademy",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Stylelint shareable config for the HTML Academy style",
   "files": [
     "index.js"
