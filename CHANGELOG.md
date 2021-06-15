@@ -1,7 +1,28 @@
 # Change log
 
+## 0.1.9
+Добавили возможность использовать многострочность в фунциях, при этом не ломая однострочные функции
+
+```css
+.element {
+  background-image:
+    linear-gradient(
+      var(--special-opacity) 16px,
+      var(--basic-yellow) 16px,
+      var(--basic-yellow) 24px,
+      var(--special-opacity) 24px
+    );
+}
+```
+
+для этого изменили:
+- `function-comma-space-after` на `always-single-line`
+- `function-parentheses-space-inside` на `never-single-line`
+
+Спасибо @firefoxic
+
 ## 0.1.8
-Обновляет уязвимые версии зависимости
+Обновили уязвимые версии зависимости
 
 ## 0.1.7
 Починили работу с зависимостями проекта
