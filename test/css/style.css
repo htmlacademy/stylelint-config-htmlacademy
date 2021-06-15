@@ -1,3 +1,8 @@
+:root {
+  --basic-yellow: #f0c52e;
+  --special-opacity: rgba(255, 255, 255, 0);
+}
+
 @font-face {
   font-family: "Open Sans";
   font-weight: 400;
@@ -3927,4 +3932,14 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+.link-details {
+  background-image:
+    linear-gradient(
+      var(--special-opacity) 16px,
+      var(--basic-yellow) 16px,
+      var(--basic-yellow) 24px,
+      var(--special-opacity) 24px
+    );
 }
