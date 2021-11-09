@@ -23,7 +23,11 @@ module.exports = {
 
     'number-leading-zero': 'always',
     'number-no-trailing-zeros': true,
-    'length-zero-no-unit': true,
+    'length-zero-no-unit': [true, {
+      'ignore': [
+        "custom-properties"
+      ]
+    }],
 
     'string-quotes': 'double',
 
