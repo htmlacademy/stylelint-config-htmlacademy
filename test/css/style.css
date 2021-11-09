@@ -1,6 +1,7 @@
 :root {
   --basic-yellow: #f0c52e;
   --special-opacity: rgba(255, 255, 255, 0);
+  --size: 0;
 }
 
 @font-face {
@@ -32,7 +33,7 @@
 .button {
   display: block;
   box-sizing: border-box;
-  width: 100%;
+  width: calc(100% - var(--size));
   min-height: 52px;
   padding-top: 16px;
   padding-bottom: 12px;
