@@ -43,6 +43,6 @@
     "scss": "stylelint test/sass/**/*.scss --config index.js --syntax scss"
   },
   "dependencies": {
-    "stylelint-config-recommended": "^5.0.0"
+    "stylelint-config-recommended": "^7.0.0"
   }
 }
