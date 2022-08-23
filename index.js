@@ -17,6 +17,11 @@ module.exports = {
     'function-comma-space-before': 'never',
     'function-max-empty-lines': 0,
     'function-name-case': 'lower',
+    'function-no-unknown': [true, {
+      ignoreFunctions: [
+        'fade', // less function
+      ]
+    }],
     'function-parentheses-space-inside': 'never-single-line',
     'function-url-quotes': 'always',
     'function-whitespace-after': 'always',

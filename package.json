@@ -34,15 +34,17 @@
   },
   "homepage": "https://github.com/htmlacademy/stylelint-config-htmlacademy#readme",
   "devDependencies": {
-    "stylelint": "13.13.1"
+    "postcss-less": "6.0.0",
+    "postcss-scss": "4.0.4",
+    "stylelint": "14.8.2"
   },
   "scripts": {
     "test": "npm run css && npm run less && npm run scss",
     "css": "stylelint test/css/style.css --config index.js",
-    "less": "stylelint test/less/**/*.less --config index.js --syntax less",
-    "scss": "stylelint test/sass/**/*.scss --config index.js --syntax scss"
+    "less": "stylelint test/less/**/*.less --config index.js --custom-syntax postcss-less",
+    "scss": "stylelint test/sass/**/*.scss --config index.js --custom-syntax postcss-scss"
   },
   "dependencies": {
-    "stylelint-config-recommended": "^5.0.0"
+    "stylelint-config-recommended": "^7.0.0"
   }
 }
