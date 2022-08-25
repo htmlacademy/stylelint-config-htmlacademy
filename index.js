@@ -72,6 +72,7 @@ module.exports = {
 
     'selector-attribute-quotes': 'always',
     'selector-max-id': 0,
+    'selector-max-universal': 2,
     'selector-not-notation': 'simple',
     'selector-pseudo-element-colon-notation': 'double',
 
