@@ -63,6 +63,8 @@ module.exports = {
     'selector-max-id': 0,
     'selector-pseudo-element-colon-notation': 'double',
 
+    'rule-selector-property-disallowed-list': null,
+
     'media-feature-name-no-vendor-prefix': true,
 
     'at-rule-no-vendor-prefix': true,
