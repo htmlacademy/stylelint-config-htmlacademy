@@ -13,6 +13,8 @@ module.exports = {
       ]
     }],
 
+    'keyframe-declaration-no-important' : true,
+
     'declaration-block-no-duplicate-properties': true,
 
     'selector-type-no-unknown': true,
@@ -53,8 +55,6 @@ module.exports = {
     'property-no-vendor-prefix': true,
 
     'declaration-no-important' : true,
-
-    'keyframe-declaration-no-important' : true,
 
     'selector-attribute-quotes': 'always',
     'selector-max-id': 0,
