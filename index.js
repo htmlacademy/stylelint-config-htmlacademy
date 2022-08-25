@@ -3,6 +3,8 @@
 module.exports = {
   extends: 'stylelint-config-recommended',
   rules: {
+    'annotation-no-unknown': true,
+
     'color-no-invalid-hex' : true,
 
     'font-family-no-missing-generic-family-keyword' : true,
@@ -54,6 +56,8 @@ module.exports = {
     'function-url-quotes': 'always',
 
     'import-notation': null,
+
+    'keyframe-selector-notation': 'percentage-unless-within-keyword-only-block',
 
     'number-max-precision' : 2,
 
