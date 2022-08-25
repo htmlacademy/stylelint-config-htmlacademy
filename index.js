@@ -58,6 +58,7 @@ module.exports = {
     'property-no-vendor-prefix': true,
 
     'declaration-no-important' : true,
+    'declaration-property-max-values': null,
 
     'selector-attribute-quotes': 'always',
     'selector-max-id': 0,
@@ -71,7 +72,7 @@ module.exports = {
 
     'max-nesting-depth' : [2, { 'ignoreAtRules': ['media'] }],
 
-    'value-keyword-case': 'lower',
+    'value-keyword-case': ['lower', { 'camelCaseSvgKeywords' : true }],
 
     'function-name-case': 'lower',
 
