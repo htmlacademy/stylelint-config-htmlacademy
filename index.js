@@ -37,14 +37,14 @@ module.exports = {
     'no-duplicate-at-import-rules' : true,
     'no-invalid-position-at-import-rule': true,
 
-    'color-hex-alpha': "never",
+    'color-hex-alpha': 'never',
     'color-hex-length': 'long',
     'color-named' : 'never',
     'color-no-hex' : null,
 
     'length-zero-no-unit': [true, {
-      'ignore': ["custom-properties"],
-      'ignoreFunctions': ["/^--/"],
+      'ignore': ['custom-properties'],
+      'ignoreFunctions': ['/^--/'],
     }],
 
     'font-family-name-quotes': 'always-unless-keyword',
@@ -62,6 +62,7 @@ module.exports = {
 
     'selector-attribute-quotes': 'always',
     'selector-max-id': 0,
+    'selector-not-notation': 'simple',
     'selector-pseudo-element-colon-notation': 'double',
 
     'rule-selector-property-disallowed-list': null,
