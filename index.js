@@ -7,11 +7,14 @@ module.exports = {
 
     'font-family-no-missing-generic-family-keyword' : true,
 
+    'function-calc-no-unspaced-operator': true,
     'function-no-unknown': [true, {
       ignoreFunctions: [
         'fade', // less function
       ]
     }],
+
+    'custom-property-no-missing-var-function': true,
 
     'keyframe-declaration-no-important' : true,
 
@@ -34,14 +37,14 @@ module.exports = {
     'no-duplicate-at-import-rules' : true,
     'no-invalid-position-at-import-rule': true,
 
+    'color-hex-alpha': "never",
     'color-hex-length': 'long',
     'color-named' : 'never',
     'color-no-hex' : null,
 
     'length-zero-no-unit': [true, {
-      'ignore': [
-        "custom-properties"
-      ]
+      'ignore': ["custom-properties"],
+      'ignoreFunctions': ["/^--/"],
     }],
 
     'font-family-name-quotes': 'always-unless-keyword',
