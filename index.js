@@ -53,6 +53,8 @@ module.exports = {
 
     'function-url-quotes': 'always',
 
+    'import-notation': null,
+
     'number-max-precision' : 2,
 
     'value-no-vendor-prefix': true,
