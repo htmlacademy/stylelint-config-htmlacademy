@@ -18,6 +18,8 @@ module.exports = {
 
     'keyframe-declaration-no-important' : true,
 
+    'keyframe-block-no-duplicate-selectors' : true,
+
     'declaration-block-no-duplicate-properties': true,
 
     'selector-type-no-unknown': true,
@@ -55,6 +57,8 @@ module.exports = {
 
     'value-no-vendor-prefix': true,
 
+    'property-allowed-list': null,
+    'property-disallowed-list': null,
     'property-no-vendor-prefix': true,
 
     'declaration-no-important' : true,
