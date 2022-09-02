@@ -1,5 +1,80 @@
 # Change log
 
+## 1.1.0
+- Отсортировал список правил по [rules list](https://stylelint.io/user-guide/rules/list/)
+- Значения текущих правил не поменялись, но некоторые дополнились новыми значениями. Одно правило может иметь несколько значений используя массив `[rule, rule2]`
+- Добавили новые правила:
+
+### [color-hex-alpha: never](https://stylelint.io/user-guide/rules/list/color-hex-alpha/)
+Правило контролирует наличие четвёртого параметра у HEX для альфа канала.
+
+Значение `never` запрещает использование `a { color: #ffffffaa; }`
+
+Мотивация: из такой прозрачности `aa` не понятно сколько это в дробях. А при коммуникации мы используем человекопонятные “Прозрачность 50%”
+
+### [custom-property-no-missing-var-function: true](https://stylelint.io/user-guide/rules/list/custom-property-no-missing-var-function/)
+Правило запрещает использовать кастомные свойства без `var`
+
+Хорошо: `color: var(--foo)`
+
+Плохо: `color: --foo`
+
+### [function-calc-no-unspaced-operator: true](https://stylelint.io/user-guide/rules/list/function-calc-no-unspaced-operator/)
+Заставляет ставить пробел вокруг оператора в функции `calc()`
+
+Хорошо:  `a { top: calc(1px + 2px); }`
+
+Плохо: `a { top: calc(1px+2px); }`
+
+### [length-zero-no-unit: ignoreFunctions: ["/^--/"]](https://stylelint.io/user-guide/rules/list/length-zero-no-unit/)
+Запрещает указывать единицы измерения, кроме функций
+
+Хорошо:  `a { top: 0 }, a { top: var(--foo, 0px); }`
+
+Плохо: `a { top: 0px }`
+
+Напоминалка: кастомным свойствам лучше указывать единицы измерения
+
+### [value-keyword-case: [lower, { camelCaseSvgKeywords: true }]](https://stylelint.io/user-guide/rules/list/value-keyword-case/)
+Правило разрешает писать значения только в нижнем регистре.
+
+`'camelCaseSvgKeywords' : true` - разрешает писать SVG-конструкции `color: currentColor;`. В SVG принято писать в camelCase.
+
+### [selector-not-notation: simple](https://stylelint.io/user-guide/rules/list/selector-not-notation/)
+Следит за использованием селектора `:not`
+
+Хорошо: `:not(a):not(div) {}`
+
+Плохо: `:not(a, div) {}`
+
+### [keyframe-block-no-duplicate-selectors : true](https://stylelint.io/user-guide/rules/list/keyframe-block-no-duplicate-selectors/)
+Запрещает повторяющие селекторы в keyframe блоке
+
+Хорошо: `@keyframes foo { 0% {} 100% {} }`
+
+Плохо:  `@keyframes foo { 0% {} 0% {} }`
+
+### [annotation-no-unknown: true](https://stylelint.io/user-guide/rules/list/annotation-no-unknown/)
+Запрещает странные аннотации
+
+Хорошо: `color: green !important;`
+
+Плохо:    `color: green !imprtant;`
+
+### [keyframe-selector-notation: percentage-unless-within-keyword-only-block](https://stylelint.io/user-guide/rules/list/keyframe-selector-notation/)
+Заставляет писать однотипные точки в кейфреймах. Или только `0%` или только `from`
+
+Хорошо: `@keyframes foo { 0% {} 100% {} }` `@keyframes foo { from {} to {} }`
+
+Плохо: `@keyframes foo { from {} 100% {} }`
+
+### [selector-max-universal: 2](https://stylelint.io/user-guide/rules/list/selector-max-universal/)
+Запрещает использовать подряд универсальные селекторы
+
+Хорошо: `.foo * {}` `* * {}`
+
+Плохо: `* * * {}`
+
 ## 1.0.0
 Перешли на мажорную версию stylelint 14+. Обновили зависимости
 
