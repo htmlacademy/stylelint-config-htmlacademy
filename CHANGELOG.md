@@ -1,5 +1,31 @@
 # Change log
 
+# 1.1.4
+Добавили правило [font-weight-notation](https://stylelint.io/user-guide/rules/font-weight-notation/):
+```js
+{
+  'font-weight-notation': [
+    "numeric",
+    {
+      'ignore': [
+        "relative"
+      ]
+    }
+  ]
+}
+```
+
+Теперь любое использование `font-weight` должно быть числовым
+```css
+a { font-weight: 700; }
+
+a { font: italic 400 20px; }
+
+@font-face { font-weight: 400 700; }
+```
+
+Также разрешены значения относительные значения `bolder` и `lighter`. [Спецификация](https://drafts.csswg.org/css-fonts/#font-weight-prop).
+
 # 1.1.3
 Обновили зависимости до последних версий:
 - stylelint 14.14.0 и 14.15.0
