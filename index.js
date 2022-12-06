@@ -52,6 +52,14 @@ module.exports = {
     }],
 
     'font-family-name-quotes': 'always-unless-keyword',
+    'font-weight-notation': [
+      "numeric",
+      {
+        'ignore': [
+          "relative"
+        ]
+      }
+    ],
 
     'function-url-quotes': 'always',
 
