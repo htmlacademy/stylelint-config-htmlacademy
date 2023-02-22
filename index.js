@@ -23,6 +23,8 @@ module.exports = {
     'unit-no-unknown': true,
     /* stylelint-config-recommended end */
 
+    'declaration-property-value-no-unknown': true, //+
+
     'annotation-no-unknown': true,
 
     'color-no-invalid-hex' : true,
