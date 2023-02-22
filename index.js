@@ -19,6 +19,8 @@ module.exports = {
     'string-no-newline': true, //+
     'unit-no-unknow': true, //+
 
+    'declaration-property-value-no-unknown': true, //+
+
     'annotation-no-unknown': true,
 
     'color-no-invalid-hex' : true,
