@@ -90,7 +90,15 @@ module.exports = {
 
     'at-rule-no-vendor-prefix': true,
 
-    'max-nesting-depth' : [2, { 'ignoreAtRules': ['media'] }],
+    'max-nesting-depth': [
+      2,
+      {
+        'ignore': [
+          'blockless-at-rules',
+          'pseudo-classes'
+        ]
+      }
+    ],
 
     'value-keyword-case': ['lower', { 'camelCaseSvgKeywords' : true }],
 
@@ -165,6 +173,7 @@ module.exports = {
     'selector-pseudo-class-case': 'lower',
     'selector-pseudo-class-parentheses-space-inside': 'never',
     'selector-pseudo-element-case': 'lower',
+    'selector-max-compound-selectors': 2,
     'selector-max-empty-lines': 0,
 
     'selector-list-comma-newline-after': 'always',
