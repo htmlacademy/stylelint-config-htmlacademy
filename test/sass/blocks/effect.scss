@@ -46,16 +46,6 @@
   }
 }
 
-.effect__item--weight-gain .effect__item-text {
-  @media (min-width: $tablet-width) {
-    width: 342px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 457px;
-  }
-}
-
 .effect__item-title {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -109,6 +99,16 @@
   @media (min-width: $desktop-width) {
     width: 467px;
     margin-bottom: 27px;
+  }
+
+  .effect__item--weight-gain & {
+    @media (min-width: $tablet-width) {
+      width: 342px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 457px;
+    }
   }
 }
 

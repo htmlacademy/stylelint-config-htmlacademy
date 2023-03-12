@@ -37,7 +37,6 @@ module.exports = {
       ]
     }],
 
-    'no-descending-specificity' : null,
     'no-duplicate-at-import-rules' : true,
     'no-invalid-position-at-import-rule': true,
 
@@ -63,28 +62,21 @@ module.exports = {
 
     'function-url-quotes': 'always',
 
-    'import-notation': null,
-
     'keyframe-selector-notation': 'percentage-unless-within-keyword-only-block',
 
     'number-max-precision' : 2,
 
     'value-no-vendor-prefix': true,
 
-    'property-allowed-list': null,
-    'property-disallowed-list': null,
     'property-no-vendor-prefix': true,
 
     'declaration-no-important' : true,
-    'declaration-property-max-values': null,
 
     'selector-attribute-quotes': 'always',
     'selector-max-id': 0,
     'selector-max-universal': 2,
     'selector-not-notation': 'simple',
     'selector-pseudo-element-colon-notation': 'double',
-
-    'rule-selector-property-disallowed-list': null,
 
     'media-feature-name-no-vendor-prefix': true,
 
