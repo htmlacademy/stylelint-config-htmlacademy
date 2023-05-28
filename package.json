@@ -29,6 +29,7 @@
     "url": "git+https://github.com/htmlacademy/stylelint-config-htmlacademy.git"
   },
   "scripts": {
+    "prepare": "husky install",
     "lint": "ec",
     "test": "stylelint \"test/**/*.{css,less,scss}\"",
     "pretest": "npm run lint",
@@ -38,6 +39,7 @@
   },
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "^2.0.3",
+    "husky": "^8.0.3",
     "stylelint": "15.7.0"
   },
   "keywords": [
