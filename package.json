@@ -3,7 +3,7 @@
   "version": "1.1.5",
   "description": "Stylelint shareable config for the HTML Academy style",
   "files": [
-    "index.js"
+    ".stylelintrc"
   ],
   "keywords": [
     "HTMLAcademy",
