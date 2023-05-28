@@ -19,6 +19,7 @@
   - для обоих синтаксисов добавлено отключение правила `declaration-property-value-no-unknown`, как и [советует документация Stylelint](https://stylelint.io/user-guide/rules/declaration-property-value-no-unknown/#:~:text=This%20rule%20is%20only%20appropriate%20for%20CSS.%20You%20should%20not%20turn%20it%20on%20for%20CSS%2Dlike%20languages%2C%20such%20as%20Sass%20or%20Less%2C%20as%20they%20have%20their%20own%20syntaxes.);
   - для `less` перенесено из общих правил разрешение кастомной функции `fade()`;
   - для `scss` перенесено из общих правил разрешение кастомных директив, в которые добавлены `@use`, `@forward`, `@if`, `@else` и `@for`.
+- Плагин `stylelint-codeguide`, возвращающий поддержку [удаляемых из Stylelint](https://stylelint.io/migration-guide/to-15/#:~:text=We%27ve%20deprecated%2076%20of%20the%20rules%20that%20enforce%20stylistic%20conventions) 76 [стилистических правил](https://github.com/firefoxic/stylelint-codeguide/blob/main/docs/user-guide/rules.md#rules). Теперь добавив к ним префикс `codeguide/` можно продолжать использовать их в stylelint@16+.
 
 ### Обновлено
 

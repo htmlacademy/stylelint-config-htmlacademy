@@ -34,23 +34,49 @@ _.stylelintrc_
 
 ## Расширение конфига
 
-Вы можете переопределить существующие правила или добавить новые.
+Вы можете переопределить существующие правила или добавить новые.
 
-Для этого добавьте ключ `"rules"` в конфиг сразу после `"extends": "stylelint-config-htmlacademy"`, а затем добавляйте свои правила.
+Для этого добавьте в конфиг поле `rules` с нужными вам переопределениями правил.
 
 _.stylelintrc_
+
 ```json
 {
   "extends": "stylelint-config-htmlacademy",
   "rules": {
-    "indentation": "tab",
-    "number-leading-zero": null,
-    "property-no-unknown": [ true, {
-      "ignoreProperties": [
-        "composes"
-      ]
-    }],
+    "property-no-unknown": [
+      true,
+      {
+        "ignoreProperties": [
+          "composes"
+        ]
+      }
+    ],
     "unit-whitelist": ["em", "rem", "s", "px"]
+  }
+}
+```
+
+В этом же поле `rules` можно переопределять и больше не поддерживаемые самим Stylelint [стилистические правила](https://github.com/firefoxic/stylelint-codeguide/blob/main/docs/user-guide/rules.md#rules) из плагина `stylelint-codeguide`, добавив перед названием правила префикс `codeguide/`.
+
+_.stylelintrc_
+
+```json
+{
+  "extends": "stylelint-config-htmlacademy",
+  "rules": {
+    "property-no-unknown": [
+      true,
+      {
+        "ignoreProperties": [
+          "composes"
+        ]
+      }
+    ],
+    "unit-whitelist": ["em", "rem", "s", "px"],
+
+    "codeguide/indentation": "tab",
+    "codeguide/number-leading-zero": null
   }
 }
 ```
