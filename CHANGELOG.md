@@ -20,6 +20,17 @@
   - для `less` перенесено из общих правил разрешение кастомной функции `fade()`;
   - для `scss` перенесено из общих правил разрешение кастомных директив, в которые добавлены `@use`, `@forward`, `@if`, `@else` и `@for`.
 - Плагин `stylelint-codeguide`, возвращающий поддержку [удаляемых из Stylelint](https://stylelint.io/migration-guide/to-15/#:~:text=We%27ve%20deprecated%2076%20of%20the%20rules%20that%20enforce%20stylistic%20conventions) 76 [стилистических правил](https://github.com/firefoxic/stylelint-codeguide/blob/main/docs/user-guide/rules.md#rules). Теперь добавив к ним префикс `codeguide/` можно продолжать использовать их в stylelint@16+.
+- Правило [`color-function-notation`](https://stylelint.io/user-guide/rules/color-function-notation/) с требованием современного синтаксиса цветовых функций.
+
+  ```css
+  /* Хорошо */
+  a { color: rgb(0 0 0); }
+  a { color: rgb(0 0 0 / 0.5); }
+
+  /* Плохо */
+  a { color: rgb(0, 0, 0); }
+  a { color: rgba(0, 0, 0, 0.5); }
+  ```
 
 ### Обновлено
 
