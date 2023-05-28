@@ -38,7 +38,7 @@
   "devDependencies": {
     "postcss-less": "6.0.0",
     "postcss-scss": "4.0.6",
-    "stylelint": "15.0.0"
+    "stylelint": "15.7.0"
   },
   "scripts": {
     "test": "npm run css && npm run less && npm run scss",
