@@ -1,4 +1,48 @@
 {
+  "overrides": [
+    {
+      "customSyntax": "postcss-less",
+      "files": [
+        "**/*.less"
+      ],
+      "rules": {
+        "declaration-property-value-no-unknown": null,
+        "function-no-unknown": [
+          true,
+          {
+            "ignoreFunctions": [
+              "fade"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "customSyntax": "postcss-scss",
+      "files": [
+        "**/*.scss"
+      ],
+      "rules": {
+        "at-rule-no-unknown": [
+          true,
+          {
+            "ignoreAtRules": [
+              "content",
+              "else",
+              "for",
+              "forward",
+              "if",
+              "include",
+              "mixin",
+              "each",
+              "use"
+            ]
+          }
+        ],
+        "declaration-property-value-no-unknown": null
+      }
+    }
+  ],
   "rules": {
     "annotation-no-unknown": true,
     "at-rule-empty-line-before": [
@@ -15,19 +59,7 @@
     ],
     "at-rule-name-case": "lower",
     "at-rule-name-space-after": "always",
-    "at-rule-no-unknown": [
-      true,
-      {
-        "ignoreAtRules": [
-          "mixin",
-          "define-mixin",
-          "include",
-          "content",
-          "rules",
-          "each"
-        ]
-      }
-    ],
+    "at-rule-no-unknown": true,
     "at-rule-no-vendor-prefix": true,
     "at-rule-semicolon-newline-after": "always",
     "block-closing-brace-empty-line-before": "never",
@@ -81,14 +113,7 @@
     "function-linear-gradient-no-nonstandard-direction": null,
     "function-max-empty-lines": 0,
     "function-name-case": "lower",
-    "function-no-unknown": [
-      true,
-      {
-        "ignoreFunctions": [
-          "fade"
-        ]
-      }
-    ],
+    "function-no-unknown": true,
     "function-parentheses-space-inside": "never-single-line",
     "function-url-quotes": "always",
     "function-whitespace-after": "always",
