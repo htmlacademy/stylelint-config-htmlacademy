@@ -68,7 +68,7 @@ module.exports = {
 
     'length-zero-no-unit': [true, {
       'ignore': ['custom-properties'],
-      'ignoreFunctions': ['/^--/'],
+      'ignoreFunctions': ["var", "/^--/"],
     }],
 
     'font-family-name-quotes': 'always-unless-keyword',
