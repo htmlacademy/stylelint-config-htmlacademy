@@ -57,6 +57,16 @@
   a { background: linear-gradient(to top bottom, #ffffff, #000000); }
   ```
 
+- Правило [`import-notation`](https://stylelint.io/user-guide/rules/import-notation/) с требованием указания пути простой строкой, а не функцией `url()`, потому что хоть в CSS и работают оба варианта, но Sass склеивает только варианты со строками, а с `url()` оставляет в коде.
+
+  ```css
+  /* Хорошо */
+  @import "foo.css";
+
+  /* Плохо */
+  @import url("foo.css");
+  ```
+
 ### Обновлено
 
 - Этот файл (на основе [Keep a Changelog](https://keepachangelog.com/ru/1.1.0/)) для удобства.

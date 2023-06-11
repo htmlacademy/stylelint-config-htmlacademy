@@ -93,7 +93,7 @@
     "function-name-case": "lower",
     "function-no-unknown": true,
     "function-url-quotes": "always",
-    "import-notation": null,
+    "import-notation": "string",
     "keyframe-block-no-duplicate-selectors": true,
     "keyframe-declaration-no-important": true,
     "keyframe-selector-notation": "percentage-unless-within-keyword-only-block",
