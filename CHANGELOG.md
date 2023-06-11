@@ -32,6 +32,16 @@
   a { color: rgba(0, 0, 0, 0.5); }
   ```
 
+- Правило [`no-descending-specificity`](https://stylelint.io/user-guide/rules/no-descending-specificity/) с запретом расположения ниже по коду селекторов с понижением специфичности.
+
+  ```css
+  /* Хорошо */
+  .a .b {} .a p.b {}
+
+  /* Плохо */
+  .a p.b {} .a .b {}
+  ```
+
 ### Обновлено
 
 - Этот файл (на основе [Keep a Changelog](https://keepachangelog.com/ru/1.1.0/)) для удобства.

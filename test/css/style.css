@@ -1080,7 +1080,12 @@
   }
 }
 
+.product-list__icon--toys path {
+  opacity: var(--path-opacity);
+}
+
 .product-list__item--toys:hover .product-list__icon--toys {
+  --path-opacity: 0.7;
   top: 16px;
 }
 
@@ -1088,10 +1093,6 @@
   .product-list__item--toys:hover .product-list__icon--toys {
     top: 26px;
   }
-}
-
-.product-list__item--toys:hover .product-list__icon--toys path {
-  opacity: 0.7;
 }
 
 .product-list__item--toys:active {
@@ -1112,6 +1113,7 @@
 }
 
 .product-list__item--toys:active .product-list__icon--toys {
+  --path-opacity: 0.3;
   top: 21px;
 }
 
@@ -1119,10 +1121,6 @@
   .product-list__item--toys:active .product-list__icon--toys {
     top: 31px;
   }
-}
-
-.product-list__item--toys:active .product-list__icon--toys path {
-  opacity: 0.3;
 }
 
 .promo {
