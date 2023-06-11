@@ -13,7 +13,10 @@
     "stylelint-codeguide": "^0.1.4"
   },
   "license": "MIT",
-  "author": " <zyuzin.vitaly@htmlacademy.ru>",
+  "author": {
+    "name": "Nikolai Shabalin",
+    "email": "dev.nikolai.shabalin@gmail.com"
+  },
   "homepage": "https://github.com/htmlacademy/stylelint-config-htmlacademy#readme",
   "bugs": {
     "url": "https://github.com/htmlacademy/stylelint-config-htmlacademy/issues"
