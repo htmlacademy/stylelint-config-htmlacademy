@@ -1,12 +1,33 @@
 {
   "name": "stylelint-config-htmlacademy",
-  "version": "1.1.5",
   "description": "Stylelint shareable config for the HTML Academy style",
+  "version": "1.1.5",
   "type": "module",
   "exports": "./.styellintrc",
   "files": [
     "./.stylelintrc"
   ],
+  "dependencies": {
+    "postcss-less": "6.0.0",
+    "postcss-scss": "4.0.6",
+    "stylelint-codeguide": "^0.1.4"
+  },
+  "license": "MIT",
+  "author": " <zyuzin.vitaly@htmlacademy.ru>",
+  "homepage": "https://github.com/htmlacademy/stylelint-config-htmlacademy#readme",
+  "bugs": {
+    "url": "https://github.com/htmlacademy/stylelint-config-htmlacademy/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/htmlacademy/stylelint-config-htmlacademy.git"
+  },
+  "scripts": {
+    "test": "stylelint \"test/**/*.{css,less,scss}\""
+  },
+  "devDependencies": {
+    "stylelint": "15.7.0"
+  },
   "keywords": [
     "HTMLAcademy",
     "HTML Academy",
@@ -24,26 +45,5 @@
     "verify",
     "enforce",
     "hint"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/htmlacademy/stylelint-config-htmlacademy.git"
-  },
-  "author": " <zyuzin.vitaly@htmlacademy.ru>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/htmlacademy/stylelint-config-htmlacademy/issues"
-  },
-  "homepage": "https://github.com/htmlacademy/stylelint-config-htmlacademy#readme",
-  "dependencies": {
-    "postcss-less": "6.0.0",
-    "postcss-scss": "4.0.6",
-    "stylelint-codeguide": "^0.1.4"
-  },
-  "devDependencies": {
-    "stylelint": "15.7.0"
-  },
-  "scripts": {
-    "test": "stylelint \"test/**/*.{css,less,scss}\""
-  }
+  ]
 }
