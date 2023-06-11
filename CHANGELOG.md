@@ -16,6 +16,7 @@
 
 ### Добавлено
 
+- Бэйджи в [README](./README.md) для наглядности состояния проекта.
 - Файл с текстом [лицензии](./LICENSE.md).
 - Переопределения (`overrides`) для кастомных синтаксисов `less` и `scss`. В эти переопределения:
   - для обоих синтаксисов добавлено отключение правила `declaration-property-value-no-unknown`, как и [советует документация Stylelint](https://stylelint.io/user-guide/rules/declaration-property-value-no-unknown/#:~:text=This%20rule%20is%20only%20appropriate%20for%20CSS.%20You%20should%20not%20turn%20it%20on%20for%20CSS%2Dlike%20languages%2C%20such%20as%20Sass%20or%20Less%2C%20as%20they%20have%20their%20own%20syntaxes.);

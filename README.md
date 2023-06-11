@@ -1,5 +1,10 @@
 # stylelint-config-htmlacademy
 
+[![Test Status][test-image]][test-url]
+[![License: MIT][license-image]][license-url]
+[![NPM version][npm-image]][npm-url]
+[![Vulnerabilities count][vulnerabilities-image]][vulnerabilities-url]
+
 > Это стандартный конфигурационный файл для stylelint от [HTML Academy](https://htmlacademy.ru/).
 
 Используйте его как есть или как основу для вашей собственной конфигурации.
@@ -91,3 +96,15 @@ _.stylelintrc_
 4. Пользуйтесь
 
 ![Несоответствия правилам конфига подчёркиваются красной волнистой линией, по наведению на которую появляется попап с описанием ошибки.](vscode-error.png)
+
+[test-url]: https://github.com/htmlacademy/stylelint-config-htmlacademy/actions
+[test-image]: https://github.com/htmlacademy/stylelint-config-htmlacademy/actions/workflows/test.yml/badge.svg?branch=main
+
+[npm-url]: https://npmjs.org/package/stylelint-config-htmlacademy
+[npm-image]: https://badge.fury.io/js/stylelint-config-htmlacademy.svg
+
+[license-url]: https://github.com/htmlacademy/stylelint-config-htmlacademy/blob/main/LICENSE
+[license-image]: https://img.shields.io/badge/License-MIT-limegreen.svg
+
+[vulnerabilities-url]: https://snyk.io/test/github/htmlacademy/stylelint-config-htmlacademy
+[vulnerabilities-image]: https://img.shields.io/snyk/vulnerabilities/npm/stylelint-config-htmlacademy
