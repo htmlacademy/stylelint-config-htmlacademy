@@ -42,6 +42,21 @@
   .a p.b {} .a .b {}
   ```
 
+- Правило [`function-linear-gradient-no-nonstandard-direction`](https://stylelint.io/user-guide/rules/function-linear-gradient-no-nonstandard-direction/) с требованием валидных и стандартных значения направления линейных градиентов: углы или `to` с названием одной или двух смежных сторон.
+
+  ```css
+  /* Хорошо */
+  a { background: linear-gradient(45%, #ffffff, #000000); }
+  a { background: linear-gradient(to top, #ffffff, #000000); }
+  a { background: linear-gradient(to top left, #ffffff, #000000); }
+
+  /* Плохо */
+  a { background: linear-gradient(45, #ffffff, #000000); }
+  a { background: linear-gradient(top, #ffffff, #000000); }
+  a { background: linear-gradient(to top top, #ffffff, #000000); }
+  a { background: linear-gradient(to top bottom, #ffffff, #000000); }
+  ```
+
 ### Обновлено
 
 - Этот файл (на основе [Keep a Changelog](https://keepachangelog.com/ru/1.1.0/)) для удобства.
