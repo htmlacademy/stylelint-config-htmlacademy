@@ -1,8 +1,28 @@
 'use strict'
 
 module.exports = {
-  extends: 'stylelint-config-recommended',
   rules: {
+    /* stylelint-config-recommended start */
+    'block-no-empty': true,
+    'comment-no-empty': true,
+    'declaration-block-no-duplicate-custom-properties': true,
+    'declaration-block-no-shorthand-property-overrides': true,
+    'font-family-no-duplicate-names': true,
+    'function-linear-gradient-no-nonstandard-direction': true,
+    'media-feature-name-no-unknown': true,
+    'named-grid-areas-no-invalid': true,
+    'no-duplicate-selectors': true,
+    'no-empty-source': true,
+    'no-extra-semicolons': true,
+    'no-invalid-double-slash-comments': true,
+    'no-irregular-whitespace': true,
+    'property-no-unknown': true,
+    'selector-pseudo-class-no-unknown': true,
+    'selector-pseudo-element-no-unknown': true,
+    'string-no-newline': true,
+    'unit-no-unknown': true,
+    /* stylelint-config-recommended end */
+
     'annotation-no-unknown': true,
 
     'color-no-invalid-hex' : true,
@@ -48,7 +68,7 @@ module.exports = {
 
     'length-zero-no-unit': [true, {
       'ignore': ['custom-properties'],
-      'ignoreFunctions': ['/^--/'],
+      'ignoreFunctions': ["var", "/^--/"],
     }],
 
     'font-family-name-quotes': 'always-unless-keyword',
