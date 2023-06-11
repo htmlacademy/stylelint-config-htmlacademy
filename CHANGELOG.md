@@ -57,6 +57,42 @@
   a { background: linear-gradient(to top bottom, #ffffff, #000000); }
   ```
 
+  - Правило [`declaration-colon-newline-after`](https://stylelint.io/user-guide/rules/list/declaration-colon-newline-after/) с требованием переноса строки после двоеточия в многострочных декларациях.
+
+  ```css
+  /* Хорошо */
+  a {
+    background: url("foo.png"), url("bar.png");
+  }
+  a {
+    background:
+      url("foo.png"),
+      url("bar.png");
+  }
+  a {
+    transform: translate(1px, 1px);
+  }
+  a {
+    transform:
+      translate(
+        1px,
+        1px
+      );
+  }
+
+  /* Плохо */
+  a {
+    transform: translate(
+      1px,
+      1px
+    );
+  }
+  a {
+    background: url("foo.png"),
+      url("bar.png");
+  }
+  ```
+
 - Правило [`import-notation`](https://stylelint.io/user-guide/rules/import-notation/) с требованием указания пути простой строкой, а не функцией `url()`, потому что хоть в CSS и работают оба варианта, но Sass склеивает только варианты со строками, а с `url()` оставляет в коде.
 
   ```css

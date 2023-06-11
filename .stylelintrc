@@ -180,6 +180,7 @@
     "codeguide/declaration-block-semicolon-space-after": "always-single-line",
     "codeguide/declaration-block-semicolon-space-before": "never",
     "codeguide/declaration-block-trailing-semicolon": "always",
+    "codeguide/declaration-colon-newline-after": "always-multi-line",
     "codeguide/declaration-colon-space-after": "always-single-line",
     "codeguide/declaration-colon-space-before": "never",
     "codeguide/function-comma-newline-after": "always-multi-line",
