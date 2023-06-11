@@ -67,7 +67,6 @@
     "color-hex-alpha": "never",
     "color-hex-length": "long",
     "color-named": "never",
-    "color-no-hex": null,
     "color-no-invalid-hex": true,
     "comment-no-empty": true,
     "custom-property-no-missing-var-function": true,
@@ -75,7 +74,6 @@
     "declaration-block-no-duplicate-properties": true,
     "declaration-block-no-shorthand-property-overrides": true,
     "declaration-no-important": true,
-    "declaration-property-max-values": null,
     "declaration-property-value-no-unknown": true,
     "font-family-name-quotes": "always-unless-keyword",
     "font-family-no-duplicate-names": true,
@@ -128,8 +126,6 @@
     "no-invalid-position-at-import-rule": true,
     "no-irregular-whitespace": true,
     "number-max-precision": 2,
-    "property-allowed-list": null,
-    "property-disallowed-list": null,
     "property-no-unknown": true,
     "property-no-vendor-prefix": true,
     "rule-empty-line-before": [
@@ -143,7 +139,6 @@
         ]
       }
     ],
-    "rule-selector-property-disallowed-list": null,
     "selector-attribute-quotes": "always",
     "selector-max-id": 0,
     "selector-max-universal": 2,
