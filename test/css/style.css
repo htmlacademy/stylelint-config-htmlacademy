@@ -1015,6 +1015,8 @@
 }
 
 .product-list__item--interior:hover .product-list__icon--interior {
+  --g-opacity: 0.7;
+
   top: 18px;
 }
 
@@ -1024,8 +1026,14 @@
   }
 }
 
-.product-list__item--interior:hover .product-list__icon--interior g {
-  opacity: 0.7;
+@media (min-width: 768px) {
+  .product-list__item--interior:hover .product-list__icon--interior {
+    top: 25px;
+  }
+}
+
+.product-list__icon--interior g {
+  opacity: var(--g-opacity);
 }
 
 .product-list__item--interior:active {
@@ -1046,6 +1054,8 @@
 }
 
 .product-list__item--interior:active .product-list__icon--interior {
+  --g-opacity: 0.3;
+
   top: 23px;
 }
 
@@ -1053,10 +1063,6 @@
   .product-list__item--interior:active .product-list__icon--interior {
     top: 30px;
   }
-}
-
-.product-list__item--interior:active .product-list__icon--interior g {
-  opacity: 0.3;
 }
 
 .product-list__item--toys {
@@ -1080,12 +1086,9 @@
   }
 }
 
-.product-list__icon--toys path {
-  opacity: var(--path-opacity);
-}
-
 .product-list__item--toys:hover .product-list__icon--toys {
   --path-opacity: 0.7;
+
   top: 16px;
 }
 
@@ -1093,6 +1096,10 @@
   .product-list__item--toys:hover .product-list__icon--toys {
     top: 26px;
   }
+}
+
+.product-list__icon--toys path {
+  opacity: var(--path-opacity);
 }
 
 .product-list__item--toys:active {
@@ -1114,6 +1121,7 @@
 
 .product-list__item--toys:active .product-list__icon--toys {
   --path-opacity: 0.3;
+
   top: 21px;
 }
 
@@ -2764,8 +2772,12 @@
   border-color: rgb(68 68 68 / 0.3);
 }
 
-.site-form__checkbox-input:checked + .site-form__box--checkbox svg {
-  display: initial;
+.site-form__checkbox-input:checked + .site-form__box--checkbox {
+  --svg-display: initial;
+}
+
+.site-form__box--checkbox .icon {
+  display: var(--svg-display);
 }
 
 .site-form__checkbox-input:disabled + .site-form__box--checkbox::before {

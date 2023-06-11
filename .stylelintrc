@@ -141,6 +141,7 @@
       }
     ],
     "selector-attribute-quotes": "always",
+    "selector-max-compound-selectors": 2,
     "selector-max-id": 0,
     "selector-max-universal": 2,
     "selector-not-notation": "simple",
