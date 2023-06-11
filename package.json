@@ -43,8 +43,5 @@
     "css": "stylelint test/css/style.css --config index.js",
     "less": "stylelint test/less/**/*.less --config index.js --custom-syntax postcss-less",
     "scss": "stylelint test/sass/**/*.scss --config index.js --custom-syntax postcss-scss"
-  },
-  "dependencies": {
-    "stylelint-config-recommended": "9.0.0"
   }
 }
