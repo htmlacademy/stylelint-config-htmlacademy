@@ -7,6 +7,9 @@
   "files": [
     "./.stylelintrc"
   ],
+  "engines": {
+    "node": "^16.20.0 || ^18.16.0"
+  },
   "dependencies": {
     "postcss-less": "6.0.0",
     "postcss-scss": "4.0.6",
