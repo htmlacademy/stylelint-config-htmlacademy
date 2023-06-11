@@ -1,6 +1,15 @@
 # Change log
 
-# 1.1.4
+## 1.1.5
+- отказались от зависимости stylelint-config-recommended
+- поправили правило `length-zero-no-unit` на `["var", "/^--/"]`
+```js
+'length-zero-no-unit': [true, {
+  'ignore': ['custom-properties'],
+  'ignoreFunctions': ["var", "/^--/"],
+}],
+```
+## 1.1.4
 Добавили правило [font-weight-notation](https://stylelint.io/user-guide/rules/font-weight-notation/):
 ```js
 {
@@ -26,15 +35,15 @@ a { font: italic 400 20px; }
 
 Также разрешены значения относительные значения `bolder` и `lighter`. [Спецификация](https://drafts.csswg.org/css-fonts/#font-weight-prop).
 
-# 1.1.3
+## 1.1.3
 Обновили зависимости до последних версий:
 - stylelint 14.14.0 и 14.15.0
 
-# 1.1.2
+## 1.1.2
 Обновили зависимости до последних версий:
 - stylelint 14.13.0.
 
-# 1.1.1
+## 1.1.1
 Обновили зависимости до последних версий:
 - stylelint 14.12.0.
 
