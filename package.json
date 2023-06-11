@@ -23,12 +23,15 @@
     "url": "git+https://github.com/htmlacademy/stylelint-config-htmlacademy.git"
   },
   "scripts": {
+    "lint": "ec",
     "test": "stylelint \"test/**/*.{css,less,scss}\"",
+    "pretest": "npm run lint",
     "preversion": "npm test",
     "postversion": "npm publish",
     "postpublish": "git push origin --all && git push origin --tags"
   },
   "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "^2.0.3",
     "stylelint": "15.7.0"
   },
   "keywords": [
