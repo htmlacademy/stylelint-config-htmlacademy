@@ -5,7 +5,7 @@
 
 Формат основан на [Keep a Changelog](https://keepachangelog.com/ru/1.1.0/), и этот проект придерживается [Semantic Versioning](https://semver.org/lang/ru/).
 
-## [Неопубликованное]
+## [2.0.0] — 2023–07–20
 
 ### Изменено
 
@@ -696,7 +696,7 @@
 
 - Правила для `stylelint` версии `7.9.0`.
 
-[Неопубликованное]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v1.1.5...HEAD
+[2.0.0]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v1.1.5...HEAD
 [1.1.5]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v1.1.4...v1.1.5
 [1.1.4]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v1.1.3...v1.1.4
 [1.1.3]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v1.1.2...v1.1.3
