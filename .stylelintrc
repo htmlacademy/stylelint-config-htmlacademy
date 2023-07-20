@@ -7,6 +7,7 @@
       ],
       "rules": {
         "declaration-property-value-no-unknown": null,
+        "media-query-no-invalid": null,
         "function-no-unknown": [
           true,
           {
@@ -23,6 +24,8 @@
         "**/*.scss"
       ],
       "rules": {
+        "declaration-property-value-no-unknown": null,
+        "media-query-no-invalid": null,
         "at-rule-no-unknown": [
           true,
           {
@@ -38,8 +41,7 @@
               "use"
             ]
           }
-        ],
-        "declaration-property-value-no-unknown": null
+        ]
       }
     }
   ],
@@ -94,6 +96,7 @@
     "import-notation": "string",
     "keyframe-block-no-duplicate-selectors": true,
     "keyframe-declaration-no-important": true,
+    "media-query-no-invalid": true,
     "keyframe-selector-notation": "percentage-unless-within-keyword-only-block",
     "length-zero-no-unit": [
       true,
@@ -117,6 +120,7 @@
       }
     ],
     "media-feature-name-no-unknown": true,
+    "media-feature-name-value-no-unknown": true,
     "media-feature-name-no-vendor-prefix": true,
     "named-grid-areas-no-invalid": true,
     "no-descending-specificity": null,
