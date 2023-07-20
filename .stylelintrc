@@ -157,6 +157,7 @@
     "selector-max-universal": 2,
     "selector-max-type": 1,
     "selector-max-universal": 1,
+    "selector-no-qualifying-type": true,
     "selector-not-notation": "simple",
     "selector-pseudo-class-no-unknown": true,
     "selector-pseudo-element-colon-notation": "double",
