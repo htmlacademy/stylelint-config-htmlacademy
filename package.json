@@ -13,7 +13,7 @@
   "dependencies": {
     "postcss-less": "6.0.0",
     "postcss-scss": "4.0.6",
-    "stylelint-codeguide": "^0.1.4"
+    "stylelint-codeguide": "0.1.5"
   },
   "peerDependencies": {
     "stylelint": "~15.7.0"
@@ -41,8 +41,8 @@
     "postpublish": "git push origin --all && git push origin --tags"
   },
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "^2.0.3",
-    "husky": "^8.0.3",
+    "@htmlacademy/editorconfig-cli": "2.0.5",
+    "husky": "8.0.3",
     "stylelint": "15.7.0"
   },
   "keywords": [
