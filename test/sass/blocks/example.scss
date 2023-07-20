@@ -10,7 +10,8 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 0;
-    background: linear-gradient(180deg, $basic-white, $basic-white 195px, transparent 195px),
+    background:
+      linear-gradient(180deg, $basic-white, $basic-white 195px, transparent 195px),
       linear-gradient(90deg, $basic-grey 50%, $basic-grey2 51%);
   }
 }
@@ -36,7 +37,8 @@
   @media (min-width: $desktop-width) {
     grid-row: 1/3;
     grid-column: 2/3;
-    background: linear-gradient(180deg, $basic-white 195px, transparent 195px),
+    background:
+      linear-gradient(180deg, $basic-white 195px, transparent 195px),
       $basic-grey;
 
     padding-bottom: 0;

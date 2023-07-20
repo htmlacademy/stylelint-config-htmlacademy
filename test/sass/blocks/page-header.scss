@@ -85,9 +85,15 @@
 
 .page-header--desktop {
   @media (min-width: $desktop-width) {
+    --bg-image: url("../img/background/header-cat-desktop@1x.jpg");
+
     position: relative;
     background: linear-gradient(90deg, transparent 55.5%, $basic-green 44.5%);
     min-height: 694px;
+
+    @media (min-resolution: 2dppx) {
+      --bg-image: url("../img/background/header-cat-desktop@2x.jpg");
+    }
 
     &::before {
       position: absolute;
@@ -96,15 +102,13 @@
       right: 0;
       width: 50%;
       height: 100%;
-      background: linear-gradient($basic-green 100%, transparent 0%),
-        url("../img/background/header-cat-desktop.jpg");
+      background:
+        linear-gradient(
+          $basic-green 100%,
+          transparent 0%
+        ),
+        var(--bg-image);
       background-size: cover, cover;
-
-      @media (min-resolution: 2dppx) {
-        background: linear-gradient($basic-green 100%, transparent 0%),
-          url("../img/background/header-cat-desktop2x.jpg");
-        background-size: cover, cover;
-      }
     }
   }
 }

@@ -47,6 +47,10 @@
   border: 1px solid $special-dark-grey2;
 }
 
+.checkbox__input:disabled + .checkbox__label::before {
+  opacity: 0.3;
+}
+
 .checkbox__input:checked + .checkbox__label::before {
   background: url("../../img/different/tick.svg") no-repeat;
 
@@ -57,8 +61,4 @@
 
 .checkbox__input:checked:hover + .checkbox__label::before {
   border: 1px solid $special-dark-grey2;
-}
-
-.checkbox__input:disabled + .checkbox__label::before {
-  opacity: 0.3;
 }

@@ -1,10 +1,50 @@
 {
   "name": "stylelint-config-htmlacademy",
-  "version": "1.1.5",
   "description": "Stylelint shareable config for the HTML Academy style",
+  "version": "1.1.5",
+  "type": "module",
+  "exports": "./.styellintrc",
   "files": [
-    "index.js"
+    "./.stylelintrc"
   ],
+  "engines": {
+    "node": "^16.20.0 || ^18.16.0"
+  },
+  "dependencies": {
+    "postcss-less": "6.0.0",
+    "postcss-scss": "4.0.6",
+    "stylelint-codeguide": "^0.1.4"
+  },
+  "peerDependencies": {
+    "stylelint": "~15.7.0"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Nikolai Shabalin",
+    "email": "dev.nikolai.shabalin@gmail.com"
+  },
+  "homepage": "https://github.com/htmlacademy/stylelint-config-htmlacademy#readme",
+  "bugs": {
+    "url": "https://github.com/htmlacademy/stylelint-config-htmlacademy/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/htmlacademy/stylelint-config-htmlacademy.git"
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "lint": "ec",
+    "test": "stylelint \"test/**/*.{css,less,scss}\"",
+    "pretest": "npm run lint",
+    "preversion": "npm test",
+    "postversion": "npm publish",
+    "postpublish": "git push origin --all && git push origin --tags"
+  },
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "^2.0.3",
+    "husky": "^8.0.3",
+    "stylelint": "15.7.0"
+  },
   "keywords": [
     "HTMLAcademy",
     "HTML Academy",
@@ -22,26 +62,5 @@
     "verify",
     "enforce",
     "hint"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/htmlacademy/stylelint-config-htmlacademy.git"
-  },
-  "author": " <zyuzin.vitaly@htmlacademy.ru>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/htmlacademy/stylelint-config-htmlacademy/issues"
-  },
-  "homepage": "https://github.com/htmlacademy/stylelint-config-htmlacademy#readme",
-  "devDependencies": {
-    "postcss-less": "6.0.0",
-    "postcss-scss": "4.0.5",
-    "stylelint": "14.15.0"
-  },
-  "scripts": {
-    "test": "npm run css && npm run less && npm run scss",
-    "css": "stylelint test/css/style.css --config index.js",
-    "less": "stylelint test/less/**/*.less --config index.js --custom-syntax postcss-less",
-    "scss": "stylelint test/sass/**/*.scss --config index.js --custom-syntax postcss-scss"
-  }
+  ]
 }

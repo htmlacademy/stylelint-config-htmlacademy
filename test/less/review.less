@@ -2,7 +2,7 @@
 .review {
   position: relative;
 
-  @media (min-width: @tablet-width) and (max-width: @desktop-width - 1) {
+  @media (min-width: @tablet-width) and (max-width: (@desktop-width - 1px)) {
     background-image: url("../img/background-img/review-tablet.png");
     background-repeat: no-repeat;
     background-position: top left;
@@ -28,7 +28,7 @@
     }
   }
 
-  @media (min-width: @tablet-width) and (max-width: @desktop-width - 1) {
+  @media (min-width: @tablet-width) and (max-width: (@desktop-width - 1px)) {
     &::after {
       position: absolute;
       content: " ";
@@ -170,7 +170,7 @@
   font-weight: 700;
   .font-size(17px, 24px);
 
-  @media (min-width: @tablet-width) and (max-width: @desktop-width - 1) {
+  @media (min-width: @tablet-width) and (max-width: (@desktop-width - 1px)) {
     .font-size(18px, 24px);
   }
 }

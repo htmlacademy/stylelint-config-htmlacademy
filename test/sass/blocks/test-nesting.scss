@@ -1,0 +1,46 @@
+.block {
+  --fill: hsl(39 100% 50%);
+  --size: 20px;
+
+  padding: 4px;
+  aspect-ratio: 1;
+  width: var(--size);
+  background: var(--fill);
+
+  @media #{$not-mobile} {
+    --size: 24px;
+  }
+
+  &:hover {
+    --fill: hsl(16 100% 50%);
+
+    @media #{$not-mobile} {
+      --fill: hsl(51 100% 50%);
+    }
+  }
+
+  &--mod-name_mod-value {
+    --fill: hsl(195 100% 50%);
+
+    @media #{$not-mobile} {
+      --size: 32px;
+    }
+
+    &:hover {
+      --fill: hsl(207 44% 49%);
+
+      @media #{$not-mobile} {
+        --fill: hsl(271 76% 53%);
+      }
+    }
+  }
+
+  &::before {
+    content: "";
+    width: var(--size);
+    aspect-ratio: 1;
+    border-radius: 100%;
+    background: var(--fill);
+    filter: invert(1);
+  }
+}
