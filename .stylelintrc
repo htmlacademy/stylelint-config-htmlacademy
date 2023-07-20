@@ -131,6 +131,7 @@
     "no-invalid-position-at-import-rule": true,
     "no-irregular-whitespace": true,
     "number-max-precision": 2,
+    "no-unknown-custom-properties": true,
     "number-max-precision": [0, {
       "ignoreProperties": ["opacity"]
     }],
