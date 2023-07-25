@@ -5,6 +5,8 @@
 
 Формат основан на [Keep a Changelog](https://keepachangelog.com/ru/1.1.0/), и этот проект придерживается [Semantic Versioning](https://semver.org/lang/ru/).
 
+## [2.0.2] — 2023–07–25
+Обновили peerDependencies
 
 ## [2.0.1] — 2023–07–20
 Добавили `media-query-no-invalid`, которое [запрещает недопустимые медиа-запросы](https://stylelint.io/user-guide/rules/media-query-no-invalid/) и `media-feature-name-value-no-unknown`, которое [запрещает неизвестные значения для медиавыражений](https://stylelint.io/user-guide/rules/media-feature-name-value-no-unknown). 
@@ -700,8 +702,9 @@
 
 - Правила для `stylelint` версии `7.9.0`.
 
-[2.0.1]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v2.0.0...HEAD
-[2.0.0]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v1.1.5...2.0.0
+[2.0.2]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v2.0.1...HEAD
+[2.0.1]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v2.0.0...v2.0.1
+[2.0.0]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v1.1.5...v2.0.0
 [1.1.5]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v1.1.4...v1.1.5
 [1.1.4]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v1.1.3...v1.1.4
 [1.1.3]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v1.1.2...v1.1.3
