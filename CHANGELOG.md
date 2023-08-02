@@ -5,6 +5,9 @@
 
 Формат основан на [Keep a Changelog](https://keepachangelog.com/ru/1.1.0/), и этот проект придерживается [Semantic Versioning](https://semver.org/lang/ru/).
 
+## [2.0.4] — 2023–08–02
+Обновляет все зависимости и уточняет версию peerDependencies
+
 ## [2.0.3] — 2023–07–28
 Починили поле `"exports": "./.stylelintrc",` в package.json
 
@@ -705,7 +708,8 @@
 
 - Правила для `stylelint` версии `7.9.0`.
 
-[2.0.3]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v2.0.2...HEAD
+[2.0.4]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v2.0.3...HEAD
+[2.0.3]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v2.0.2...v2.0.3
 [2.0.2]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v2.0.1...v2.0.2
 [2.0.1]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v2.0.0...v2.0.1
 [2.0.0]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v1.1.5...v2.0.0
