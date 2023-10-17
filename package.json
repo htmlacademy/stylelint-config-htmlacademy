@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "postcss-less": "6.0.0",
-    "postcss-scss": "4.0.6",
+    "postcss-scss": "4.0.9",
     "stylelint-codeguide": "0.1.5"
   },
   "peerDependencies": {
@@ -43,7 +43,7 @@
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "2.0.5",
     "husky": "8.0.3",
-    "stylelint": "15.10.2"
+    "stylelint": "15.11.0"
   },
   "keywords": [
     "HTMLAcademy",
