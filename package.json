@@ -16,7 +16,7 @@
     "stylelint-codeguide": "0.1.5"
   },
   "peerDependencies": {
-    "stylelint": "~15.10"
+    "stylelint": "~15.11"
   },
   "license": "MIT",
   "author": {
