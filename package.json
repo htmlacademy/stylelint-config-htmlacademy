@@ -8,15 +8,15 @@
     "./.stylelintrc"
   ],
   "engines": {
-    "node": "^16.20.0 || ^18.16.0"
+    "node": ">=18.16.0"
   },
   "dependencies": {
     "postcss-less": "6.0.0",
     "postcss-scss": "4.0.9",
-    "stylelint-codeguide": "0.1.5"
+    "stylelint-codeguide": "0.3.2"
   },
   "peerDependencies": {
-    "stylelint": "~15.10"
+    "stylelint": "~15.11"
   },
   "license": "MIT",
   "author": {
