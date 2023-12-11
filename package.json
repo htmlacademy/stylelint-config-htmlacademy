@@ -8,15 +8,14 @@
     "./.stylelintrc"
   ],
   "engines": {
-    "node": ">=18.16.0"
+    "node": ">=18.12.0"
   },
   "dependencies": {
     "postcss-less": "6.0.0",
-    "postcss-scss": "4.0.9",
-    "stylelint-codeguide": "0.3.2"
+    "postcss-scss": "4.0.9"
   },
   "peerDependencies": {
-    "stylelint": "~15.11"
+    "stylelint": "^16.0.0"
   },
   "license": "MIT",
   "author": {
@@ -41,9 +40,10 @@
     "postpublish": "git push origin --all && git push origin --tags"
   },
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "2.0.5",
+    "@htmlacademy/editorconfig-cli": "2.0.8",
     "husky": "8.0.3",
-    "stylelint": "15.11.0"
+    "stylelint": "16.0.2",
+    "stylelint-codeguide": "1.0.1"
   },
   "keywords": [
     "HTMLAcademy",
