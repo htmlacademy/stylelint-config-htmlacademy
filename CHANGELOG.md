@@ -7,7 +7,8 @@
 
 ## [3.0.0] — 2023–11–10
 - Обновили поддержку stylelint до 16 версии
-- Изменили поддержку node.js по рекомендации stylelint
+- Изменили поддержку node.js по рекомендации stylelint, не ниже 18.12
+- Обновили [stylelint-codeguide](https://github.com/firefoxic/stylelint-codeguide)
 
 ## [2.0.6] — 2023–10–19
 - Обновили node engine до современной. Удалили 16.x
