@@ -43,7 +43,7 @@
     "@htmlacademy/editorconfig-cli": "2.0.8",
     "husky": "8.0.3",
     "stylelint": "16.0.2",
-    "stylelint-codeguide": "1.0.1"
+    "stylelint-codeguide": "1.0.2"
   },
   "keywords": [
     "HTMLAcademy",
