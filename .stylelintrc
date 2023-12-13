@@ -151,6 +151,7 @@
     "selector-not-notation": "simple",
     "selector-pseudo-class-no-unknown": true,
     "selector-pseudo-element-colon-notation": "double",
+    "selector-class-pattern":  "^[a-z0-9-_]+$",
     "selector-pseudo-element-no-unknown": true,
     "selector-type-case": "lower",
     "selector-type-no-unknown": true,
