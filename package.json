@@ -16,7 +16,7 @@
     "postcss-scss": "4.0.9"
   },
   "peerDependencies": {
-    "stylelint": "^16.0.0"
+    "stylelint": "^16.1.0"
   },
   "license": "MIT",
   "author": {
@@ -43,7 +43,7 @@
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "2.0.8",
     "husky": "8.0.3",
-    "stylelint": "16.0.2"
+    "stylelint": "16.1.0"
   },
   "keywords": [
     "HTMLAcademy",
