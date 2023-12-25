@@ -8,6 +8,7 @@
       "rules": {
         "declaration-property-value-no-unknown": null,
         "media-query-no-invalid": null,
+        "no-unknown-custom-properties": null,
         "function-no-unknown": [
           true,
           {
@@ -26,6 +27,7 @@
       "rules": {
         "declaration-property-value-no-unknown": null,
         "media-query-no-invalid": null,
+        "no-unknown-custom-properties": null,
         "at-rule-no-unknown": [
           true,
           {
@@ -121,6 +123,7 @@
     ],
     "media-feature-name-no-unknown": true,
     "media-feature-name-value-no-unknown": true,
+    "no-unknown-custom-properties": true,
     "media-feature-name-no-vendor-prefix": true,
     "named-grid-areas-no-invalid": true,
     "no-descending-specificity": null,
