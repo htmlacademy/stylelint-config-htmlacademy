@@ -11,9 +11,9 @@
     "node": ">=18.12.0"
   },
   "dependencies": {
+    "@stylistic/stylelint-plugin": "2.0.0",
     "postcss-less": "6.0.0",
-    "postcss-scss": "4.0.9",
-    "stylelint-codeguide": "1.0.2"
+    "postcss-scss": "4.0.9"
   },
   "peerDependencies": {
     "stylelint": "^16.0.0"
