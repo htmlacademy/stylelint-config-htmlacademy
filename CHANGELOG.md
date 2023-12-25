@@ -5,6 +5,10 @@
 
 Формат основан на [Keep a Changelog](https://keepachangelog.com/ru/1.1.0/), и этот проект придерживается [Semantic Versioning](https://semver.org/lang/ru/).
 
+## [4.0.0] — 2023–12–25
+- Обновили `stylelint-codeguide` до `"@stylistic/stylelint-plugin": "2.0.0"`
+- Обновили stylelint до версии 16.1.0
+
 ## [3.0.2] — 2023–12–13
 Перенесли stylelint-codeguide в правильные зависимости
 
@@ -727,7 +731,8 @@
 
 - Правила для `stylelint` версии `7.9.0`.
 
-[3.0.1]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v3.0.2...HEAD
+[4.0.0]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.0.0...HEAD
+[3.0.2]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v3.0.2...4.0.0
 [3.0.1]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v3.0.1...v3.0.2
 [3.0.0]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v3.0.0...v3.0.1
 [2.0.6]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v2.0.5...v3.0.0
