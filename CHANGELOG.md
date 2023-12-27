@@ -5,6 +5,10 @@
 
 Формат основан на [Keep a Changelog](https://keepachangelog.com/ru/1.1.0/), и этот проект придерживается [Semantic Versioning](https://semver.org/lang/ru/).
 
+## [4.0.1] — 2023–12–28
+- Отсортировали правило по документу https://stylelint.io/user-guide/rules/
+- Добавили требование прописывать CSS-свойства в lowercase `"selector-class-pattern": "^[a-z0-9-_]+$",`
+
 ## [4.0.0] — 2023–12–25
 - Обновили `stylelint-codeguide` до `"@stylistic/stylelint-plugin": "2.0.0"`
 - Обновили stylelint до версии 16.1.0
@@ -731,7 +735,8 @@
 
 - Правила для `stylelint` версии `7.9.0`.
 
-[4.0.0]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.0.0...HEAD
+[4.0.1]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.0.1...HEAD
+[4.0.0]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.0.0...v4.0.1
 [3.0.2]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v3.0.2...4.0.0
 [3.0.1]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v3.0.1...v3.0.2
 [3.0.0]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v3.0.0...v3.0.1
