@@ -8,9 +8,6 @@
 ## [4.0.2] — 2024–01–16
 Добавили новое правило `comment-whitespace-inside`, которое [требует пробелы внутри комментариев](https://stylelint.io/user-guide/rules/comment-whitespace-inside/). Это повышает читабельность комментариев.
 
-```css
-
-
 ## [4.0.1] — 2023–12–28
 - Отсортировали правило по документу https://stylelint.io/user-guide/rules/
 - Добавили требование прописывать CSS-свойства в lowercase `"selector-class-pattern": "^[a-z0-9-_]+$",`
