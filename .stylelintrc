@@ -187,6 +187,8 @@
     "function-url-quotes": "always",
     "selector-attribute-quotes": "always",
 
+    "comment-whitespace-inside": "always",
+
     "@stylistic/at-rule-name-case": "lower",
     "@stylistic/at-rule-name-space-after": "always",
     "@stylistic/at-rule-semicolon-newline-after": "always",
