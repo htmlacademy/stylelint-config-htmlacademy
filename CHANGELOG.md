@@ -5,6 +5,9 @@
 
 Формат основан на [Keep a Changelog](https://keepachangelog.com/ru/1.1.0/), и этот проект придерживается [Semantic Versioning](https://semver.org/lang/ru/).
 
+## [4.0.3] — 2024–01–19
+Обновили stylelint до версии 16.2.0
+
 ## [4.0.2] — 2024–01–16
 Добавили новое правило `comment-whitespace-inside`, которое [требует пробелы внутри комментариев](https://stylelint.io/user-guide/rules/comment-whitespace-inside/). Это повышает читабельность комментариев.
 
@@ -738,7 +741,8 @@
 
 - Правила для `stylelint` версии `7.9.0`.
 
-[4.0.1]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.0.2...HEAD
+[4.0.3]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.0.3...HEAD
+[4.0.2]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.0.2...4.0.3
 [4.0.1]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.0.1...v4.0.2
 [4.0.0]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.0.0...v4.0.1
 [3.0.2]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v3.0.2...4.0.0
