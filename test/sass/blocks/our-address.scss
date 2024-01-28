@@ -14,11 +14,11 @@
 
 .our-address__address {
   display: flex;
-  padding: 23px 0 26px 0;
+  padding: 23px 0 26px;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
-    padding: 63px 40px 20px 40px;
+    padding: 63px 40px 20px;
     min-height: 201px;
   }
 
@@ -42,7 +42,7 @@
   background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
-    padding: 63px 2px 20px 2px;
+    padding: 63px 2px 20px;
   }
 
   @media (min-width: $desktop-width) {
