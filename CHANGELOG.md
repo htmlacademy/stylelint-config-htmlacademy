@@ -5,6 +5,9 @@
 
 Формат основан на [Keep a Changelog](https://keepachangelog.com/ru/1.1.0/), и этот проект придерживается [Semantic Versioning](https://semver.org/lang/ru/).
 
+## [4.0.4] — 2024–01–28
+Обновили husky до последней версии 9.0.6 
+
 ## [4.0.3] — 2024–01–19
 Обновили stylelint до версии 16.2.0
 
@@ -741,11 +744,12 @@
 
 - Правила для `stylelint` версии `7.9.0`.
 
-[4.0.3]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.0.3...HEAD
-[4.0.2]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.0.2...4.0.3
+[4.0.4]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.0.4...HEAD
+[4.0.3]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.0.3...v4.0.4
+[4.0.2]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.0.2...v4.0.3
 [4.0.1]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.0.1...v4.0.2
 [4.0.0]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.0.0...v4.0.1
-[3.0.2]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v3.0.2...4.0.0
+[3.0.2]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v3.0.2...v4.0.0
 [3.0.1]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v3.0.1...v3.0.2
 [3.0.0]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v3.0.0...v3.0.1
 [2.0.6]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v2.0.5...v3.0.0
