@@ -5,6 +5,9 @@
 
 Формат основан на [Keep a Changelog](https://keepachangelog.com/ru/1.1.0/), и этот проект придерживается [Semantic Versioning](https://semver.org/lang/ru/).
 
+## [4.0.5] — 2024–01–28
+Добавили новое правило `shorthand-property-no-redundant-values`, которое [запрещает избыточные значения в сокращённых свойствах](https://stylelint.io/user-guide/rules/shorthand-property-no-redundant-values/).
+
 ## [4.0.4] — 2024–01–28
 Обновили husky до последней версии 9.0.6 
 
