@@ -20,14 +20,14 @@
 
 
 .product-descriptions__title {
-  margin: 0 0 38px 0;
+  margin: 0 0 38px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 32px 0;
+    margin: 0 0 32px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 32px 0;
+    margin: 0 0 32px;
   }
 }
 
@@ -58,7 +58,7 @@
     @include col-2-2(60px);
 
     position: relative;
-    padding: 153px 0 55px 0;
+    padding: 153px 0 55px;
     margin-bottom: 37px;
 
     &::before {

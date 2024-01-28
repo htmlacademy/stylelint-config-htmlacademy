@@ -48,7 +48,7 @@
 .example__list {
   list-style: none;
   padding: 0;
-  margin: 0 0 34px 0;
+  margin: 0 0 34px;
   display: flex;
   justify-content: space-between;
 
@@ -57,7 +57,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 60px 0;
+    margin: 0 0 60px;
   }
 }
 
@@ -70,7 +70,7 @@
   height: 56px;
 
   @media (min-width: $tablet-width) {
-    padding: 15px 0 0 0;
+    padding: 15px 0 0;
     min-width: 162px;
     height: 72px;
     margin: 0 42px 0 0;
@@ -96,7 +96,7 @@
 }
 
 .example__text {
-  margin: 0 0 25px 0;
+  margin: 0 0 25px;
 
   @media (min-width: $tablet-width) {
     width: 680px;
@@ -119,12 +119,12 @@
   line-height: 24px;
   color: $basic-black;
   text-transform: uppercase;
-  margin: 0 0 10px 0;
+  margin: 0 0 10px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
-    margin: 0 0 5px 0;
+    margin: 0 0 5px;
   }
 }
 
@@ -233,14 +233,14 @@
 }
 
 .example__title h2 {
-  margin: 0 0 33px 0;
+  margin: 0 0 33px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 65px 0;
+    margin: 0 0 65px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 76px 0;
+    margin: 0 0 76px;
   }
 }
 
@@ -337,7 +337,7 @@
   border-radius: 6px;
   background: $basic-green;
   cursor: pointer;
-  margin: 3px 0 0 0;
+  margin: 3px 0 0;
 
   @media (min-width: $tablet-width) {
     height: 31px;
@@ -385,7 +385,7 @@
   border-radius: 6px;
   background: $basic-green;
   cursor: pointer;
-  margin: 3px 0 0 0;
+  margin: 3px 0 0;
 
   @media (min-width: $tablet-width) {
     height: 9px;
