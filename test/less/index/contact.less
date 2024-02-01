@@ -16,10 +16,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-column: 1 / 4;
     padding: 0;
     width: auto;
     min-width: 100%;
@@ -146,10 +143,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    grid-column-start: 4;
-    grid-column-end: 7;
-    grid-row-start: 1;
-    grid-row-end: 3;
+    grid-column: 4 / 7;
   }
 }
 
@@ -160,20 +154,14 @@
 }
 
 .contact__write-button-wrapper {
-  margin-top: 42px;
-  margin-bottom: 41px;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin: 42px 30px 41px;
 
   @media (min-width: @tablet-width) {
     margin: 57px auto 56px;
   }
 
   @media (min-width: @desktop-width) {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-column: 2 / 4;
     margin: 0;
     margin-top: 52px;
   }
