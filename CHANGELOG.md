@@ -5,8 +5,10 @@
 
 Формат основан на [Keep a Changelog](https://keepachangelog.com/ru/1.1.0/), и этот проект придерживается [Semantic Versioning](https://semver.org/lang/ru/).
 
-## [4.0.5] — 2024–01–28
-Добавили новое правило `shorthand-property-no-redundant-values`, которое [запрещает избыточные значения в сокращённых свойствах](https://stylelint.io/user-guide/rules/shorthand-property-no-redundant-values/).
+## [4.0.5] — 2024–02–01
+- Добавили новое правило `shorthand-property-no-redundant-values`, которое [запрещает избыточные значения в сокращённых свойствах](https://stylelint.io/user-guide/rules/shorthand-property-no-redundant-values/).
+- Обновили husky до последней версии 9.0.10 
+- Обновили stylelint до версии 16.2.1
 
 ## [4.0.4] — 2024–01–28
 Обновили husky до последней версии 9.0.6 
@@ -747,7 +749,8 @@
 
 - Правила для `stylelint` версии `7.9.0`.
 
-[4.0.4]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.0.4...HEAD
+[4.0.5]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.0.5...HEAD
+[4.0.4]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.0.4...v4.0.5
 [4.0.3]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.0.3...v4.0.4
 [4.0.2]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.0.2...v4.0.3
 [4.0.1]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.0.1...v4.0.2
