@@ -15,17 +15,11 @@
 
 .slider__list {
   @media (min-width: @tablet-width) {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 3;
+    grid-column: 1 / 5;
   }
 
   @media (min-width: @desktop-width) {
-    grid-column-start: 2;
-    grid-column-end: 7;
-    grid-row-start: 1;
-    grid-row-end: 3;
+    grid-column: 2 / 7;
   }
 }
 
@@ -44,19 +38,13 @@
   margin-bottom: 38px;
 
   @media (min-width: @tablet-width) {
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-column: 4 / 5;
     margin: 0;
     align-self: end;
   }
 
   @media (min-width: @desktop-width) {
-    grid-column-start: 6;
-    grid-column-end: 7;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-column: 6 / 7;
     margin: 0;
   }
 }

@@ -187,6 +187,7 @@
     "function-url-quotes": "always",
     "selector-attribute-quotes": "always",
 
+    "declaration-block-no-redundant-longhand-properties": true,
     "shorthand-property-no-redundant-values": true,
 
     "comment-whitespace-inside": "always",
