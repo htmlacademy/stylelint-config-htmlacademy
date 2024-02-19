@@ -258,6 +258,7 @@
     "@stylistic/value-list-comma-newline-before": "never-multi-line",
     "@stylistic/value-list-comma-space-after": "always-single-line",
     "@stylistic/value-list-comma-space-before": "never",
-    "@stylistic/value-list-max-empty-lines": 0
+    "@stylistic/value-list-max-empty-lines": 0,
+    "@stylistic/named-grid-areas-alignment": true
   }
 }
