@@ -11,7 +11,7 @@
     "node": ">=18.12.0"
   },
   "dependencies": {
-    "@stylistic/stylelint-plugin": "2.0.0",
+    "@stylistic/stylelint-plugin": "2.1.0",
     "postcss-less": "6.0.0",
     "postcss-scss": "4.0.9"
   },
@@ -41,8 +41,8 @@
     "postpublish": "git push origin --all && git push origin --tags"
   },
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "2.0.8",
-    "husky": "9.0.10",
+    "@htmlacademy/editorconfig-cli": "2.0.9",
+    "husky": "9.0.11",
     "stylelint": "16.2.1"
   },
   "keywords": [
