@@ -5,6 +5,33 @@
 
 Формат основан на [Keep a Changelog](https://keepachangelog.com/ru/1.1.0/), и этот проект придерживается [Semantic Versioning](https://semver.org/lang/ru/).
 
+## [4.1.0] — 2024–02–19
+- Обновили [husky](https://github.com/typicode/husky) до последней версии 9.0.11
+- Обновили [@htmlacademy/editorconfig-cli](https://github.com/htmlacademy/editorconfig-cli) до версии 2.0.9
+- Добавили новое правило [named-grid-areas-alignment](https://github.com/stylelint-stylistic/stylelint-stylistic/blob/main/lib/rules/named-grid-areas-alignment/README.md), которое выравнивает обращение к именованным областям в гриде
+
+Плохо
+```css
+/* ❌ Not aligned cell tokens */
+
+div {
+  grid-template-areas: 
+    'a a a'
+    'bb bb bb';
+}
+```
+
+Хорошо
+```css
+/* ✅ Aligned cell tokens */
+
+div {
+  grid-template-areas: 
+    'a  a  a'
+    'bb bb bb'
+}
+```
+
 ## [4.0.5] — 2024–02–01
 - Добавили новое правило `shorthand-property-no-redundant-values`, которое [запрещает избыточные значения в сокращённых свойствах](https://stylelint.io/user-guide/rules/shorthand-property-no-redundant-values/).
 - Обновили husky до последней версии 9.0.10 
@@ -749,7 +776,8 @@
 
 - Правила для `stylelint` версии `7.9.0`.
 
-[4.0.5]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.0.5...HEAD
+[4.1.0]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.1.0...HEAD
+[4.0.5]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.0.5...v4.1.0
 [4.0.4]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.0.4...v4.0.5
 [4.0.3]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.0.3...v4.0.4
 [4.0.2]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.0.2...v4.0.3
