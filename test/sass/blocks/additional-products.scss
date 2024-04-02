@@ -20,7 +20,7 @@
   font-size: 24px;
   line-height: 24px;
   color: $basic-black;
-  margin: 0 0 35px 0;
+  margin: 0 0 35px;
   display: inline-block;
   position: relative;
 
@@ -97,7 +97,7 @@
 .additional-products__list {
   list-style: none;
   padding: 0;
-  margin: 0 0 39px 0;
+  margin: 0 0 39px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 69px;
@@ -130,7 +130,7 @@
   padding-top: 12px;
 
   @media (min-width: $tablet-width) {
-    padding: 26px 0 26px 0;
+    padding: 26px 0;
     border-bottom: 1px solid $special-light-grey3;
     border-left: 1px solid $special-light-grey3;
     border-right: 1px solid $special-light-grey3;
@@ -140,7 +140,7 @@
   @media (min-width: $desktop-width) {
     border-left: none;
     border-right: none;
-    padding: 15px 0 16px 0;
+    padding: 15px 0 16px;
   }
 }
 
@@ -165,23 +165,23 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 11px 0 8px 0;
+    padding: 11px 0 8px;
   }
 
   @media (min-width: $tablet-width) {
-    padding: 11px 0 9px 0;
+    padding: 11px 0 9px;
   }
 }
 
 .additional-products__text {
-  margin: 0 0 16px 0;
+  margin: 0 0 16px;
   display: flex;
   justify-content: space-between;
   line-height: 14px;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    margin: 6px 0 0 0;
+    margin: 6px 0 0;
     grid-template-columns: 193px 93px;
     text-align: end;
     line-height: 14px;
@@ -240,7 +240,7 @@
       url("../../img/logo/icon-gift.svg") 50% 55px no-repeat,
       url("../../img/background/additional-products-desktop.png") 80% no-repeat,
       $special-green;
-    padding: 186px 39px 41px 39px;
+    padding: 186px 39px 41px;
 
 
     @media (min-resolution: 2dppx) {
@@ -275,7 +275,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 26px;
-    padding: 0 1px 0 1px;
+    padding: 0 1px;
   }
 
   @media (min-width: $desktop-width) {

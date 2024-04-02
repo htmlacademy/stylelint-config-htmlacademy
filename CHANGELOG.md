@@ -5,8 +5,76 @@
 
 Формат основан на [Keep a Changelog](https://keepachangelog.com/ru/1.1.0/), и этот проект придерживается [Semantic Versioning](https://semver.org/lang/ru/).
 
+## [4.1.0] — 2024–02–19
+- Обновили [husky](https://github.com/typicode/husky) до последней версии 9.0.11
+- Обновили [@htmlacademy/editorconfig-cli](https://github.com/htmlacademy/editorconfig-cli) до версии 2.0.9
+- Добавили новое правило [named-grid-areas-alignment](https://github.com/stylelint-stylistic/stylelint-stylistic/blob/main/lib/rules/named-grid-areas-alignment/README.md), которое выравнивает обращение к именованным областям в гриде
+
+Плохо
+```css
+/* ❌ Not aligned cell tokens */
+
+div {
+  grid-template-areas: 
+    'a a a'
+    'bb bb bb';
+}
+```
+
+Хорошо
+```css
+/* ✅ Aligned cell tokens */
+
+div {
+  grid-template-areas: 
+    'a  a  a'
+    'bb bb bb'
+}
+```
+
+## [4.0.5] — 2024–02–01
+- Добавили новое правило `shorthand-property-no-redundant-values`, которое [запрещает избыточные значения в сокращённых свойствах](https://stylelint.io/user-guide/rules/shorthand-property-no-redundant-values/).
+- Обновили husky до последней версии 9.0.10 
+- Обновили stylelint до версии 16.2.1
+
+## [4.0.4] — 2024–01–28
+Обновили husky до последней версии 9.0.6 
+
+## [4.0.3] — 2024–01–19
+Обновили stylelint до версии 16.2.0
+
+## [4.0.2] — 2024–01–16
+Добавили новое правило `comment-whitespace-inside`, которое [требует пробелы внутри комментариев](https://stylelint.io/user-guide/rules/comment-whitespace-inside/). Это повышает читабельность комментариев.
+
+## [4.0.1] — 2023–12–28
+- Отсортировали правило по документу https://stylelint.io/user-guide/rules/
+- Добавили требование прописывать CSS-свойства в lowercase `"selector-class-pattern": "^[a-z0-9-_]+$",`
+
+## [4.0.0] — 2023–12–25
+- Обновили `stylelint-codeguide` до `"@stylistic/stylelint-plugin": "2.0.0"`
+- Обновили stylelint до версии 16.1.0
+
+## [3.0.2] — 2023–12–13
+Перенесли stylelint-codeguide в правильные зависимости
+
+## [3.0.1] — 2023–12–12
+Обновили все зависимости
+
+## [3.0.0] — 2023–12–12
+- Обновили поддержку stylelint до 16 версии
+- Изменили поддержку node.js по рекомендации stylelint, не ниже 18.12
+- Обновили [stylelint-codeguide](https://github.com/firefoxic/stylelint-codeguide)
+
+## [2.0.6] — 2023–10–19
+- Обновили node engine до современной. Удалили 16.x
+- Обновили stylelint-codeguide
+- Обновили peerDependencies
+
+## [2.0.5] — 2023–10–17
+Обновили все зависимости и заменили окончания строк
+
 ## [2.0.4] — 2023–08–02
-Обновляет все зависимости и уточняет версию peerDependencies
+Обновили все зависимости и уточняет версию peerDependencies
 
 ## [2.0.3] — 2023–07–28
 Починили поле `"exports": "./.stylelintrc",` в package.json
@@ -708,7 +776,19 @@
 
 - Правила для `stylelint` версии `7.9.0`.
 
-[2.0.4]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v2.0.3...HEAD
+[4.1.0]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.1.0...HEAD
+[4.0.5]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.0.5...v4.1.0
+[4.0.4]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.0.4...v4.0.5
+[4.0.3]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.0.3...v4.0.4
+[4.0.2]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.0.2...v4.0.3
+[4.0.1]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.0.1...v4.0.2
+[4.0.0]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.0.0...v4.0.1
+[3.0.2]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v3.0.2...v4.0.0
+[3.0.1]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v3.0.1...v3.0.2
+[3.0.0]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v3.0.0...v3.0.1
+[2.0.6]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v2.0.5...v3.0.0
+[2.0.5]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v2.0.4...v2.0.5
+[2.0.4]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v2.0.3...v2.0.4
 [2.0.3]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v2.0.2...v2.0.3
 [2.0.2]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v2.0.1...v2.0.2
 [2.0.1]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v2.0.0...v2.0.1

@@ -1,22 +1,22 @@
 {
   "name": "stylelint-config-htmlacademy",
   "description": "Stylelint shareable config for the HTML Academy style",
-  "version": "2.0.4",
+  "version": "4.1.0",
   "type": "module",
   "exports": "./.stylelintrc",
   "files": [
     "./.stylelintrc"
   ],
   "engines": {
-    "node": "^16.20.0 || ^18.16.0"
+    "node": ">=18.12.0"
   },
   "dependencies": {
+    "@stylistic/stylelint-plugin": "2.1.0",
     "postcss-less": "6.0.0",
-    "postcss-scss": "4.0.6",
-    "stylelint-codeguide": "0.1.5"
+    "postcss-scss": "4.0.9"
   },
   "peerDependencies": {
-    "stylelint": "~15.10"
+    "stylelint": "^16.1.0"
   },
   "license": "MIT",
   "author": {
@@ -32,7 +32,7 @@
     "url": "git+https://github.com/htmlacademy/stylelint-config-htmlacademy.git"
   },
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "husky",
     "lint": "ec",
     "test": "stylelint \"test/**/*.{css,less,scss}\"",
     "pretest": "npm run lint",
@@ -41,9 +41,9 @@
     "postpublish": "git push origin --all && git push origin --tags"
   },
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "2.0.5",
-    "husky": "8.0.3",
-    "stylelint": "15.10.2"
+    "@htmlacademy/editorconfig-cli": "2.0.9",
+    "husky": "9.0.11",
+    "stylelint": "16.2.1"
   },
   "keywords": [
     "HTMLAcademy",

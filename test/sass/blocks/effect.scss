@@ -59,7 +59,7 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin: 0 0 25px 0;
+    margin: 0 0 25px;
   }
 
   @media (min-width: $desktop-width) {
@@ -84,7 +84,7 @@
 }
 
 .effect__item-text {
-  margin: 0 0 19px 0;
+  margin: 0 0 19px;
   padding-bottom: 22px;
   border-bottom: 1px solid $dark-grey;
 

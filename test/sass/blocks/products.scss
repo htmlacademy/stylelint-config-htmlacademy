@@ -1,19 +1,17 @@
 .products {
   list-style: none;
   padding: 0;
-  margin: 0 0 25px 0;
+  margin: 0 0 25px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 60px;
-    row-gap: 59px;
+    gap: 59px 60px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 63px;
-    column-gap: 80px;
+    gap: 63px 80px;
   }
 }
 
