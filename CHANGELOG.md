@@ -5,6 +5,27 @@
 
 Формат основан на [Keep a Changelog](https://keepachangelog.com/ru/1.1.0/), и этот проект придерживается [Semantic Versioning](https://semver.org/lang/ru/).
 
+## [4.2.0] — 2024–04–02
+- Обновили все зависимости до самых свежих
+- Добавили новые правила:
+  - [declaration-block-no-redundant-longhand-properties](https://stylelint.io/user-guide/rules/declaration-block-no-redundant-longhand-properties/), который запрещает избыточные блоки объявлений
+  ```css
+  a {
+    padding-top: 1px;
+    padding-right: 2px;
+    padding-bottom: 3px;
+    padding-left: 4px; 
+  }
+  ```
+  
+  ```css
+  a {
+    padding: 1px 2px 3px 4px;
+  }
+  ```
+  - [no-unknown-custom-properties](https://stylelint.io/user-guide/rules/no-unknown-custom-properties), который запрещает неизвестные кастомные свойства
+
+
 ## [4.1.0] — 2024–02–19
 - Обновили [husky](https://github.com/typicode/husky) до последней версии 9.0.11
 - Обновили [@htmlacademy/editorconfig-cli](https://github.com/htmlacademy/editorconfig-cli) до версии 2.0.9
