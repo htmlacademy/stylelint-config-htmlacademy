@@ -43,7 +43,7 @@
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "3.0.0",
     "husky": "9.0.11",
-    "stylelint": "16.5.0"
+    "stylelint": "16.6.0"
   },
   "keywords": [
     "HTMLAcademy",
