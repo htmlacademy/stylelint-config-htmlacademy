@@ -804,7 +804,7 @@ div {
 
 - Правила для `stylelint` версии `7.9.0`.
 
-[4.2.1]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.2.2...HEAD
+[4.2.2]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.2.2...HEAD
 [4.2.1]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.2.1...v4.2.2
 [4.2.0]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.2.0...v4.2.1
 [4.1.0]: https://github.com/htmlacademy/stylelint-config-htmlacademy/compare/v4.1.0...v4.2.0
