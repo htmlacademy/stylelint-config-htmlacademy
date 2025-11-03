@@ -1,7 +1,7 @@
 {
   "name": "stylelint-config-htmlacademy",
   "description": "Stylelint shareable config for the HTML Academy style",
-  "version": "4.3.0",
+  "version": "4.4.0",
   "type": "module",
   "exports": "./.stylelintrc",
   "files": [
