@@ -11,12 +11,12 @@
     "node": ">=18.12.0"
   },
   "dependencies": {
-    "@stylistic/stylelint-plugin": "3.1.1",
+    "@stylistic/stylelint-plugin": "4.0.0",
     "postcss-less": "6.0.0",
     "postcss-scss": "4.0.9"
   },
   "peerDependencies": {
-    "stylelint": "^16.10.0"
+    "stylelint": "^16.25.0"
   },
   "license": "MIT",
   "author": {
@@ -43,7 +43,7 @@
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "3.0.0",
     "husky": "9.1.7",
-    "stylelint": "16.10.0"
+    "stylelint": "16.25.0"
   },
   "keywords": [
     "HTMLAcademy",
