@@ -1,66 +1,34 @@
 {
   "name": "stylelint-config-htmlacademy",
-  "description": "Stylelint shareable config for the HTML Academy style",
-  "version": "4.4.0",
-  "type": "module",
+  "version": "5.0.0",
+  "description": "Stylelint Config for HTML Academy CODEGUIDE",
+  "license": "MIT",
+  "author": "Nikolai Shabalin",
+  "repository": "htmlacademy/stylelint-config-htmlacademy",
+  "keywords": [
+    "stylelint",
+    "config",
+    "htmlacademy",
+    "codeguide",
+    "linter"
+  ],
   "exports": "./.stylelintrc",
   "files": [
-    "./.stylelintrc"
+    ".stylelintrc"
   ],
-  "engines": {
-    "node": ">=18.12.0"
-  },
-  "dependencies": {
-    "@stylistic/stylelint-plugin": "4.0.0",
-    "postcss-less": "6.0.0",
-    "postcss-scss": "4.0.9"
+  "scripts": {
+    "test": "stylelint \"test/**/*.{css,less,scss}\""
   },
   "peerDependencies": {
-    "stylelint": "^16.25.0"
+    "stylelint": "^16.25.0 || ^17.0.0"
   },
-  "license": "MIT",
-  "author": {
-    "name": "Nikolai Shabalin",
-    "email": "dev.nikolai.shabalin@gmail.com"
-  },
-  "homepage": "https://github.com/htmlacademy/stylelint-config-htmlacademy#readme",
-  "bugs": {
-    "url": "https://github.com/htmlacademy/stylelint-config-htmlacademy/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/htmlacademy/stylelint-config-htmlacademy.git"
-  },
-  "scripts": {
-    "prepare": "husky",
-    "lint": "ec",
-    "test": "stylelint \"test/**/*.{css,less,scss}\"",
-    "pretest": "npm run lint",
-    "preversion": "npm test",
-    "postversion": "npm publish",
-    "postpublish": "git push origin --all && git push origin --tags"
+  "dependencies": {
+    "@stylistic/stylelint-plugin": "^5.0.1",
+    "postcss-less": "^6.0.0",
+    "postcss-scss": "^4.0.9",
+    "stylelint-order": "^7.0.1"
   },
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "3.0.0",
-    "husky": "9.1.7",
-    "stylelint": "16.25.0"
-  },
-  "keywords": [
-    "HTMLAcademy",
-    "HTML Academy",
-    "code",
-    "quality",
-    "style",
-    "lint",
-    "linter",
-    "stylelint",
-    "validate",
-    "code style",
-    "strict",
-    "check",
-    "checker",
-    "verify",
-    "enforce",
-    "hint"
-  ]
+    "stylelint": "^17.0.0"
+  }
 }

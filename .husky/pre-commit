@@ -1,5 +1,0 @@
-git stash -ku
-
-trap "git stash pop" EXIT
-
-npm test
