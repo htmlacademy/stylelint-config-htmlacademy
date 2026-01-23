@@ -1,10 +1,10 @@
 .block {
   --fill: hsl(39 100% 50%);
   --size: 20px;
+  width: var(--size);
+  aspect-ratio: 1;
 
   padding: 4px;
-  aspect-ratio: 1;
-  width: var(--size);
   background: var(--fill);
 
   @media #{$not-mobile} {
@@ -36,11 +36,11 @@
   }
 
   &::before {
-    content: "";
     width: var(--size);
     aspect-ratio: 1;
-    border-radius: 100%;
     background: var(--fill);
+    border-radius: 100%;
+    content: "";
     filter: invert(1);
   }
 }

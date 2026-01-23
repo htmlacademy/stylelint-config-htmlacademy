@@ -17,9 +17,9 @@
 
   @media (min-width: @desktop-width) {
     grid-column: 1 / 4;
-    padding: 0;
     width: auto;
     min-width: 100%;
+    padding: 0;
   }
 }
 
@@ -37,14 +37,14 @@
 
     &::before {
       position: absolute;
-      content: " ";
       top: 7px;
       right: 3px;
       width: 47px;
       height: 81px;
       background-image: url("../img/flag.svg");
-      background-position: center center;
       background-repeat: no-repeat;
+      background-position: center center;
+      content: " ";
     }
   }
 
@@ -55,21 +55,21 @@
 
     &::before {
       position: absolute;
-      content: " ";
       top: 62px;
       left: 63px;
       width: 47px;
       height: 81px;
       background-image: url("../img/flag.svg");
-      background-position: center center;
       background-repeat: no-repeat;
+      background-position: center center;
+      content: " ";
     }
   }
 }
 
 .contact__list {
-  padding: 0;
   margin: 0;
+  padding: 0;
   padding-bottom: 30px;
   list-style: none;
 
@@ -81,15 +81,15 @@
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr;
-    padding-left: 175px;
     padding-bottom: 0;
+    padding-left: 175px;
   }
 }
 
 .contact__item {
-  margin-bottom: 30px;
   display: grid;
   grid-template-columns: 76px 1fr;
+  margin-bottom: 30px;
 }
 
 .contact__kind {
@@ -102,9 +102,9 @@
 
 .contact__value {
   .font-size(14px, 30px);
-  color: @text-color;
   font-style: normal;
   text-decoration: none;
+  color: @text-color;
 
   @media (min-width: @tablet-width) {
     font-size: 17px;
@@ -112,8 +112,8 @@
 }
 
 .contact__value--mail {
-  border-bottom: 1px solid @mail-borderline;
   margin-right: auto;
+  border-bottom: 1px solid @mail-borderline;
 
   @media (min-width: @tablet-width) and (max-width: (@desktop-width - 1px)) {
     margin-bottom: auto;

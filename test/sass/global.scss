@@ -10,22 +10,22 @@ body {
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
   overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
 }
 
 .heading-secondary {
+  margin: 0;
   font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
   font-weight: 400;
   font-style: normal;
-  font-size: 36px;
   line-height: 40px;
   color: $basic-black;
-  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -39,8 +39,8 @@ body {
 
 .container {
   max-width: 320px;
-  padding: 0 20px;
   margin: 0 auto;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     max-width: $tablet-width;
@@ -55,13 +55,13 @@ body {
 
 .container--form {
   max-width: 320px;
-  padding: 0 20px;
   margin: 0 auto;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     max-width: $tablet-width;
-    padding: 0 67px 0 69px;
     margin: 0 auto;
+    padding: 0 67px 0 69px;
   }
 
   @media (min-width: $desktop-width) {
@@ -71,12 +71,12 @@ body {
 }
 
 .subtitle {
+  margin: 0;
   font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
   line-height: 20px;
-  margin: 0;
 }
 
 img {

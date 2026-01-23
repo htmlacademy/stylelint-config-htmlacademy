@@ -2,13 +2,13 @@
   margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 24px;
     margin-bottom: 0;
+    padding-top: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 53px;
     margin-bottom: 82px;
+    padding-top: 53px;
   }
 }
 
@@ -88,8 +88,8 @@
     --bg-image: url("../img/background/header-cat-desktop@1x.jpg");
 
     position: relative;
-    background: linear-gradient(90deg, transparent 55.5%, $basic-green 44.5%);
     min-height: 694px;
+    background: linear-gradient(90deg, transparent 55.5%, $basic-green 44.5%);
 
     @media (min-resolution: 2dppx) {
       --bg-image: url("../img/background/header-cat-desktop@2x.jpg");
@@ -97,7 +97,6 @@
 
     &::before {
       position: absolute;
-      content: "";
       top: 0;
       right: 0;
       width: 50%;
@@ -109,6 +108,7 @@
         ),
         var(--bg-image);
       background-size: cover, cover;
+      content: "";
     }
   }
 }
@@ -141,21 +141,21 @@
   border-bottom: 1px solid $special-light-grey;
 
   @media (min-width: $tablet-width) {
-    border: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
     margin: 0;
+    padding: 0;
   }
 }
 
 .page-header__logo-wrapper .container {
   @media (min-width: $tablet-width) {
-    border: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    border: none;
   }
 }

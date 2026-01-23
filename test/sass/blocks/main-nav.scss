@@ -7,9 +7,9 @@
 }
 
 .main-nav__list {
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -18,8 +18,8 @@
 }
 
 .main-nav__item {
-  border-bottom: 1px solid $special-light-grey;
   text-align: center;
+  border-bottom: 1px solid $special-light-grey;
 
   @media (min-width: $tablet-width) {
     margin-left: 37px;
@@ -43,24 +43,24 @@
 
 .main-nav__link {
   display: inline-block;
-  padding: 23px 24px 22px;
   min-width: 280px;
+  padding: 23px 24px 22px;
   font-family: "Oswald", "Arial", sans-serif;
+  font-size: 20px;
   font-weight: 500;
   font-style: normal;
-  font-size: 20px;
   line-height: 20px;
   text-align: center;
-  color: $basic-black;
   text-transform: uppercase;
+  color: $basic-black;
 
   @media (min-width: $tablet-width) {
-    border: none;
     min-width: 0;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
     padding: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    border: none;
 
     &[href]:hover {
       opacity: 0.6;
@@ -110,9 +110,9 @@
   right: 2px;
   width: 61px;
   height: 61px;
-  border: none;
   background: url("../../img/decorative/mobile/mobile-toggle.svg") no-repeat;
   background-position: 50% 50%;
+  border: none;
 
   @media (min-width: $tablet-width) {
     display: none;

@@ -18,26 +18,26 @@
   @media (max-width: @mobile-only-width) {
     &::after {
       position: absolute;
-      content: " ";
+      bottom: 0;
+      left: 0;
       width: 100%;
       height: 6px;
-      left: 0;
-      bottom: 0;
       background-image: url("../img/zigzag-line-mobile.svg");
       background-repeat: repeat-x;
+      content: " ";
     }
   }
 
   @media (min-width: @tablet-width) and (max-width: (@desktop-width - 1px)) {
     &::after {
       position: absolute;
-      content: " ";
+      bottom: 0;
+      left: 0;
       width: 100%;
       height: 17px;
-      left: 0;
-      bottom: 0;
       background-image: url("../img/zigzag-line-tablet.svg");
       background-repeat: repeat-x;
+      content: " ";
     }
   }
 }
@@ -77,14 +77,14 @@
 
     &::after {
       position: absolute;
-      content: " ";
+      bottom: 0;
+      left: 0;
       width: 100%;
       height: 23px;
-      left: 0;
-      bottom: 0;
       background-image: url("../img/zigzag-line-desktop.svg");
-      background-position: center;
       background-repeat: no-repeat;
+      background-position: center;
+      content: " ";
     }
   }
 }
@@ -116,8 +116,8 @@
 }
 
 .review__list {
-  padding: 0;
   margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -147,15 +147,15 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 38px;
     padding-right: 65px;
+    padding-bottom: 38px;
   }
 }
 
 
 .review__author {
-  font-style: normal;
   font-weight: 700;
+  font-style: normal;
   .font-size(17px, 24px);
 
   @media (min-width: @tablet-width) and (max-width: (@desktop-width - 1px)) {

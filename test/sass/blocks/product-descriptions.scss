@@ -32,10 +32,10 @@
 }
 
 .product-descriptions__list {
-  counter-reset: section;
-  padding: 0;
-  list-style: none;
   margin: 0;
+  padding: 0;
+  counter-reset: section;
+  list-style: none;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -50,30 +50,30 @@
 }
 
 .product-descriptions__item {
-  padding-top: 3px;
-  margin-bottom: 20px;
   min-height: 60px;
+  margin-bottom: 20px;
+  padding-top: 3px;
 
   @media (min-width: $tablet-width) {
     @include col-2-2(60px);
 
     position: relative;
-    padding: 153px 0 55px;
     margin-bottom: 37px;
+    padding: 153px 0 55px;
 
     &::before {
       position: absolute;
       top: 1px;
       right: 77px;
-      counter-increment: section;
-      content: counter(section);
+      z-index: 0;
       font-family: "Oswald", "Arial", sans-serif;
+      font-size: 280px;
       font-weight: 400;
       font-style: normal;
-      font-size: 280px;
       line-height: 280px;
       color: $basic-grey;
-      z-index: 0;
+      content: counter(section);
+      counter-increment: section;
     }
   }
 
@@ -106,36 +106,36 @@
 
 .product-descriptions__text {
   position: relative;
-  margin: 0 0 26px 80px;
-  width: 200px;
   z-index: 1;
+  width: 200px;
+  margin: 0 0 26px 80px;
 }
 
 .product-descriptions__item--utility .product-descriptions__text {
   @media (min-width: $tablet-width) {
-    margin: 0;
     width: 201px;
+    margin: 0;
   }
 }
 
 .product-descriptions__item--convenience .product-descriptions__text {
   @media (min-width: $tablet-width) {
-    margin: 0;
     width: 227px;
+    margin: 0;
   }
 }
 
 .product-descriptions__item--economy .product-descriptions__text {
   @media (min-width: $tablet-width) {
-    margin: 0;
     width: 209px;
+    margin: 0;
   }
 }
 
 .product-descriptions__item--quickness .product-descriptions__text {
   @media (min-width: $tablet-width) {
-    margin: 0;
     width: 245px;
+    margin: 0;
   }
 }
 

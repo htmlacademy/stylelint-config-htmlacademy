@@ -34,8 +34,8 @@
 }
 
 .production-promo__video {
-  grid-column: 1 / -1;
   z-index: 3;
+  grid-column: 1 / -1;
   min-width: 260px;
   min-height: 150px;
 
@@ -53,28 +53,28 @@
 }
 
 .production-promo__title-wrapper {
-  grid-column: 1 / -1;
-  box-sizing: border-box;
   display: grid;
   grid-template-columns: auto auto;
+  grid-column: 1 / -1;
+  box-sizing: border-box;
   padding: 22px 0 25px;
   border-top: 1px solid @catalog-card-border;
-  border-left: 1px solid @catalog-card-border;
   border-right: 1px solid @catalog-card-border;
+  border-left: 1px solid @catalog-card-border;
 
 
   @media (min-width: @tablet-width) {
-    grid-column: 1 / -1;
     display: flex;
-    justify-content: space-between;
+    grid-column: 1 / -1;
     align-items: center;
+    justify-content: space-between;
     padding: 39px 0 25px;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: column;
-    align-items: flex-start;
     grid-column: 2 / 3;
+    align-items: flex-start;
     padding: 47px 17px 27px 80px;
   }
 }
@@ -94,8 +94,8 @@
 .production-promo__title-icon {
   width: 32px;
   height: 22px;
-  margin-left: 34px;
   margin-right: 25px;
+  margin-left: 34px;
 
   @media (max-width: @mobile-only-width) {
     align-self: center;
@@ -103,8 +103,8 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin-left: 40px;
     margin-right: 32px;
+    margin-left: 40px;
   }
 
   @media (min-width: @desktop-width) {
@@ -114,22 +114,22 @@
 }
 
 .production-promo__text-wrapper {
-  box-sizing: border-box;
   grid-column: 1 / -1;
+  box-sizing: border-box;
 
   padding: 35px 0 40px 34px;
-  border-left: 1px solid @catalog-card-border;
   border-right: 1px solid @catalog-card-border;
+  border-left: 1px solid @catalog-card-border;
 
   @media (min-width: @tablet-width) {
-    font-size: 15px;
-    line-height: 30px;
     grid-column: 1 / -1;
     margin: 0;
     padding: 0 37px 41px 40px;
+    font-size: 15px;
+    line-height: 30px;
     border: none;
-    border-left: 1px solid @catalog-card-border;
     border-right: 1px solid @catalog-card-border;
+    border-left: 1px solid @catalog-card-border;
   }
 
   @media (min-width: @desktop-width) {
@@ -169,7 +169,7 @@
 
 .production-promo__button-wrapper {
   box-sizing: border-box;
-  border-left: 1px solid @catalog-card-border;
   border-right: 1px solid @catalog-card-border;
   border-bottom: 1px solid @catalog-card-border;
+  border-left: 1px solid @catalog-card-border;
 }

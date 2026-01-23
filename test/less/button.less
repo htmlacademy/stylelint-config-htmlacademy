@@ -6,15 +6,15 @@
   min-height: 52px;
   padding-top: 16px;
   padding-bottom: 12px;
-  font-weight: 700;
   font-size: 18px;
+  font-weight: 700;
   line-height: 20px;
-  text-transform: uppercase;
-  text-decoration: none;
   text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
   color: @text-color;
-  border: 2px solid @main-border-color;
   background-color: transparent;
+  border: 2px solid @main-border-color;
   cursor: pointer;
 
   &:hover {
@@ -28,8 +28,8 @@
   }
 
   &:active {
-    background-color: @button-active-bg;
     color: fade(@button-active-color, 30%);
+    background-color: @button-active-bg;
   }
 }
 
@@ -38,9 +38,9 @@
 }
 
 .button--modal {
-  border: none;
   color: @button-active-color;
   background-color: @modal-button-bg;
+  border: none;
 
   @media (min-width: @tablet-width) {
     width: 350px;

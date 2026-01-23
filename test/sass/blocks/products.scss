@@ -1,7 +1,7 @@
 .products {
-  list-style: none;
-  padding: 0;
   margin: 0 0 25px;
+  padding: 0;
+  list-style: none;
 
   @media (min-width: $tablet-width) {
     display: grid;
