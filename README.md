@@ -1,27 +1,22 @@
-# stylelint-config-htmlacademy
+# Stylelint Config for HTML Academy CODEGUIDE
 
-[![Test Status][test-image]][test-url]
-[![License: MIT][license-image]][license-url]
-[![NPM version][npm-image]][npm-url]
-[![Vulnerabilities count][vulnerabilities-image]][vulnerabilities-url]
+[![npm version](https://img.shields.io/npm/v/stylelint-config-htmlacademy.svg)](https://www.npmjs.com/package/stylelint-config-htmlacademy)
+[![test](https://github.com/htmlacademy/stylelint-config-htmlacademy/actions/workflows/test.yml/badge.svg)](https://github.com/htmlacademy/stylelint-config-htmlacademy/actions/workflows/test.yml)
+[![license](https://img.shields.io/npm/l/stylelint-config-htmlacademy.svg)](https://github.com/htmlacademy/stylelint-config-htmlacademy/blob/main/LICENSE)
 
-> Это стандартный конфигурационный файл для stylelint от [HTML Academy](https://htmlacademy.ru/).
+Stylelint configuration for CSS, SCSS, LESS validation according to [HTML Academy Codeguide](https://codeguide.academy).
 
-Используйте его как есть или как основу для вашей собственной конфигурации.
+Compatible with Stylelint v16 and v17.
 
-## Установка
-
-Вместе с конфигом установите и сам `stylelint`.
+## Installation
 
 ```sh
-npm i -D stylelint-config-htmlacademy stylelint
+npm install -D stylelint stylelint-config-htmlacademy
 ```
 
-## Использование
+## Usage
 
-В корне проекта создайте файл `.stylelintrc` и в нём добавьте `stylelint-config-htmlacademy` в поле `extends`.
-
-_.stylelintrc_
+Create `.stylelintrc` in your project root:
 
 ```json
 {
@@ -29,82 +24,103 @@ _.stylelintrc_
 }
 ```
 
-Если вы установили `stylelint-config-htmlacademy` глобально с помощью флага `-g`, тогда вам нужно использовать абсолютный путь `stylelint-config-htmlacademy` в конфигурационном файле:
+## Key Features
 
-_.stylelintrc_
+- **Property Order** — Logical grouping: positioning, box model, typography, decoration, animation, interactivity
+- **Modern CSS** — `rgb(255 0 0)` syntax, no vendor prefixes, no `@import` in CSS
+- **Code Quality** — No `!important`, max 2 nesting levels, kebab-case naming
+- **Preprocessors** — SCSS and LESS support with syntax-aware rule adjustments
 
-```json
-{
-  "extends": "/absolute/path/to/stylelint-config-htmlacademy"
+## Property Order
+
+Properties are organized into groups:
+
+```css
+.element {
+  /* 1. Custom Properties */
+  --element-color: #333333;
+
+  /* 2. Positioning */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+
+  /* 3. Box Model */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  padding: 10px;
+  overflow: hidden;
+
+  /* 4. Typography */
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--element-color);
+
+  /* 5. Decoration */
+  background-color: #f5f5f5;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  opacity: 1;
+
+  /* 6. Animation */
+  transition: color 0.3s;
+
+  /* 7. Interactivity */
+  cursor: pointer;
+  pointer-events: auto;
+  user-select: none;
 }
 ```
 
-## Расширение конфига
+Run `stylelint --fix` to automatically reorder properties.
 
-Вы можете переопределить существующие правила или добавить новые.
+## Preprocessors
 
-Для этого добавьте в конфиг поле `rules` с нужными вам переопределениями правил.
+SCSS and LESS work out of the box. The syntax is automatically detected by file extension (`.scss`, `.less`). No additional configuration required.
 
-_.stylelintrc_
+## Extending
+
+Override rules in your `.stylelintrc`:
 
 ```json
 {
   "extends": "stylelint-config-htmlacademy",
   "rules": {
-    "property-no-unknown": [
-      true,
-      {
-        "ignoreProperties": [
-          "composes"
-        ]
-      }
-    ],
-    "unit-whitelist": ["em", "rem", "s", "px"]
+    "selector-class-pattern": null
   }
 }
 ```
 
-В этом же поле `rules` можно переопределять и больше не поддерживаемые самим Stylelint [стилистические правила](https://github.com/firefoxic/stylelint-codeguide/blob/main/docs/user-guide/rules.md#rules) из плагина `stylelint-codeguide`, добавив перед названием правила префикс `codeguide/`.
+## Editor Integration
 
-_.stylelintrc_
+Install the [Stylelint extension](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint) for VS Code.
+
+For auto-fix on save, add to `.vscode/settings.json`:
 
 ```json
 {
-  "extends": "stylelint-config-htmlacademy",
-  "rules": {
-    "property-no-unknown": [
-      true,
-      {
-        "ignoreProperties": [
-          "composes"
-        ]
-      }
-    ],
-    "unit-whitelist": ["em", "rem", "s", "px"],
-
-    "codeguide/indentation": "tab",
-    "codeguide/number-leading-zero": null
-  }
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": "explicit"
+  },
+  "stylelint.validate": ["css", "scss", "less"]
 }
 ```
 
-## Использование в VSCode
+## Links
 
-1. Установите стайллинт и конфиг
-2. Откройте VScode
-3. Установите плагин [stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
-4. Пользуйтесь
-
-![Несоответствия правилам конфига подчёркиваются красной волнистой линией, по наведению на которую появляется попап с описанием ошибки.](vscode-error.png)
-
-[test-url]: https://github.com/htmlacademy/stylelint-config-htmlacademy/actions
-[test-image]: https://github.com/htmlacademy/stylelint-config-htmlacademy/actions/workflows/test.yml/badge.svg?branch=main
-
-[npm-url]: https://npmjs.org/package/stylelint-config-htmlacademy
-[npm-image]: https://badge.fury.io/js/stylelint-config-htmlacademy.svg
-
-[license-url]: https://github.com/htmlacademy/stylelint-config-htmlacademy/blob/main/LICENSE
-[license-image]: https://img.shields.io/badge/License-MIT-limegreen.svg
-
-[vulnerabilities-url]: https://snyk.io/test/github/htmlacademy/stylelint-config-htmlacademy
-[vulnerabilities-image]: https://img.shields.io/snyk/vulnerabilities/npm/stylelint-config-htmlacademy
+- [HTML Academy](https://htmlacademy.ru)
+- [HTML Academy Codeguide](https://codeguide.academy)
+- [Codeguide Repository](https://github.com/htmlacademy/codeguide)
+- [Stylelint Documentation](https://stylelint.io/user-guide/get-started/)
