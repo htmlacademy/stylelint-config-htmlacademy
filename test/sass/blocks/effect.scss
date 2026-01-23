@@ -11,9 +11,9 @@
 }
 
 .effect__list {
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -23,9 +23,9 @@
 }
 
 .effect__item {
-  background-color: $basic-grey;
-  padding: 30px 33px 18px 20px;
   min-height: 266px;
+  padding: 30px 33px 18px 20px;
+  background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
     padding: 77px 28px 56px 52px;
@@ -33,8 +33,8 @@
 
   @media (min-width: $desktop-width) {
     width: calc(100% / 2 - 40px);
-    padding: 78px 52px 58px 51px;
     margin-bottom: 30px;
+    padding: 78px 52px 58px 51px;
   }
 }
 
@@ -47,19 +47,19 @@
 }
 
 .effect__item-title {
+  margin: 0 0 29px 71px;
   font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
   font-weight: 400;
   font-style: normal;
-  font-size: 24px;
   line-height: 37px;
-  color: $basic-black;
   text-transform: uppercase;
-  margin: 0 0 29px 71px;
+  color: $basic-black;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 25px;
     font-size: 36px;
     line-height: 36px;
-    margin: 0 0 25px;
   }
 
   @media (min-width: $desktop-width) {
@@ -69,12 +69,12 @@
 
 .effect__item-link {
   font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
   line-height: 16px;
-  color: $basic-black;
   text-transform: uppercase;
+  color: $basic-black;
   background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
@@ -89,11 +89,11 @@
   border-bottom: 1px solid $dark-grey;
 
   @media (min-width: $tablet-width) {
-    color: $basic-black;
     width: 377px;
-    border: none;
-    padding-bottom: 0;
     margin-bottom: 52px;
+    padding-bottom: 0;
+    color: $basic-black;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -113,8 +113,8 @@
 }
 
 .effect__link-weight-loss {
-  margin: 0;
   width: 134px;
+  margin: 0;
   background: url("../../img/decorative/arrow.svg") 93px 2px no-repeat;
 
   &:hover {
@@ -153,8 +153,8 @@
 }
 
 .effect__link-weight-gain {
-  margin: 0;
   width: 134px;
+  margin: 0;
   background: url("../../img/decorative/arrow.svg") 91px 2px no-repeat;
 
   &:hover {
@@ -197,13 +197,13 @@
 
   @media (min-width: $tablet-width) {
     background: url("../img/logo/logo-cat-slim-table.svg") no-repeat, $basic-grey;
-    background-size: 200px 213px;
     background-position: 446px 80px;
+    background-size: 200px 213px;
   }
 
   @media (min-width: $desktop-width) {
-    background-size: 100px 106px;
     background-position: 52px 41px;
+    background-size: 100px 106px;
   }
 }
 
@@ -212,13 +212,13 @@
 
   @media (min-width: $tablet-width) {
     background: url("../img/logo/logo-cat-fat-table.svg") no-repeat, $basic-grey;
-    background-size: 268px 200px;
     background-position: 412px 91px;
+    background-size: 268px 200px;
   }
 
   @media (min-width: $desktop-width) {
-    background-size: 134px 100px;
     background-position: 34px 47px;
+    background-size: 134px 100px;
   }
 }
 

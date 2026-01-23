@@ -7,18 +7,18 @@
 }
 
 .page-main__title {
+  margin-bottom: 37px;
   font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
   font-weight: 400;
   font-style: normal;
-  font-size: 36px;
   line-height: 36px;
   color: $basic_black;
-  margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
@@ -39,19 +39,19 @@
 }
 
 .page-main__text {
+  margin-bottom: 38px;
   font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
   font-weight: 400;
   font-style: normal;
-  font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   color: $basic_black;
-  margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 66px;
   }
 
   @media (min-width: $desktop-width) {

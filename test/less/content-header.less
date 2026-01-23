@@ -1,34 +1,34 @@
 //
 .content-header {
   position: relative;
-  background-color: @title-bg-color;
   text-align: center;
+  background-color: @title-bg-color;
 }
 
 .content-header--decorated {
   @media (min-width: @tablet-width) {
     &::after {
       position: absolute;
-      content: " ";
+      bottom: -12px;
+      left: 0;
       width: 100%;
       height: 24px;
-      left: 0;
-      bottom: -12px;
       background-image: url("../img/zigzag-head-tablet.svg");
       background-repeat: repeat-x;
+      content: " ";
     }
   }
 
   @media (min-width: @desktop-width) {
     &::after {
       position: absolute;
-      content: " ";
+      bottom: -17px;
+      left: 0;
       width: 100%;
       height: 34px;
-      left: 0;
-      bottom: -17px;
       background-image: url("../img/zigzag-head-desktop.svg");
       background-repeat: repeat-x;
+      content: " ";
     }
   }
 }
@@ -37,26 +37,26 @@
   @media (min-width: @tablet-width) {
     &::after {
       position: absolute;
-      content: " ";
+      bottom: -12px;
+      left: 0;
       width: 100%;
       height: 24px;
-      left: 0;
-      bottom: -12px;
       background-image: url("../img/zigzag-head-tablet.svg");
       background-repeat: repeat-x;
+      content: " ";
     }
   }
 
   @media (min-width: @desktop-width) {
     &::after {
       position: absolute;
-      content: " ";
+      bottom: -17px;
+      left: 0;
       width: 100%;
       height: 34px;
-      left: 0;
-      bottom: -17px;
       background-image: url("../img/zigzag-head-inner-desktop.svg");
       background-repeat: repeat-x;
+      content: " ";
     }
   }
 }

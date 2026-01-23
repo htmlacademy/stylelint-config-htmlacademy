@@ -1,42 +1,42 @@
 .functional-food {
-  text-align: center;
   height: min-content;
   padding-top: 27px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     position: relative;
-    text-align: left;
     min-height: 810px;
-    padding-left: 112px;
     padding-top: 0;
+    padding-left: 112px;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
-    background-position: 500px 0;
-    background-size: 552px 499px;
+    min-height: 550px;
     padding-top: 83px;
     padding-left: 110px;
-    min-height: 550px;
+    background-position: 500px 0;
+    background-size: 552px 499px;
     vertical-align: middle;
   }
 }
 
 .functional-food__title {
   margin: 0 auto;
+  margin-bottom: 25px;
   font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
   font-weight: 400;
   font-style: normal;
-  font-size: 36px;
   line-height: 36px;
   color: $basic-white;
-  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    color: $basic-black;
     width: 414px;
     margin: 0 0 42px 5px;
     font-size: 60px;
     line-height: 60px;
+    color: $basic-black;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,18 +48,18 @@
 .functional-food__slogan {
   margin: 0 auto 28px;
   font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
   font-weight: 400;
   font-style: normal;
-  font-size: 14px;
   line-height: 14px;
-  color: $basic-white;
   text-transform: uppercase;
+  color: $basic-white;
 
   @media (min-width: $tablet-width) {
-    color: $basic-black;
     margin: 0 0 48px 5px;
     font-size: 20px;
     line-height: 20px;
+    color: $basic-black;
   }
 
   @media (min-width: $desktop-width) {
@@ -99,11 +99,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    display: inline-block;
     position: relative;
+    z-index: 1;
+    display: inline-block;
     padding: 17px 26px 17px 27px;
     font-size: 20px;
     line-height: 20px;
-    z-index: 1;
   }
 }

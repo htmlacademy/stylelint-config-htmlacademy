@@ -1,8 +1,8 @@
 //Задает общие параметры стиля и поведения для всех форм всего сайта
 
 .site-form__fieldset {
-  padding: 0;
   margin: 0;
+  padding: 0;
   border: none;
 
   @media (max-width: @mobile-only-width) {
@@ -145,11 +145,11 @@
 }
 
 .site-form__box--checkbox::before {
-  content: "";
   box-sizing: border-box;
   width: 38px;
   height: 38px;
   border: 2px solid @checkbox-color;
+  content: "";
 
   @media (min-width: @tablet-width) {
     width: 52px;
@@ -158,10 +158,10 @@
 }
 
 .site-form__box-tick {
-  display: none;
   position: absolute;
   top: 12px;
   left: 8px;
+  display: none;
   width: 24px;
   height: 17px;
 
@@ -202,12 +202,12 @@
 }
 
 .site-form__box--radio-box::before {
-  content: "";
   box-sizing: border-box;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
   border: 2px solid @checkbox-color;
+  border-radius: 50%;
+  content: "";
 
   @media (min-width: @tablet-width) {
     width: 50px;
@@ -216,15 +216,15 @@
 }
 
 .site-form__radio-input:checked + .site-form__box--radio-box::after {
-  content: "";
   position: absolute;
-  box-sizing: border-box;
   top: 12px;
   left: 12px;
+  box-sizing: border-box;
   width: 16px;
   height: 16px;
-  border-radius: 50%;
   background-color: @checkbox-color-radio-checked;
+  border-radius: 50%;
+  content: "";
 
   @media (min-width: @tablet-width) {
     top: 15px;
@@ -264,19 +264,19 @@
 .site-form__text-input {
   display: inline-block;
   box-sizing: border-box;
-  min-height: 48px;
   width: 100%;
+  min-height: 48px;
   padding: 0;
-  .font-size(17px, 18px);
   color: @menu-text-color;
+  background-color: transparent;
   border: none;
   border-bottom: 2px solid @checkbox-color;
-  background-color: transparent;
   outline: none;
+  .font-size(17px, 18px);
 
   @media (min-width: @tablet-width) {
-    padding-left: 17px;
     min-height: 52px;
+    padding-left: 17px;
     .font-size(19px, 18px);
   }
 
@@ -322,10 +322,10 @@
   box-sizing: border-box;
   width: 100%;
   padding: 17px;
-  .font-size(17px, 18px);
   color: @menu-text-color;
-  border: 2px solid @checkbox-color;
   background-color: transparent;
+  border: 2px solid @checkbox-color;
+  .font-size(17px, 18px);
 
   @media (min-width: @tablet-width) {
     .font-size(19px, 18px);

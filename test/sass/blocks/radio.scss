@@ -1,13 +1,13 @@
 .radio__label {
   position: relative;
+  margin-left: 46px;
   font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
   line-height: 18px;
-  color: $special-light-black;
   text-transform: uppercase;
-  margin-left: 46px;
+  color: $special-light-black;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -17,19 +17,19 @@
 
 .radio__input + .radio__label::before {
   position: absolute;
-  content: "";
-  width: 30px;
-  height: 30px;
   top: -3px;
   left: -46px;
+  width: 30px;
+  height: 30px;
   border: 1px solid $special-light-grey;
   border-radius: 50%;
+  content: "";
 
   @media (min-width: $tablet-width) {
-    width: 40px;
-    height: 40px;
     top: -6px;
     left: -61px;
+    width: 40px;
+    height: 40px;
   }
 }
 

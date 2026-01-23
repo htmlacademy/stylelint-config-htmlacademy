@@ -7,14 +7,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 36px 40px;
     margin: 0;
+    padding: 10px 36px 40px;
     background: linear-gradient(0deg, $basic-grey2 430px, transparent 81px);
   }
 
   @media (min-width: $desktop-width) {
-    padding: 1px 36px 40px;
     margin: 0;
+    padding: 1px 36px 40px;
     background: linear-gradient(0deg, $basic-grey2 431px, transparent 81px);
   }
 }
@@ -61,19 +61,19 @@
 }
 
 .product__title {
-  margin: 0 0 14px;
   width: 80px;
+  margin: 0 0 14px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 2px;
-    margin-bottom: 10px;
-    text-align: center;
     width: 150px;
+    margin-bottom: 10px;
+    margin-left: 2px;
+    text-align: center;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 3px;
     margin-bottom: 12px;
+    margin-left: 3px;
   }
 }
 
@@ -82,38 +82,38 @@
 }
 
 .product__table {
-  border-collapse: collapse;
   width: 140px;
   font-size: 12px;
   line-height: 14px;
+  border-collapse: collapse;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 27px;
     width: 250px;
+    margin-bottom: 27px;
     font-size: 16px;
     line-height: 28px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 169px;
     margin-bottom: 26px;
     margin-left: 1px;
-    width: 169px;
     font-size: 16px;
     line-height: 29px;
   }
 }
 
 .product__link {
-  margin-top: 8px;
   width: 100%;
+  margin-top: 8px;
 
   &:hover {
     background-color: $basic-green2;
   }
 
   &:active {
-    background-color: $basic-green2;
     color: $special-basic-white;
+    background-color: $basic-green2;
   }
 
   @media (min-width: $tablet-width) {
@@ -136,8 +136,8 @@
 }
 
 .product__title-link {
-  color: $special-light-black;
   text-transform: uppercase;
+  color: $special-light-black;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -160,7 +160,7 @@
 
 .product__row {
   @media (min-width: $tablet-width) {
-    border-bottom: 1px solid $special-light-grey3;
     padding-bottom: 9px;
+    border-bottom: 1px solid $special-light-grey3;
   }
 }

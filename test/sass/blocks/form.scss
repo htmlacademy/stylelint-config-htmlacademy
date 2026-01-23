@@ -1,6 +1,6 @@
 .form {
-  padding-bottom: 10px;
   margin-bottom: 22px;
+  padding-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -8,9 +8,9 @@
 }
 
 .form__fieldset {
-  border: none;
-  padding: 0;
   margin: 0 0 40px;
+  padding: 0;
+  border: none;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 52px;
@@ -52,30 +52,30 @@
 
 .form__legend {
   position: relative;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 26px;
-  color: $basic-black;
   margin-bottom: 35px;
   padding: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 26px;
+  color: $basic-black;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 76px;
   }
 }
 
 .form__legend--line-contacts {
   &::before {
     position: absolute;
-    content: "";
-    left: calc(100% - 20px);
     top: 16px;
-    border-top: 2px solid $basic-green;
+    left: calc(100% - 20px);
     width: 100vw;
+    border-top: 2px solid $basic-green;
+    content: "";
   }
 
   @media (min-width: $tablet-width) {
@@ -86,13 +86,13 @@
 
     &::after {
       position: absolute;
-      content: "";
-      transform-origin: left;
-      transform: rotate(180deg);
-      border-top: 2px solid $basic-green;
       top: 22px;
       left: -39px;
       width: 100vw;
+      border-top: 2px solid $basic-green;
+      content: "";
+      transform: rotate(180deg);
+      transform-origin: left;
     }
   }
 
@@ -114,11 +114,11 @@
 
   &::before {
     position: absolute;
-    content: "";
     top: 15px;
     left: calc(100% + 20px);
-    border-top: 2px solid $basic-green;
     width: 100vw;
+    border-top: 2px solid $basic-green;
+    content: "";
   }
 
   @media (min-width: $tablet-width) {
@@ -131,13 +131,13 @@
 
     &::after {
       position: absolute;
-      content: "";
-      transform-origin: left;
-      transform: rotate(180deg);
-      border-top: 2px solid $basic-green;
       top: 22px;
       left: -39px;
       width: 100vw;
+      border-top: 2px solid $basic-green;
+      content: "";
+      transform: rotate(180deg);
+      transform-origin: left;
     }
   }
 
@@ -159,11 +159,11 @@
 
   &::before {
     position: absolute;
-    content: "";
     top: 15px;
     left: calc(100% + 20px);
-    border: 1px solid $basic-green;
     width: 100vw;
+    border: 1px solid $basic-green;
+    content: "";
   }
 
   @media (min-width: $tablet-width) {
@@ -176,13 +176,13 @@
 
     &::after {
       position: absolute;
-      content: "";
-      transform-origin: left;
-      transform: rotate(180deg);
-      border-top: 2px solid $basic-green;
-      width: 100vw;
       top: 22px;
       left: -39px;
+      width: 100vw;
+      border-top: 2px solid $basic-green;
+      content: "";
+      transform: rotate(180deg);
+      transform-origin: left;
     }
   }
 
@@ -202,19 +202,19 @@
 }
 
 .form__label {
+  margin-right: 13px;
   font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: $special-dark-grey;
-  margin-right: 13px;
 
   @media (min-width: $tablet-width) {
+    margin-right: 16px;
     font-size: 20px;
     line-height: 29px;
-    margin-right: 16px;
   }
 }
 
@@ -227,8 +227,8 @@
 }
 
 .form__label--age {
-  margin-right: 15px;
   width: max-content;
+  margin-right: 15px;
 
   @media (min-width: $tablet-width) {
     margin-right: 16px;
@@ -253,23 +253,23 @@
 
 .form__input {
   flex-grow: 1;
+  height: 46px;
   padding: 13px 14px;
-  border: 1px solid $light-grey;
   font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
   line-height: 18px;
-  color: $special-dark-grey;
   text-transform: uppercase;
-  height: 46px;
+  color: $special-dark-grey;
+  border: 1px solid $light-grey;
 
 
   @media (min-width: $tablet-width) {
+    height: 53px;
     padding: 9px 18px;
     font-size: 20px;
     line-height: 29px;
-    height: 53px;
   }
 }
 
@@ -283,8 +283,8 @@
 }
 
 .form__input:focus {
-  outline: none;
   border: 1px solid $special-dark-grey;
+  outline: none;
 }
 
 .form__input--error {
@@ -296,14 +296,14 @@
 
   &::after {
     position: absolute;
-    content: "";
-    width: 100vw;
-    transform: translateX(-50%);
     bottom: 1px;
-    height: 1px;
 
     left: 50%;
+    width: 100vw;
+    height: 1px;
     background-color: $dark-grey;
+    content: "";
+    transform: translateX(-50%);
   }
 
   @media (min-width: $tablet-width) {
@@ -318,13 +318,13 @@
 }
 
 .form__fieldset--radio {
-  padding: 0 0 23px;
   margin-bottom: 25px;
+  padding: 0 0 23px;
 
   @media (min-width: $tablet-width) {
-    border: 1px solid $light-grey;
     margin: 0 auto;
     padding: 30px 41px 28px;
+    border: 1px solid $light-grey;
   }
 
   @media (min-width: $desktop-width) {
@@ -333,12 +333,12 @@
 }
 
 .form__fieldset--checkbox {
-  padding: 0 0 23px;
   margin-bottom: 14px;
+  padding: 0 0 23px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
     margin-bottom: 34px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -365,22 +365,22 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 72px;
     column-gap: 80px;
+    margin-bottom: 72px;
   }
 }
 
 .form__button {
-  padding: 10px 44px;
   min-width: 280px;
   margin-bottom: 21px;
+  padding: 10px 44px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 2px;
     width: 282px;
+    margin-bottom: 0;
+    margin-left: 2px;
     padding: 16px 38px;
     font-size: 20px;
-    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -394,14 +394,14 @@
 }
 
 .form__button:active {
-  background-color: $basic-green2;
   color: $special-basic-white;
+  background-color: $basic-green2;
 }
 
 .form__wrapper {
   @media (min-width: $tablet-width) {
-    padding-left: 2px;
     margin-bottom: 75px;
+    padding-left: 2px;
   }
 
   @media (min-width: $desktop-width) {
@@ -424,24 +424,24 @@
 }
 
 .form__textarea {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 18px;
-  color: $special-dark-grey;
-  text-transform: uppercase;
   width: 100%;
   height: 150px;
   padding: 9px 12px 9px 14px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special-dark-grey;
   border: 1px solid $light-grey;
   resize: none;
 
   @media (min-width: $tablet-width) {
+    height: 174px;
+    padding: 9px 18px;
     font-size: 20px;
     line-height: 30px;
-    padding: 9px 18px;
-    height: 174px;
   }
 }
 
@@ -455,15 +455,15 @@
 }
 
 .form__textarea:focus {
-  outline: none;
   border: 1px solid $special-dark-grey;
+  outline: none;
 }
 
 .form__legend-text {
   margin: 0;
   line-height: 16px;
-  color: $basic-black;
   text-align: center;
+  color: $basic-black;
 
   @media (min-width: $tablet-width) {
     margin-top: 16px;

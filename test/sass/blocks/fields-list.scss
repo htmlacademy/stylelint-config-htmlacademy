@@ -1,14 +1,14 @@
 .fields-list {
-  list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .fields-list__item {
   position: relative;
   display: flex;
-  margin-bottom: 13px;
   align-items: baseline;
+  margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 19px;
@@ -37,16 +37,16 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
 .fields-list--contacts {
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 

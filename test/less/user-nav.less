@@ -1,7 +1,7 @@
 //
 .user-nav {
-  padding: 0;
   margin: 0;
+  padding: 0;
   list-style: none;
 
   @media (min-width: @tablet-width) {
@@ -21,16 +21,16 @@
   box-sizing: border-box;
 
   @media (max-width: @mobile-only-width) {
-    box-shadow: 0 1px 0 @menu-border, inset 0 1px 0 @menu-border;
     height: 79px;
+    box-shadow: 0 1px 0 @menu-border, inset 0 1px 0 @menu-border;
   }
 }
 
 .user-nav__item--search {
   @media (min-width: @tablet-width) {
     width: 85px;
-    border-left: 1px solid fade(@dark-basic, 10);
     border-right: 1px solid fade(@dark-basic, 10);
+    border-left: 1px solid fade(@dark-basic, 10);
   }
 }
 
@@ -41,9 +41,9 @@
   width: 100%;
   height: 100%;
   font-weight: 700;
-  .font-size(17px, 24px);
-  color: @menu-text-color;
   text-decoration: none;
+  color: @menu-text-color;
+  .font-size(17px, 24px);
 
   @media (max-width: @mobile-only-width) {
     padding: 29px 30px 26px 76px;
@@ -72,26 +72,26 @@
 
 
 .user-nav__link:hover .user-nav__link-icon {
-  fill: @menu-icon-active;
   opacity: 1;
+  fill: @menu-icon-active;
 }
 
 .user-nav__link:focus .user-nav__link-icon {
-  fill: @menu-icon-active;
   opacity: 1;
+  fill: @menu-icon-active;
 }
 
 .user-nav__link:active .user-nav__link-icon {
-  fill: @menu-icon-active;
   opacity: 0.3;
+  fill: @menu-icon-active;
 }
 
 .user-nav__link-icon--search {
   position: absolute;
-  width: 18px;
-  height: 18px;
   top: 32px;
   left: 32px;
+  width: 18px;
+  height: 18px;
   opacity: 0.2;
 
   @media (min-width: @tablet-width) {
@@ -108,10 +108,10 @@
 
 .user-nav__link-icon--cart {
   position: absolute;
-  width: 20px;
-  height: 19px;
   top: 31px;
   left: 30px;
+  width: 20px;
+  height: 19px;
   opacity: 0.2;
 
   @media (min-width: @tablet-width) {

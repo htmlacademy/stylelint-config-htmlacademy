@@ -22,12 +22,12 @@
 }
 
 .copyright__text {
+  margin: 8px 0 0;
   font-family: "Arial", sans-serif;
+  font-size: 16px;
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
   line-height: 18px;
-  margin: 8px 0 0;
   color: $special-dark-grey;
 
   @media (min-width: $tablet-width) {
