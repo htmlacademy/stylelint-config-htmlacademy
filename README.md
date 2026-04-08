@@ -1,16 +1,19 @@
-# Stylelint Config for HTML Academy CODEGUIDE
+# Stylelint Config for HTML Academy Codeguide
 
 [![npm version](https://img.shields.io/npm/v/stylelint-config-htmlacademy.svg)](https://www.npmjs.com/package/stylelint-config-htmlacademy)
 [![test](https://github.com/htmlacademy/stylelint-config-htmlacademy/actions/workflows/test.yml/badge.svg)](https://github.com/htmlacademy/stylelint-config-htmlacademy/actions/workflows/test.yml)
 [![license](https://img.shields.io/npm/l/stylelint-config-htmlacademy.svg)](https://github.com/htmlacademy/stylelint-config-htmlacademy/blob/main/LICENSE)
 
-Stylelint configuration for CSS, SCSS, LESS validation according to [HTML Academy Codeguide](https://codeguide.academy).
+[Stylelint](https://stylelint.io) configuration for CSS, SCSS, LESS validation according to [HTML Academy Codeguide](https://codeguide.academy).
 
-Compatible with Stylelint v16 and v17.
+## Requirements
+
+- Node.js >= 24
+- Stylelint >= 17
 
 ## Installation
 
-```sh
+```bash
 npm install -D stylelint stylelint-config-htmlacademy
 ```
 
