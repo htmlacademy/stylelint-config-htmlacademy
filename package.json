@@ -3,7 +3,10 @@
   "version": "5.0.0",
   "description": "Stylelint Config for HTML Academy CODEGUIDE",
   "license": "MIT",
-  "author": "Nikolai Shabalin",
+  "engines": {
+    "node": ">=24"
+  },
+  "author": "HTML Academy <mail@htmlacademy.dev>",
   "repository": "htmlacademy/stylelint-config-htmlacademy",
   "keywords": [
     "stylelint",
@@ -20,15 +23,15 @@
     "test": "stylelint \"test/**/*.{css,less,scss}\""
   },
   "peerDependencies": {
-    "stylelint": "^16.25.0 || ^17.0.0"
+    "stylelint": ">=17"
   },
   "dependencies": {
-    "@stylistic/stylelint-plugin": "^5.0.1",
+    "@stylistic/stylelint-plugin": "^5.1.0",
     "postcss-less": "^6.0.0",
     "postcss-scss": "^4.0.9",
-    "stylelint-order": "^7.0.1"
+    "stylelint-order": "^8.1.0"
   },
   "devDependencies": {
-    "stylelint": "^17.0.0"
+    "stylelint": "^17.6.0"
   }
 }
