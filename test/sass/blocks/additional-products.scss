@@ -30,8 +30,8 @@
     top: 15px;
     left: calc(100% + 20px);
     width: 100vw;
-    border: 1px solid $basic-green;
     content: "";
+    border: 1px solid $basic-green;
   }
 
   @media (min-width: $tablet-width) {
@@ -51,8 +51,8 @@
       top: 22px;
       left: -37px;
       width: 100vw;
-      border-top: 2px solid $basic-green;
       content: "";
+      border-top: 2px solid $basic-green;
       transform: rotate(180deg);
       transform-origin: left;
     }
@@ -208,7 +208,7 @@
     url("../img/background/additional-products.png"),
     $special-green;
 
-  @media (min-resolution: 2dppx) {
+  @media (resolution >= 2dppx) {
     background:
       url("../img/logo/icon-gift.svg") 100px 56px no-repeat,
       url("../img/background/additional-products2x.png"),
@@ -226,7 +226,7 @@
       url("../img/background/cat-green.png") no-repeat,
       $special-green;
 
-    @media (min-resolution: 2dppx) {
+    @media (resolution >= 2dppx) {
       background:
         url("../img/logo/icon-gift.svg") 78px 56px no-repeat,
         url("../img/background/cat-green2x.png") no-repeat,
@@ -243,7 +243,7 @@
       $special-green;
 
 
-    @media (min-resolution: 2dppx) {
+    @media (resolution >= 2dppx) {
       background:
         url("../../img/logo/icon-gift.svg") 50% 55px no-repeat,
         url("../../img/background/additional-products-desktop2x.png") 80% no-repeat,

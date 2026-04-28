@@ -83,9 +83,9 @@
 
 .product__table {
   width: 140px;
+  border-collapse: collapse;
   font-size: 12px;
   line-height: 14px;
-  border-collapse: collapse;
 
   @media (min-width: $tablet-width) {
     width: 250px;

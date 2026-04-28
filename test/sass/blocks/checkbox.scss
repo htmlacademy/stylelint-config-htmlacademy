@@ -28,8 +28,8 @@
   left: -45px;
   width: 30px;
   height: 30px;
-  border: 1px solid $special-light-grey;
   content: "";
+  border: 1px solid $special-light-grey;
 
   @media (min-width: $tablet-width) {
     top: -4px;

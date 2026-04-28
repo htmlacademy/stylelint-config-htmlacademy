@@ -148,9 +148,9 @@
 }
 
 .our-address__map-image {
+  object-fit: cover;
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .our-address__map iframe {

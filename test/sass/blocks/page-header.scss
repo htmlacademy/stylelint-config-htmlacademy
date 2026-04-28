@@ -91,7 +91,7 @@
     min-height: 694px;
     background: linear-gradient(90deg, transparent 55.5%, $basic-green 44.5%);
 
-    @media (min-resolution: 2dppx) {
+    @media (resolution >= 2dppx) {
       --bg-image: url("../img/background/header-cat-desktop@2x.jpg");
     }
 
@@ -101,6 +101,7 @@
       right: 0;
       width: 50%;
       height: 100%;
+      content: "";
       background:
         linear-gradient(
           $basic-green 100%,
@@ -108,7 +109,6 @@
         ),
         var(--bg-image);
       background-size: cover, cover;
-      content: "";
     }
   }
 }
@@ -120,7 +120,7 @@
     url("../img/background/foot-header-cat.jpg") no-repeat top center,
     linear-gradient(180deg, $special-dark-grey 63%, transparent 37%);
 
-  @media (min-resolution: 2dppx) {
+  @media (resolution >= 2dppx) {
     background:
       url("../img/background/fill-cat.svg") repeat-x,
       url("../img/background/foot-header-cat2x.jpg") no-repeat top center,

@@ -14,14 +14,14 @@
   background-position: center;
   background-size: contain;
 
-  @media (min-resolution: 2dppx) {
+  @media (resolution >= 2dppx) {
     background-image: url("../img/background-img/video-mobile@2x.jpg");
   }
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/background-img/video-tablet.jpg");
 
-    @media (min-resolution: 2dppx) {
+    @media (resolution >= 2dppx) {
       background-image: url("../img/background-img/video-tablet@2x.jpg");
     }
   }
@@ -29,7 +29,7 @@
   @media (min-width: @desktop-width) {
     background-image: url("../img/background-img/video-desktop.jpg");
 
-    @media (min-resolution: 2dppx) {
+    @media (resolution >= 2dppx) {
       background-image: url("../img/background-img/video-desktop@2x.jpg");
     }
   }
