@@ -19,20 +19,31 @@ npm install -D stylelint stylelint-config-htmlacademy
 
 ## Usage
 
-Create `.stylelintrc` in your project root:
+Create `stylelint.config.js` in your project root:
+
+```js
+export default {
+  extends: "stylelint-config-htmlacademy",
+}
+```
+
+Or add to your `package.json`:
 
 ```json
 {
-  "extends": "stylelint-config-htmlacademy"
+  "stylelint": {
+    "extends": ["stylelint-config-htmlacademy"]
+  }
 }
 ```
 
 ## Key Features
 
-- **Property Order** — Logical grouping: positioning, box model, typography, decoration, animation, interactivity
-- **Modern CSS** — `rgb(255 0 0)` syntax, no vendor prefixes, no `@import` in CSS
-- **Code Quality** — No `!important`, max 2 nesting levels, kebab-case naming
+- **Property Order** — Logical grouping into seven groups (positioning, box model, typography, decoration, animation, interactivity), covering modern CSS: container queries, anchor positioning, view transitions, scroll API, logical properties, masks, modern typography
+- **Modern CSS** — `rgb(255 0 0)` syntax (no `rgba` alias), no vendor prefixes, no `@import` in CSS
+- **Code Quality** — No `!important`, max 2 nesting levels, max 2 compound selectors, no single-line blocks, kebab-case naming, no deprecated or unmatchable selectors
 - **Preprocessors** — SCSS and LESS support with syntax-aware rule adjustments
+- **Modular** — `stylelint.config.js` ESM entry point, property order list lives in a separate `properties-order.js` module
 
 ## Property Order
 
@@ -45,17 +56,14 @@ Properties are organized into groups:
 
   /* 2. Positioning */
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  inset: 0;
   z-index: 100;
 
   /* 3. Box Model */
   display: flex;
+  gap: 10px;
   align-items: center;
   justify-content: center;
-  gap: 10px;
   width: 100px;
   height: 100px;
   margin: 10px;
@@ -64,10 +72,10 @@ Properties are organized into groups:
 
   /* 4. Typography */
   font-family: "Arial", sans-serif;
-  font-style: normal;
   font-size: 13px;
-  line-height: 20px;
   font-weight: 700;
+  font-style: normal;
+  line-height: 20px;
   text-align: center;
   color: var(--element-color);
 
@@ -95,14 +103,14 @@ SCSS and LESS work out of the box. The syntax is automatically detected by file 
 
 ## Extending
 
-Override rules in your `.stylelintrc`:
+Override rules in your `stylelint.config.js`:
 
-```json
-{
-  "extends": "stylelint-config-htmlacademy",
-  "rules": {
-    "selector-class-pattern": null
-  }
+```js
+export default {
+  extends: "stylelint-config-htmlacademy",
+  rules: {
+    "selector-class-pattern": null,
+  },
 }
 ```
 
