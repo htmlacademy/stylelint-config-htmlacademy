@@ -3,6 +3,7 @@
   "version": "5.0.0",
   "description": "Stylelint Config for HTML Academy CODEGUIDE",
   "license": "MIT",
+  "type": "module",
   "engines": {
     "node": ">=24"
   },
@@ -15,12 +16,15 @@
     "codeguide",
     "linter"
   ],
-  "exports": "./.stylelintrc",
+  "exports": "./stylelint.config.js",
   "files": [
-    ".stylelintrc"
+    "stylelint.config.js",
+    "properties-order.js"
   ],
   "scripts": {
-    "test": "stylelint \"test/**/*.{css,less,scss}\""
+    "test:valid": "stylelint \"test/**/*.{css,less,scss}\"",
+    "test:invalid": "node --test \"test/invalid/**/*.test.js\"",
+    "test": "npm run test:valid && npm run test:invalid"
   },
   "peerDependencies": {
     "stylelint": ">=17"
@@ -29,9 +33,9 @@
     "@stylistic/stylelint-plugin": "^5.1.0",
     "postcss-less": "^6.0.0",
     "postcss-scss": "^4.0.9",
-    "stylelint-order": "^8.1.0"
+    "stylelint-order": "^8.1.1"
   },
   "devDependencies": {
-    "stylelint": "^17.6.0"
+    "stylelint": "^17.9.1"
   }
 }
