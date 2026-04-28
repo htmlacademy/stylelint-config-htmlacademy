@@ -21,9 +21,9 @@
   left: -46px;
   width: 30px;
   height: 30px;
+  content: "";
   border: 1px solid $special-light-grey;
   border-radius: 50%;
-  content: "";
 
   @media (min-width: $tablet-width) {
     top: -6px;

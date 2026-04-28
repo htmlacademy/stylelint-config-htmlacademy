@@ -12,8 +12,8 @@
   display: block;
   width: 100vw;
   height: 100%;
-  background: $basic-grey;
   content: "";
+  background: $basic-grey;
 }
 
 @media (min-width: $tablet-width) {
@@ -22,8 +22,8 @@
     display: block;
     width: 100vw;
     height: 100%;
-    background: linear-gradient(to bottom, $basic-white, $basic-white 171px, $basic-grey2 171px);
     content: "";
+    background: linear-gradient(to bottom, $basic-white, $basic-white 171px, $basic-grey2 171px);
   }
 
   @media (min-width: $desktop-width) {
@@ -32,8 +32,8 @@
       display: block;
       width: 100vw;
       height: 100%;
-      background: linear-gradient(to bottom, $basic-white, $basic-white 195px, $basic-grey2 195px);
       content: "";
+      background: linear-gradient(to bottom, $basic-white, $basic-white 195px, $basic-grey2 195px);
     }
   }
 }

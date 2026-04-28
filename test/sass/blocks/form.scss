@@ -74,8 +74,8 @@
     top: 16px;
     left: calc(100% - 20px);
     width: 100vw;
-    border-top: 2px solid $basic-green;
     content: "";
+    border-top: 2px solid $basic-green;
   }
 
   @media (min-width: $tablet-width) {
@@ -89,8 +89,8 @@
       top: 22px;
       left: -39px;
       width: 100vw;
-      border-top: 2px solid $basic-green;
       content: "";
+      border-top: 2px solid $basic-green;
       transform: rotate(180deg);
       transform-origin: left;
     }
@@ -117,8 +117,8 @@
     top: 15px;
     left: calc(100% + 20px);
     width: 100vw;
-    border-top: 2px solid $basic-green;
     content: "";
+    border-top: 2px solid $basic-green;
   }
 
   @media (min-width: $tablet-width) {
@@ -134,8 +134,8 @@
       top: 22px;
       left: -39px;
       width: 100vw;
-      border-top: 2px solid $basic-green;
       content: "";
+      border-top: 2px solid $basic-green;
       transform: rotate(180deg);
       transform-origin: left;
     }
@@ -162,8 +162,8 @@
     top: 15px;
     left: calc(100% + 20px);
     width: 100vw;
-    border: 1px solid $basic-green;
     content: "";
+    border: 1px solid $basic-green;
   }
 
   @media (min-width: $tablet-width) {
@@ -179,8 +179,8 @@
       top: 22px;
       left: -39px;
       width: 100vw;
-      border-top: 2px solid $basic-green;
       content: "";
+      border-top: 2px solid $basic-green;
       transform: rotate(180deg);
       transform-origin: left;
     }
@@ -301,8 +301,8 @@
     left: 50%;
     width: 100vw;
     height: 1px;
-    background-color: $dark-grey;
     content: "";
+    background-color: $dark-grey;
     transform: translateX(-50%);
   }
 

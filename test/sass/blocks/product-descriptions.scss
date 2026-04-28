@@ -34,8 +34,8 @@
 .product-descriptions__list {
   margin: 0;
   padding: 0;
-  counter-reset: section;
   list-style: none;
+  counter-reset: section;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -71,9 +71,9 @@
       font-weight: 400;
       font-style: normal;
       line-height: 280px;
+      counter-increment: section;
       color: $basic-grey;
       content: counter(section);
-      counter-increment: section;
     }
   }
 

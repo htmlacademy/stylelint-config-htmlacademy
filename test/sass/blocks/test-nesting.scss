@@ -38,9 +38,9 @@
   &::before {
     width: var(--size);
     aspect-ratio: 1;
+    content: "";
     background: var(--fill);
     border-radius: 100%;
-    content: "";
     filter: invert(1);
   }
 }
