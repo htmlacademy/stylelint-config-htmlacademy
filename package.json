@@ -2,32 +2,33 @@
   "name": "stylelint-config-htmlacademy",
   "version": "5.0.0",
   "description": "Stylelint Config for HTML Academy CODEGUIDE",
-  "license": "MIT",
-  "type": "module",
-  "engines": {
-    "node": ">=24"
-  },
-  "author": "HTML Academy <mail@htmlacademy.dev>",
-  "repository": "htmlacademy/stylelint-config-htmlacademy",
   "keywords": [
-    "stylelint",
+    "codeguide",
     "config",
     "htmlacademy",
-    "codeguide",
-    "linter"
+    "linter",
+    "stylelint"
   ],
-  "exports": "./stylelint.config.js",
+  "license": "MIT",
+  "author": {
+    "name": "HTML Academy",
+    "email": "mail@htmlacademy.dev",
+    "url": "https://htmlacademy.ru"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/htmlacademy/stylelint-config-htmlacademy.git"
+  },
   "files": [
     "stylelint.config.js",
     "properties-order.js"
   ],
+  "type": "module",
+  "exports": "./stylelint.config.js",
   "scripts": {
-    "test:valid": "stylelint \"test/**/*.{css,less,scss}\"",
+    "test": "npm run test:valid && npm run test:invalid",
     "test:invalid": "node --test \"test/invalid/**/*.test.js\"",
-    "test": "npm run test:valid && npm run test:invalid"
-  },
-  "peerDependencies": {
-    "stylelint": ">=17"
+    "test:valid": "stylelint \"test/**/*.{css,less,scss}\""
   },
   "dependencies": {
     "@stylistic/stylelint-plugin": "^5.1.0",
@@ -37,5 +38,11 @@
   },
   "devDependencies": {
     "stylelint": "^17.9.1"
+  },
+  "peerDependencies": {
+    "stylelint": ">=17"
+  },
+  "engines": {
+    "node": ">=24"
   }
 }

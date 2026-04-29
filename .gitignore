@@ -1,6 +1,10 @@
-node_modules/
+._*
 .DS_Store
-Thumbs.db
+*.local.*
+.worktrees/
+node_modules/
 .idea/
-*.sublime*
 .vscode/
+.zed/
+docs/
+plan/
