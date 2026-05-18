@@ -1,7 +1,7 @@
-import { testRule } from "../utils/testRule.js"
+import {testRule} from '../utils/test-rule.js';
 
 testRule({
-  description: "no-duplicate-selectors: same selector twice is forbidden",
+  description: 'no-duplicate-selectors: same selector twice is forbidden',
   code: `
 .foo {
   color: #000000;
@@ -12,6 +12,6 @@ testRule({
 }
 `,
   expected: [
-    { line: 6, rule: "no-duplicate-selectors" },
+    {line: 6, rule: 'no-duplicate-selectors'},
   ],
-})
+});

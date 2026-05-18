@@ -1,7 +1,7 @@
-import { testRule } from "../utils/testRule.js"
+import {testRule} from '../utils/test-rule.js';
 
 testRule({
-  description: "at-rule-no-vendor-prefix: -webkit-keyframes forbidden",
+  description: 'at-rule-no-vendor-prefix: -webkit-keyframes forbidden',
   code: `
 @-webkit-keyframes spin {
   0% {
@@ -14,6 +14,6 @@ testRule({
 }
 `,
   expected: [
-    { line: 2, rule: "at-rule-no-vendor-prefix" },
+    {line: 2, rule: 'at-rule-no-vendor-prefix'},
   ],
-})
+});

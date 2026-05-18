@@ -1,8 +1,8 @@
-import { testRule } from "../utils/testRule.js"
+import {testRule} from '../utils/test-rule.js';
 
 testRule({
-  description: "max-nesting-depth: 2 — fourth level is forbidden",
-  customSyntax: "postcss-scss",
+  description: 'max-nesting-depth: 2 — fourth level is forbidden',
+  customSyntax: 'postcss-scss',
   code: `
 .alpha {
   color: #000000;
@@ -21,6 +21,6 @@ testRule({
 }
 `,
   expected: [
-    { line: 11, rule: "max-nesting-depth" },
+    {line: 11, rule: 'max-nesting-depth'},
   ],
-})
+});

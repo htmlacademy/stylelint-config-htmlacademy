@@ -1,7 +1,7 @@
-import { testRule } from "../utils/testRule.js"
+import {testRule} from '../utils/test-rule.js';
 
 testRule({
-  description: "length-zero-no-unit: 0 with units is forbidden",
+  description: 'length-zero-no-unit: 0 with units is forbidden',
   code: `
 .foo {
   margin: 0px;
@@ -12,7 +12,7 @@ testRule({
 }
 `,
   expected: [
-    { line: 3, rule: "length-zero-no-unit" },
-    { line: 7, rule: "length-zero-no-unit" },
+    {line: 3, rule: 'length-zero-no-unit'},
+    {line: 7, rule: 'length-zero-no-unit'},
   ],
-})
+});

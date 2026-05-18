@@ -23,8 +23,8 @@ Create `stylelint.config.js` in your project root:
 
 ```js
 export default {
-  extends: "stylelint-config-htmlacademy",
-}
+  extends: 'stylelint-config-htmlacademy',
+};
 ```
 
 Or add to your `package.json`:
@@ -107,11 +107,11 @@ Override rules in your `stylelint.config.js`:
 
 ```js
 export default {
-  extends: "stylelint-config-htmlacademy",
+  extends: 'stylelint-config-htmlacademy',
   rules: {
-    "selector-class-pattern": null,
+    'selector-class-pattern': null,
   },
-}
+};
 ```
 
 ## Editor Integration

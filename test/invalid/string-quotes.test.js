@@ -1,13 +1,13 @@
-import { testRule } from "../utils/testRule.js"
+import {testRule} from '../utils/test-rule.js';
 
 testRule({
-  description: "@stylistic/string-quotes: double quotes only",
+  description: '@stylistic/string-quotes: double quotes only',
   code: `
 .foo {
   font-family: 'Inter', sans-serif;
 }
 `,
   expected: [
-    { line: 3, rule: "@stylistic/string-quotes" },
+    {line: 3, rule: '@stylistic/string-quotes'},
   ],
-})
+});

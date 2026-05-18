@@ -1,8 +1,8 @@
-import { testRule } from "../utils/testRule.js"
+import {testRule} from '../utils/test-rule.js';
 
 testRule({
-  description: "order/order: declaration after nested rule is forbidden",
-  customSyntax: "postcss-scss",
+  description: 'order/order: declaration after nested rule is forbidden',
+  customSyntax: 'postcss-scss',
   code: `
 .foo {
   --color: #000000;
@@ -16,6 +16,6 @@ testRule({
 }
 `,
   expected: [
-    { line: 10, rule: "order/order" },
+    {line: 10, rule: 'order/order'},
   ],
-})
+});

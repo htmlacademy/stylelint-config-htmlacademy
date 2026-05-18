@@ -1,7 +1,7 @@
-import { testRule } from "../utils/testRule.js"
+import {testRule} from '../utils/test-rule.js';
 
 testRule({
-  description: "color-hex-length: long — short hex is forbidden",
+  description: 'color-hex-length: long — short hex is forbidden',
   code: `
 .foo {
   color: #fff;
@@ -12,7 +12,7 @@ testRule({
 }
 `,
   expected: [
-    { line: 3, rule: "color-hex-length" },
-    { line: 7, rule: "color-hex-length" },
+    {line: 3, rule: 'color-hex-length'},
+    {line: 7, rule: 'color-hex-length'},
   ],
-})
+});

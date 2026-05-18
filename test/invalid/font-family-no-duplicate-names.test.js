@@ -1,7 +1,7 @@
-import { testRule } from "../utils/testRule.js"
+import {testRule} from '../utils/test-rule.js';
 
 testRule({
-  description: "font-family-no-duplicate-names: monospace fallback is allowed",
+  description: 'font-family-no-duplicate-names: monospace fallback is allowed',
   code: `
 .real-duplicate {
   font-family: "Inter", "Inter", sans-serif;
@@ -12,6 +12,6 @@ testRule({
 }
 `,
   expected: [
-    { line: 3, rule: "font-family-no-duplicate-names" },
+    {line: 3, rule: 'font-family-no-duplicate-names'},
   ],
-})
+});

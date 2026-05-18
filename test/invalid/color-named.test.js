@@ -1,7 +1,7 @@
-import { testRule } from "../utils/testRule.js"
+import {testRule} from '../utils/test-rule.js';
 
 testRule({
-  description: "color-named: never — keywords like red are forbidden",
+  description: 'color-named: never — keywords like red are forbidden',
   code: `
 .foo {
   color: red;
@@ -12,7 +12,7 @@ testRule({
 }
 `,
   expected: [
-    { line: 3, rule: "color-named" },
-    { line: 7, rule: "color-named" },
+    {line: 3, rule: 'color-named'},
+    {line: 7, rule: 'color-named'},
   ],
-})
+});

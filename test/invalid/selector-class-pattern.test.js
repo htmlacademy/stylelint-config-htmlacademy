@@ -1,7 +1,7 @@
-import { testRule } from "../utils/testRule.js"
+import {testRule} from '../utils/test-rule.js';
 
 testRule({
-  description: "selector-class-pattern: only kebab-case / snake_case",
+  description: 'selector-class-pattern: only kebab-case / snake_case',
   code: `
 .UpperCase {
   color: #000000;
@@ -16,7 +16,7 @@ testRule({
 }
 `,
   expected: [
-    { line: 2, rule: "selector-class-pattern" },
-    { line: 6, rule: "selector-class-pattern" },
+    {line: 2, rule: 'selector-class-pattern'},
+    {line: 6, rule: 'selector-class-pattern'},
   ],
-})
+});
