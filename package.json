@@ -37,7 +37,7 @@
     "stylelint-order": "^8.1.1"
   },
   "devDependencies": {
-    "stylelint": "^17.9.1"
+    "stylelint": "^17.11.1"
   },
   "peerDependencies": {
     "stylelint": ">=17"
