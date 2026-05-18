@@ -10,6 +10,7 @@ export default {
         "at-rule-disallowed-list": null,
         "declaration-property-value-no-unknown": null,
         "media-query-no-invalid": null,
+        "selector-no-invalid": null,
         "function-no-unknown": [
           true,
           {
@@ -25,6 +26,7 @@ export default {
         "at-rule-disallowed-list": null,
         "declaration-property-value-no-unknown": null,
         "media-query-no-invalid": null,
+        "selector-no-invalid": null,
         "at-rule-no-unknown": [
           true,
           {
@@ -103,6 +105,7 @@ export default {
 
     "selector-anb-no-unmatchable": true,
     "selector-no-deprecated": true,
+    "selector-no-invalid": true,
 
     "at-rule-disallowed-list": ["import"],
     "at-rule-no-vendor-prefix": true,

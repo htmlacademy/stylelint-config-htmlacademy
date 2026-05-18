@@ -13,6 +13,7 @@
 - `order/order: [custom-properties, declarations, rules]` — declarations after nested rules are flagged.
 - `selector-no-deprecated` — deprecated selectors like `:-webkit-any` are flagged.
 - `selector-anb-no-unmatchable` — impossible selectors like `:nth-child(0)` are flagged.
+- `selector-no-invalid` — syntactically invalid selectors like `[0foo]` or `:nth-child(2n+)` are flagged. CSS only; disabled in SCSS/LESS overrides.
 - `no-unknown-custom-media` — typos in `@custom-media` references are flagged.
 - `color-function-alias-notation: "without-alpha"` — only `rgb()`/`hsl()` allowed; `rgba`/`hsla` aliases are flagged.
 - `declaration-block-single-line-max-declarations: 0` — single-line blocks are flagged.
@@ -27,6 +28,7 @@
 
 ### Changed
 
+- Bumped Stylelint to `^17.11.1`. Picks up bug fixes for `selector-pseudo-class-no-unknown` (nested `::-webkit-scrollbar` parts), `declaration-block-no-redundant-longhand-properties` (more accurate range), and `function-url-quotes` (URLs with modifiers).
 - `declaration-no-important` now reports a warning instead of an error.
 - `selector-not-notation` switched from `simple` to `complex` — Selectors Level 4 list `:not(.a, .b)` is preferred over chained `:not(.a):not(.b)`. Auto-fixable.
 - `aspect-ratio` ordered after the full sizing block (`max-block-size`) instead of after `max-height`.
@@ -36,7 +38,7 @@
 
 - Most consumers (`extends: "stylelint-config-htmlacademy"`): no action required.
 - Run `stylelint --fix` once: `media-feature-range-notation`, `selector-not-notation`, and the expanded `properties-order` are auto-fixable and will reformat existing CSS.
-- The new error-level rules (`declaration-block-single-line-max-declarations: 0`, `selector-max-compound-selectors: 2`, `order/order`, `selector-no-deprecated`, `selector-anb-no-unmatchable`, `no-unknown-custom-media`, `color-function-alias-notation`) may surface previously tolerated patterns.
+- The new error-level rules (`declaration-block-single-line-max-declarations: 0`, `selector-max-compound-selectors: 2`, `order/order`, `selector-no-deprecated`, `selector-anb-no-unmatchable`, `selector-no-invalid`, `no-unknown-custom-media`, `color-function-alias-notation`) may surface previously tolerated patterns.
 
 ## 4.4.0 — 2025-10-02
 
