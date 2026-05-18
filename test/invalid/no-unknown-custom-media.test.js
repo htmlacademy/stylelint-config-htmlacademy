@@ -1,7 +1,7 @@
-import { testRule } from "../utils/testRule.js"
+import {testRule} from '../utils/test-rule.js';
 
 testRule({
-  description: "no-unknown-custom-media: typo in @custom-media is caught",
+  description: 'no-unknown-custom-media: typo in @custom-media is caught',
   code: `
 @custom-media --large (width >= 1024px);
 
@@ -12,6 +12,6 @@ testRule({
 }
 `,
   expected: [
-    { line: 4, rule: "no-unknown-custom-media" },
+    {line: 4, rule: 'no-unknown-custom-media'},
   ],
-})
+});

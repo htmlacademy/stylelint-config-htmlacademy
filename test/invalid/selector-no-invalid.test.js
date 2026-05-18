@@ -1,7 +1,7 @@
-import { testRule } from "../utils/testRule.js"
+import {testRule} from '../utils/test-rule.js';
 
 testRule({
-  description: "selector-no-invalid: syntactically invalid selectors are forbidden",
+  description: 'selector-no-invalid: syntactically invalid selectors are forbidden',
   code: `
 [0foo] {
   color: #000000;
@@ -12,7 +12,7 @@ testRule({
 }
 `,
   expected: [
-    { line: 2, rule: "selector-no-invalid" },
-    { line: 6, rule: "selector-no-invalid" },
+    {line: 2, rule: 'selector-no-invalid'},
+    {line: 6, rule: 'selector-no-invalid'},
   ],
-})
+});

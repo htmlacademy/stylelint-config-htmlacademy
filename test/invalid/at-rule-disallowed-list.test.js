@@ -1,7 +1,7 @@
-import { testRule } from "../utils/testRule.js"
+import {testRule} from '../utils/test-rule.js';
 
 testRule({
-  description: "at-rule-disallowed-list: @import is forbidden in CSS",
+  description: 'at-rule-disallowed-list: @import is forbidden in CSS',
   code: `@import "foo.css";
 
 .foo {
@@ -9,6 +9,6 @@ testRule({
 }
 `,
   expected: [
-    { line: 1, rule: "at-rule-disallowed-list" },
+    {line: 1, rule: 'at-rule-disallowed-list'},
   ],
-})
+});

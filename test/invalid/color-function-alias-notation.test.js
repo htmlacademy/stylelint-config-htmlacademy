@@ -1,7 +1,7 @@
-import { testRule } from "../utils/testRule.js"
+import {testRule} from '../utils/test-rule.js';
 
 testRule({
-  description: "color-function-alias-notation: rgba/hsla aliases are forbidden",
+  description: 'color-function-alias-notation: rgba/hsla aliases are forbidden',
   code: `
 .foo {
   color: rgba(0 0 0 / 0.5);
@@ -12,7 +12,7 @@ testRule({
 }
 `,
   expected: [
-    { line: 3, rule: "color-function-alias-notation" },
-    { line: 7, rule: "color-function-alias-notation" },
+    {line: 3, rule: 'color-function-alias-notation'},
+    {line: 7, rule: 'color-function-alias-notation'},
   ],
-})
+});

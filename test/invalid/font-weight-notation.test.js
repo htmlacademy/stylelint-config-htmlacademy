@@ -1,7 +1,7 @@
-import { testRule } from "../utils/testRule.js"
+import {testRule} from '../utils/test-rule.js';
 
 testRule({
-  description: "font-weight-notation: numeric — keywords like bold are forbidden",
+  description: 'font-weight-notation: numeric — keywords like bold are forbidden',
   code: `
 .foo {
   font-weight: bold;
@@ -16,7 +16,7 @@ testRule({
 }
 `,
   expected: [
-    { line: 3, rule: "font-weight-notation" },
-    { line: 7, rule: "font-weight-notation" },
+    {line: 3, rule: 'font-weight-notation'},
+    {line: 7, rule: 'font-weight-notation'},
   ],
-})
+});

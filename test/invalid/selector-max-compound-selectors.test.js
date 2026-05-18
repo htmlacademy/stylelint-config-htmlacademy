@@ -1,7 +1,7 @@
-import { testRule } from "../utils/testRule.js"
+import {testRule} from '../utils/test-rule.js';
 
 testRule({
-  description: "selector-max-compound-selectors: max 2 compound selectors",
+  description: 'selector-max-compound-selectors: max 2 compound selectors',
   code: `
 .alpha .beta .gamma {
   color: #000000;
@@ -12,6 +12,6 @@ testRule({
 }
 `,
   expected: [
-    { line: 2, rule: "selector-max-compound-selectors" },
+    {line: 2, rule: 'selector-max-compound-selectors'},
   ],
-})
+});

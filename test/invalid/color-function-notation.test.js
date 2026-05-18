@@ -1,7 +1,7 @@
-import { testRule } from "../utils/testRule.js"
+import {testRule} from '../utils/test-rule.js';
 
 testRule({
-  description: "color-function-notation: modern — legacy comma syntax forbidden",
+  description: 'color-function-notation: modern — legacy comma syntax forbidden',
   code: `
 .foo {
   color: rgb(0, 0, 0);
@@ -12,7 +12,7 @@ testRule({
 }
 `,
   expected: [
-    { line: 3, rule: "color-function-notation" },
-    { line: 7, rule: "color-function-notation" },
+    {line: 3, rule: 'color-function-notation'},
+    {line: 7, rule: 'color-function-notation'},
   ],
-})
+});

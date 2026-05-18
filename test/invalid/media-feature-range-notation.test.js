@@ -1,7 +1,7 @@
-import { testRule } from "../utils/testRule.js"
+import {testRule} from '../utils/test-rule.js';
 
 testRule({
-  description: "media-feature-range-notation: context — prefix notation forbidden",
+  description: 'media-feature-range-notation: context — prefix notation forbidden',
   code: `
 @media (min-width: 768px) {
   .foo {
@@ -16,7 +16,7 @@ testRule({
 }
 `,
   expected: [
-    { line: 2, rule: "media-feature-range-notation" },
-    { line: 8, rule: "media-feature-range-notation" },
+    {line: 2, rule: 'media-feature-range-notation'},
+    {line: 8, rule: 'media-feature-range-notation'},
   ],
-})
+});

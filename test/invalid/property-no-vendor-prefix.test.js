@@ -1,7 +1,7 @@
-import { testRule } from "../utils/testRule.js"
+import {testRule} from '../utils/test-rule.js';
 
 testRule({
-  description: "property-no-vendor-prefix: -webkit-/-moz- prefixes are forbidden",
+  description: 'property-no-vendor-prefix: -webkit-/-moz- prefixes are forbidden',
   code: `
 .foo {
   -webkit-user-select: none;
@@ -10,7 +10,7 @@ testRule({
 }
 `,
   expected: [
-    { line: 3, rule: "property-no-vendor-prefix" },
-    { line: 4, rule: "property-no-vendor-prefix" },
+    {line: 3, rule: 'property-no-vendor-prefix'},
+    {line: 4, rule: 'property-no-vendor-prefix'},
   ],
-})
+});

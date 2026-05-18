@@ -1,7 +1,7 @@
-import { testRule } from "../utils/testRule.js"
+import {testRule} from '../utils/test-rule.js';
 
 testRule({
-  description: "keyframes-name-pattern: kebab-case keyframes",
+  description: 'keyframes-name-pattern: kebab-case keyframes',
   code: `
 @keyframes slideIn {
   0% {
@@ -24,6 +24,6 @@ testRule({
 }
 `,
   expected: [
-    { line: 2, rule: "keyframes-name-pattern" },
+    {line: 2, rule: 'keyframes-name-pattern'},
   ],
-})
+});
