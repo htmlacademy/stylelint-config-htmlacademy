@@ -48,7 +48,7 @@
 }
 
 .checkbox__input:disabled + .checkbox__label::before {
-  opacity: 0.3;
+  opacity: 30%;
 }
 
 .checkbox__input:checked + .checkbox__label::before {

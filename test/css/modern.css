@@ -32,8 +32,8 @@
   text-wrap-style: pretty;
   hyphens: auto;
   hyphenate-character: "-";
-  color: #ffffff;
-  accent-color: #0066ff;
+  color: oklch(60% 0.15 240);
+  accent-color: lab(50% 40 60);
 }
 
 .modern-decoration {
@@ -47,7 +47,7 @@
   mask-mode: alpha;
   filter: brightness(1.1);
   backdrop-filter: blur(4px);
-  opacity: 1;
+  opacity: 100%;
 }
 
 .modern-animation {
@@ -80,12 +80,12 @@
 
 @keyframes slide-in {
   0% {
-    opacity: 0;
+    opacity: 0%;
     transform: translateY(20px);
   }
 
   100% {
-    opacity: 1;
+    opacity: 100%;
     transform: translateY(0);
   }
 }
