@@ -42,7 +42,7 @@
 }
 
 .radio__input:disabled + .radio__label::before {
-  opacity: 0.3;
+  opacity: 30%;
 }
 
 .radio__input:checked + .radio__label::before {

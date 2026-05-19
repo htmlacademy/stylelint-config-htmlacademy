@@ -275,7 +275,7 @@
 
 .form__input::placeholder {
   color: $special-dark-grey;
-  opacity: 1;
+  opacity: 100%;
 }
 
 .form__input:hover {
@@ -447,7 +447,7 @@
 
 .form__textarea::placeholder {
   color: $special-dark-grey;
-  opacity: 1;
+  opacity: 100%;
 }
 
 .form__textarea:hover {

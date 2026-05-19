@@ -1,6 +1,5 @@
 import {propertiesOrder} from './properties-order.js';
 
-/** @type {import("stylelint").Config} */
 export default {
   overrides: [
     {
@@ -132,12 +131,7 @@ export default {
 
     'function-name-case': 'lower',
     'selector-type-case': 'lower',
-    'value-keyword-case': [
-      'lower',
-      {
-        camelCaseSvgKeywords: true,
-      },
-    ],
+    'value-keyword-case': 'lower',
 
     'at-rule-empty-line-before': [
       'always',
@@ -162,13 +156,19 @@ export default {
       },
     ],
     'number-max-precision': 2,
+    'time-min-milliseconds': 100,
+    'selector-max-class': 2,
+    'selector-max-combinators': 2,
     'selector-max-compound-selectors': 2,
     'selector-max-id': 0,
+    'selector-max-type': 2,
     'selector-max-universal': 2,
 
+    'alpha-value-notation': 'percentage',
     'color-function-alias-notation': 'without-alpha',
     'color-function-notation': 'modern',
     'color-hex-length': 'long',
+    'lightness-notation': 'percentage',
     'font-weight-notation': [
       'numeric',
       {
@@ -182,7 +182,16 @@ export default {
     'selector-not-notation': 'complex',
     'selector-pseudo-element-colon-notation': 'double',
 
-    'selector-class-pattern': '^[a-z0-9-_]+$',
+    'custom-media-pattern': '^[a-z][a-z0-9-]*$',
+    'custom-property-pattern': '^[a-z][a-z0-9-]*$',
+    'selector-id-pattern': '^[a-z][a-z0-9-]*$',
+    'selector-nested-pattern': '&',
+    'selector-class-pattern': [
+      '^[a-z][a-z0-9]*(-[a-z0-9]+)*(__[a-z][a-z0-9]*(-[a-z0-9]+)*)?(--[a-z][a-z0-9]*(-[a-z0-9]+)*)?$',
+      {
+        resolveNestedSelectors: true,
+      },
+    ],
 
     'font-family-name-quotes': 'always-unless-keyword',
     'function-url-quotes': 'always',
