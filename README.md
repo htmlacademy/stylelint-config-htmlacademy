@@ -4,7 +4,7 @@
 [![test](https://github.com/htmlacademy/stylelint-config-htmlacademy/actions/workflows/test.yml/badge.svg)](https://github.com/htmlacademy/stylelint-config-htmlacademy/actions/workflows/test.yml)
 [![license](https://img.shields.io/npm/l/stylelint-config-htmlacademy.svg)](https://github.com/htmlacademy/stylelint-config-htmlacademy/blob/main/LICENSE)
 
-[Stylelint](https://stylelint.io) configuration for CSS, SCSS, LESS validation according to [HTML Academy Codeguide](https://codeguide.academy).
+[Stylelint](https://stylelint.io) configuration for CSS, SCSS and LESS validation according to [HTML Academy Codeguide](https://codeguide.academy).
 
 ## Requirements
 
@@ -39,27 +39,68 @@ Or add to your `package.json`:
 
 ## Key Features
 
-- **Property Order** — Logical grouping into seven groups (positioning, box model, typography, decoration, animation, interactivity), covering modern CSS: container queries, anchor positioning, view transitions, scroll API, logical properties, masks, modern typography
-- **Modern CSS** — `rgb(255 0 0)` syntax (no `rgba` alias), no vendor prefixes, no `@import` in CSS
-- **Code Quality** — No `!important`, max 2 nesting levels, max 2 compound selectors, no single-line blocks, kebab-case naming, no deprecated or unmatchable selectors
-- **Preprocessors** — SCSS and LESS support with syntax-aware rule adjustments
-- **Modular** — `stylelint.config.js` ESM entry point, property order list lives in a separate `properties-order.js` module
+- **Modern CSS** — modern color functions (`rgb(255 0 0)`, `oklch(60% 0.15 240)`), percentage lightness and alpha, modern media features (`width >= 768px`), no vendor prefixes, no `@import` in CSS.
+- **BEM class names** — strict `block__element--modifier` pattern, kebab-case throughout, single `_` and chained modifiers rejected.
+- **Property order** — seven semantic groups (positioning, box model, typography, decoration, animation, interactivity), covering ~430 modern properties: container queries, anchor positioning, view transitions, scroll API, logical properties, masks, modern typography. Auto-fixable.
+- **Selector hygiene** — maximum 2 classes, 2 compound selectors, 2 combinators, 2 type selectors per chain; no ID selectors; no deprecated or invalid selectors; nested selectors must reference parent via `&`.
+- **Naming patterns** — kebab-case for custom properties, custom media, IDs, animations.
+- **Code quality** — no `!important` (warning), max 2 nesting levels, no single-line blocks, no duplicate properties.
+- **Preprocessors** — SCSS and LESS work out of the box, syntax detected by file extension, preprocessor-specific syntax (`@include`, `@mixin`, `@use`, `fade()`) allowed.
+
+## BEM Class Names
+
+Class names must follow `block__element--modifier` BEM notation in lowercase:
+
+```css
+/* Valid */
+.button {}
+.site-header {}
+.button__icon {}
+.button__icon-text {}
+.button--primary {}
+.button__icon--small {}
+
+/* Invalid */
+.Button {}                 /* uppercase */
+.button_icon {}            /* single underscore */
+.button--mod--extra {}     /* chained modifiers */
+```
+
+## Alpha and Lightness Notation
+
+Opacity, alpha channels and lightness in modern color functions must be expressed as percentages:
+
+```css
+/* Valid */
+.element {
+  opacity: 50%;
+  color: rgb(0 0 0 / 25%);
+  background: oklch(60% 0.15 240);
+}
+
+/* Invalid */
+.element {
+  opacity: 0.5;
+  color: rgb(0 0 0 / 0.25);
+  background: oklch(0.6 0.15 240);
+}
+```
+
+Run `stylelint --fix` to convert existing decimal values automatically.
 
 ## Property Order
 
-Properties are organized into groups:
-
 ```css
 .element {
-  /* 1. Custom Properties */
+  /* Custom properties */
   --element-color: #333333;
 
-  /* 2. Positioning */
+  /* Positioning */
   position: absolute;
   inset: 0;
   z-index: 100;
 
-  /* 3. Box Model */
+  /* Box model */
   display: flex;
   gap: 10px;
   align-items: center;
@@ -70,36 +111,35 @@ Properties are organized into groups:
   padding: 10px;
   overflow: hidden;
 
-  /* 4. Typography */
+  /* Typography */
   font-family: "Arial", sans-serif;
   font-size: 13px;
   font-weight: 700;
-  font-style: normal;
   line-height: 20px;
   text-align: center;
   color: var(--element-color);
 
-  /* 5. Decoration */
+  /* Decoration */
   background-color: #f5f5f5;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
-  opacity: 1;
+  opacity: 100%;
 
-  /* 6. Animation */
-  transition: color 0.3s;
+  /* Animation */
+  transition: color 200ms;
 
-  /* 7. Interactivity */
+  /* Interactivity */
   cursor: pointer;
   pointer-events: auto;
   user-select: none;
 }
 ```
 
-Run `stylelint --fix` to automatically reorder properties.
+Run `stylelint --fix` to reorder properties automatically.
 
 ## Preprocessors
 
-SCSS and LESS work out of the box. The syntax is automatically detected by file extension (`.scss`, `.less`). No additional configuration required.
+SCSS and LESS are detected by file extension (`.scss`, `.less`). Preprocessor-specific at-rules (`@include`, `@mixin`, `@use`, `@forward`, `@if`, `@for`, `@each`, `@content`) and functions (`fade()` in LESS) are allowed. `@import` is allowed in preprocessors but forbidden in plain CSS.
 
 ## Extending
 
@@ -110,6 +150,7 @@ export default {
   extends: 'stylelint-config-htmlacademy',
   rules: {
     'selector-class-pattern': null,
+    'max-nesting-depth': 3,
   },
 };
 ```
