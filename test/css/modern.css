@@ -70,6 +70,28 @@
   overscroll-behavior: contain;
 }
 
+.modern-color-mix {
+  color: light-dark(#000000, #ffffff);
+  background: color-mix(in srgb, #ffffff 80%, #000000);
+  border-color: color-mix(in oklch, oklch(60% 0.15 240) 50%, oklch(80% 0.1 180));
+}
+
+.modern-nesting {
+  display: block;
+
+  & .modern-nesting__child {
+    color: oklch(60% 0.15 240);
+  }
+
+  &__element {
+    color: lab(50% 40 60);
+  }
+
+  &:hover {
+    opacity: 80%;
+  }
+}
+
 @custom-media --large (width >= 1024px);
 
 @media (--large) {
