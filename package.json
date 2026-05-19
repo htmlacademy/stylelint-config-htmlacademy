@@ -26,7 +26,8 @@
   "type": "module",
   "exports": "./stylelint.config.js",
   "scripts": {
-    "test": "npm run test:valid && npm run test:invalid",
+    "test": "npm run test:lint && npm run test:valid && npm run test:invalid",
+    "test:lint": "eslint .",
     "test:invalid": "node --test \"test/invalid/**/*.test.js\"",
     "test:valid": "stylelint \"test/**/*.{css,less,scss}\""
   },
@@ -37,6 +38,9 @@
     "stylelint-order": "^8.1.1"
   },
   "devDependencies": {
+    "eslint": "^10.4.0",
+    "eslint-config-htmlacademy": "^11.0.0",
+    "globals": "^17.6.0",
     "stylelint": "^17.11.1"
   },
   "peerDependencies": {
